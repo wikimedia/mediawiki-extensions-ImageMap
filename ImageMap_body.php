@@ -28,7 +28,6 @@ class ImageMap {
 
 	static function render( $input, $params, $parser ) {
 		global $wgScriptPath, $wgUrlProtocols, $wgNoFollowLinks;
-		wfLoadExtensionMessages( 'ImageMap' );
 
 		$lines = explode( "\n", $input );
 
