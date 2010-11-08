@@ -131,6 +131,25 @@ $messages['ast'] = array(
 	'imagemap_poly_odd' => 'Error: atopóse un polígonu con un númberu impar de coordenaes na llinia $1',
 );
 
+/** Bashkir (Башҡорт)
+ * @author Assele
+ */
+$messages['ba'] = array(
+	'imagemap_desc' => '<code>&lt;imagemap&gt;</code> билдәһе ярҙамында килент яғында баҫмалы рәсемдәр картаһын күрһатеү мөмкинлеген бирә',
+	'imagemap_no_image' => 'Хата: беренсе юлда рәсем билдәләнгән булырға тейеш',
+	'imagemap_invalid_image' => 'Хата: рәсем дөрөҫ түгел йәки юҡ',
+	'imagemap_bad_image' => 'Хата: рәсем был биттә ҡара исемлеккә керә',
+	'imagemap_no_link' => 'Хата: $1 юлының аҙағында һылтанма дөрөҫ түгел',
+	'imagemap_invalid_title' => 'Хата: $1 юлында һылтанманың исеме дөрөҫ түгел',
+	'imagemap_missing_coord' => 'Хата: $1 юлында фигура өсөн координаталар етмәй',
+	'imagemap_unrecognised_shape' => 'Хата: $1 юлында танылмаған фигура, һәр юл default, rect, circle йәки poly асҡыс һүҙҙәренең береһе менән башланырға тейеш',
+	'imagemap_no_areas' => 'Хата: кәмендә бер өлкә бирелергә тейеш',
+	'imagemap_invalid_coord' => 'Хата: $1 юлында координата дөрөҫ түгел, һан булырға тейеш',
+	'imagemap_invalid_desc' => 'Хата: desc дөрөҫ күрһәтелмәгән, түбәндәгеләрҙең береһе булырға тейеш: <code>$1</code>',
+	'imagemap_description' => 'Рәсем тураһында',
+	'imagemap_poly_odd' => 'Хата: $1 юлындағы күпмөйөштөң координаталар һаны — таҡ һан',
+);
+
 /** Southern Balochi (بلوچی مکرانی)
  * @author Mostafadaneshvar
  */
