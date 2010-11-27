@@ -1258,6 +1258,13 @@ $messages['os'] = array(
 	'imagemap_description' => 'Ацы нывы тыххæй',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'imagemap_description' => 'Iwwer sell Pikder',
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Leinad
