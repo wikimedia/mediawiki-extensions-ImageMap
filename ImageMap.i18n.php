@@ -131,7 +131,7 @@ $messages['ast'] = array(
 	'imagemap_poly_odd' => 'Error: atopóse un polígonu con un númberu impar de coordenaes na llinia $1',
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -174,7 +174,7 @@ $messages['bcl'] = array(
 	'imagemap_description' => 'Manónongod sa retratong ini',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -290,6 +290,13 @@ $messages['ca'] = array(
 	'imagemap_invalid_desc' => "Error: l'especificació de descripció no és vàlida, ha de ser una de: <code>$1</code>",
 	'imagemap_description' => 'Quant a la imatge',
 	'imagemap_poly_odd' => 'Error: poly amb un nombre senar de coordenades a la línia $1',
+);
+
+/** Chechen (Нохчийн)
+ * @author Sasan700
+ */
+$messages['ce'] = array(
+	'imagemap_invalid_image' => 'Гlалат: нийса дац йа ишта сурт дац кху чохь',
 );
 
 /** Corsican (Corsu) */
@@ -1546,7 +1553,7 @@ $messages['sl'] = array(
 	'imagemap_poly_odd' => 'Napaka: najden večkotnik z lihim številom koordinat v vrstici $1',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
@@ -1567,7 +1574,7 @@ $messages['sr-ec'] = array(
 	'imagemap_poly_odd' => 'Грешка: нађен је полигон са непарним бројем координата у линији $1',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
