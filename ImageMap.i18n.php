@@ -975,6 +975,13 @@ $messages['ksh'] = array(
 en dä Reih: $1.',
 );
 
+/** Kurdish (Latin) (Kurdî (Latin))
+ * @author George Animal
+ */
+$messages['ku-latn'] = array(
+	'imagemap_description' => 'Der barê vê wêneyê',
+);
+
 /** Latin (Latina)
  * @author SPQRobin
  */
