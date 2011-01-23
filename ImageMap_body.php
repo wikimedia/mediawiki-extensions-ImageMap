@@ -41,6 +41,7 @@ class ImageMap {
 		$descType = self::BOTTOM_RIGHT;
 		$defaultLinkAttribs = false;
 		$realmap = true;
+		$extLinks = array();
 		foreach ( $lines as $line ) {
 			++$lineNum;
 			$externLink = false;
@@ -137,6 +138,7 @@ class ImageMap {
 
 			# Find the link
 			$link = trim( strstr( $line, '[' ) );
+			$m = array();
 			if ( preg_match( '/^ \[\[  ([^|]*+)  \|  ([^\]]*+)  \]\] \w* $ /x', $link, $m ) ) {
 				$title = Title::newFromText( $m[1] );
 				$alt = trim( $m[2] );
