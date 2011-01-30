@@ -234,6 +234,13 @@ $messages['bn'] = array(
 	'imagemap_description' => 'এই চিত্র সম্পর্কে',
 );
 
+/** Tibetan (བོད་ཡིག)
+ * @author Freeyak
+ */
+$messages['bo'] = array(
+	'imagemap_description' => 'བརྙན་རིས་འདིའི་སྐོར།',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  */
