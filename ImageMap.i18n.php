@@ -1561,6 +1561,25 @@ $messages['sl'] = array(
 	'imagemap_poly_odd' => 'Napaka: najden večkotnik z lihim številom koordinat v vrstici $1',
 );
 
+/** Albanian (Shqip)
+ * @author Olsi
+ */
+$messages['sq'] = array(
+	'imagemap_desc' => 'Lejon klientin-side klikueshme harta figure duke përdorur etiketën <code>&lt;imagemap&gt;</code>',
+	'imagemap_no_image' => 'Gabim: duhet të specifikohet një figurë në rreshtin e parë',
+	'imagemap_invalid_image' => 'Gabim: figura është e pavlefshme ose joekzistente',
+	'imagemap_bad_image' => 'Gabim: figura është në listën e zezë në këtë faqe',
+	'imagemap_no_link' => 'Gabim: nuk u gjet asnjë lidhje në fund të rreshtit $1',
+	'imagemap_invalid_title' => 'Gabim: titull i pavlefshëm në lidhjen tek rreshti $1',
+	'imagemap_missing_coord' => 'Gabim: nuk ka mjaftueshëm koordinata për formën tek rreshti $1',
+	'imagemap_unrecognised_shape' => 'Gabim: formë e papranuar tek rreshti $1, çdo rresht duhet të fillojë me një: default, rect, cicrcle ose poly',
+	'imagemap_no_areas' => 'Gabim: së paku një fushë e specifikuar duhet të jepet',
+	'imagemap_invalid_coord' => 'Gabim: koordinatë e pavlefshme tek rreshti $1, duhet të jetë një numër',
+	'imagemap_invalid_desc' => 'Gabim: desc specifikim i pavlefshëm, duhet të jetë një nga: <code>$1</code>',
+	'imagemap_description' => 'Rreth kësaj figure',
+	'imagemap_poly_odd' => 'Gabim: u gjet poli me numër tek i koordinatave në rreshtin $1',
+);
+
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Millosh
  * @author Sasa Stefanovic
