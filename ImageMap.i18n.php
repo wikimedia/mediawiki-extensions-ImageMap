@@ -1865,6 +1865,15 @@ $messages['vo'] = array(
 	'imagemap_description' => 'Tefü magod at',
 );
 
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'imagemap_invalid_image' => 'טעות: בילד איז אומגילטיק אָדער נישט פֿאַרהאַנען',
+	'imagemap_invalid_title' => 'טעות: אומגילטיקער טיטל אין פֿאַרבינדונג אין שורה $1',
+	'imagemap_description' => 'וועגן דעם בילד',
+);
+
 /** Yoruba (Yorùbá)
  * @author Demmy
  */
