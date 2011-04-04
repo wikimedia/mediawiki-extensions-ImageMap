@@ -76,7 +76,6 @@ class ImageMap {
 				$parser->replaceLinkHolders( $imageHTML );
 				$imageHTML = $parser->mStripState->unstripBoth( $imageHTML );
 				$imageHTML = Sanitizer::normalizeCharReferences( $imageHTML );
-				$parser->mOutput->addImage( $imageTitle->getDBkey() );
 
 				$domDoc = new DOMDocument();
 				wfSuppressWarnings();
