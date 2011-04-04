@@ -276,6 +276,7 @@ $messages['bs'] = array(
 	'imagemap_invalid_coord' => 'Greška: nevaljane koordinate u redu $1, treba biti broj',
 	'imagemap_invalid_desc' => 'Greška: nevaljana specifikacija opisa, mora biti jedan od: <code>$1</code>',
 	'imagemap_description' => 'O ovoj slici',
+	'imagemap_desc_types' => 'gore-desno, dolje-desno, dolje-lijevo, gore-lijevo, nema',
 	'imagemap_poly_odd' => 'Greška: pronađen poly sa neparnim brojem koordinata u redu $1',
 );
 
