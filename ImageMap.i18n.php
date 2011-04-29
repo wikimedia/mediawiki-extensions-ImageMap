@@ -131,6 +131,13 @@ $messages['ast'] = array(
 	'imagemap_poly_odd' => 'Error: atopóse un polígonu con un númberu impar de coordenaes na llinia $1',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Vago
+ */
+$messages['az'] = array(
+	'imagemap_desc_types' => 'yuxarı-sağ, aşağı-sağ, aşağı-sol, yuxarı-sol, heç nə',
+);
+
 /** Bashkir (Башҡортса)
  * @author Assele
  */
