@@ -93,12 +93,7 @@ class ImageMap {
 				$thumbWidth = $imageNode->getAttribute('width');
 				$thumbHeight = $imageNode->getAttribute('height');
 
-				if( function_exists( 'wfFindFile' ) ) {
-					$imageObj = wfFindFile( $imageTitle );
-				} else {
-					// Old MW
-					$imageObj = wfFindFile( $imageTitle );
-				}
+				$imageObj = wfFindFile( $imageTitle );
 				if ( !$imageObj || !$imageObj->exists() ) {
 					return self::error( 'imagemap_invalid_image' );
 				}
