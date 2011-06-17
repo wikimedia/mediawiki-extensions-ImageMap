@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Image map extension. 
+ * Image map extension.
  *
  * Syntax:
  * <imagemap>
@@ -9,7 +9,7 @@
  *
  * rect    0  0  50 50  [[Foo type A]]
  * circle  50 50 20     [[Foo type B]]
- * 
+ *
  * desc bottom-left
  * </imagemap>
  *
@@ -97,7 +97,7 @@ class ImageMap {
 				if ( !$imageObj || !$imageObj->exists() ) {
 					return self::error( 'imagemap_invalid_image' );
 				}
-				# Add the linear dimensions to avoid inaccuracy in the scale 
+				# Add the linear dimensions to avoid inaccuracy in the scale
 				# factor when one is much larger than the other
 				# (sx+sy)/(x+y) = s
 				$denominator = $imageObj->getWidth() + $imageObj->getHeight();
@@ -208,7 +208,7 @@ class ImageMap {
 				if ( $wgNoFollowLinks ) {
 					$attribs['rel'] = 'nofollow';
 				}
-			} else if ( $title->getFragment() != '' && $title->getPrefixedDBkey() == '' ) {
+			} elseif ( $title->getFragment() != '' && $title->getPrefixedDBkey() == '' ) {
 				# XXX: kluge to handle [[#Fragment]] links, should really fix getLocalURL()
 				# in Title.php to return an empty string in this case
 				$attribs['href'] = $title->getFragmentForURL();
@@ -226,7 +226,7 @@ class ImageMap {
 					$attribs['alt'] = $alt;
 				}
 				$attribs['title'] = $alt;
-			} 
+			}
 			if ( $shape == 'default' ) {
 				$defaultLinkAttribs = $attribs;
 			} else {
@@ -252,7 +252,7 @@ class ImageMap {
 
 		if ( $realmap ) {
 			# Construct the map
-			# Add random number to avoid breaking cached HTML fragments that are 
+			# Add random number to avoid breaking cached HTML fragments that are
 			# later joined together on the one page (bug 16471)
 			$mapName = "ImageMap_" . ++self::$id . '_' . mt_rand( 0, 0x7fffffff );
 			$mapHTML = "<map name=\"$mapName\">\n$mapHTML</map>\n";
@@ -306,8 +306,8 @@ class ImageMap {
 			}
 			$div->setAttribute( 'style', "height: {$thumbHeight}px; width: {$thumbWidth}px; " );
 			$descWrapper = $div->appendChild( new DOMElement( 'div' ) );
-			$descWrapper->setAttribute( 'style', 
-				"margin-left: {$marginLeft}px; " . 
+			$descWrapper->setAttribute( 'style',
+				"margin-left: {$marginLeft}px; " .
 				"margin-top: {$marginTop}px; " .
 				"text-align: left;"
 			);
