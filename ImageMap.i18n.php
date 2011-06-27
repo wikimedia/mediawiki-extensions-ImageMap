@@ -348,9 +348,10 @@ $messages['cy'] = array(
 
 /** Danish (Dansk)
  * @author Byrial
+ * @author Peter Alberti
  */
 $messages['da'] = array(
-	'imagemap_desc' => 'Muliggør klikkbare billeder med brug af <code>&lt;imagemap&gt;</code>-tagget.',
+	'imagemap_desc' => 'Muliggør klikbare billeder med brug af <code>&lt;imagemap&gt;</code>-tagget.',
 	'imagemap_no_image' => '&lt;imagemap&gt;: Der skal angives et billednavn i første linje',
 	'imagemap_invalid_image' => '&lt;imagemap&gt;: Billedet er ugyldigt eller findes ikke',
 	'imagemap_bad_image' => 'Fejl: billedet er sortlistet på denne side',
