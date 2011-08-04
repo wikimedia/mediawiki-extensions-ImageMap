@@ -1188,15 +1188,15 @@ $messages['nds'] = array(
  * @author Servien
  */
 $messages['nds-nl'] = array(
-	'imagemap_no_image' => 'Fout: geef een aofbeelding op in de eerste regel',
+	'imagemap_no_image' => 'Fout: geef n aofbeelding op in de eerste regel',
 	'imagemap_invalid_image' => 'Fout: aofbeelding is ongeldig of besteet niet',
 	'imagemap_no_link' => 'Fout: der is gien geldige verwiezing evunnen an t einde van regel $1',
 	'imagemap_invalid_title' => 'Fout: ongeldige titel in de verwiezing op regel $1',
 	'imagemap_missing_coord' => 'Fout: niet genog koördinaoten veur vorm op regel $1',
-	'imagemap_unrecognised_shape' => 'Fout: onherkenbaore vorm op regel $1, elke regel möt beginnen mit één van de volgende vormen: standard, dreehoek, sirkel of een veulhoek',
-	'imagemap_no_areas' => 'Fout: der möt tenminsten een gebied espesifiseerd wörden',
-	'imagemap_invalid_coord' => 'Fout: ongeldige koördinaot in regel $1, möt een getal ween',
-	'imagemap_invalid_desc' => 'Fout: ongeldige beschrievingsspesifikasie, möt een van: <code>$1</code> ween',
+	'imagemap_unrecognised_shape' => 'Fout: onherkenbaore vorm op regel $1, elke regel mut beginnen mit één van de volgende vormen: standard, dreehoek, sirkel of n veulhoek',
+	'imagemap_no_areas' => 'Fout: der mut tenminsten n gebied espesifiseerd wörden',
+	'imagemap_invalid_coord' => 'Fout: ongeldige koördinaot in regel $1, mut n getal ween',
+	'imagemap_invalid_desc' => 'Fout: ongeldige beschrievingsspesifikasie, mut n van: <code>$1</code> ween',
 	'imagemap_description' => 'Over disse aofbeelding',
 );
 
