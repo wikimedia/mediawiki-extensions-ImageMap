@@ -1282,7 +1282,7 @@ $messages['oc'] = array(
 	'imagemap_poly_odd' => 'Error : trobat un poligòn amb un nombre impar de coordenadas a la linha $1',
 );
 
-/** Ossetic (Иронау)
+/** Ossetic (Ирон)
  * @author Amikeco
  */
 $messages['os'] = array(
@@ -1472,7 +1472,7 @@ $messages['rue'] = array(
 	'imagemap_poly_odd' => 'Хыба: на рядку $1 найденый многокутник з непарным чіслом коордінат',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
