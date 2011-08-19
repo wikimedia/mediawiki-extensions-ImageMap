@@ -1337,6 +1337,14 @@ $messages['pms'] = array(
 	'imagemap_poly_odd' => 'Eror: trovà un polìgon con un nùmer dìspar ëd coordinà an sla linia $1',
 );
 
+/** Western Punjabi (پنجابی)
+ * @author Khalid Mahmood
+ */
+$messages['pnb'] = array(
+	'imagemap_no_image' => 'غلطی: پہلی لائن چ مورت بارے دسو',
+	'imagemap_description' => 'ایس مورت بارے',
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
