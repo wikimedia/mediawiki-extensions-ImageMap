@@ -1342,6 +1342,10 @@ $messages['pms'] = array(
  */
 $messages['pnb'] = array(
 	'imagemap_no_image' => 'غلطی: پہلی لائن چ مورت بارے دسو',
+	'imagemap_invalid_image' => 'مسئلہ: اے فوٹو غلط اے یا نئیں ہیگی',
+	'imagemap_bad_image' => 'مسئلہ: فوٹو اس صفے واسطے بلیک لسٹ اے',
+	'imagemap_no_link' => 'مسئلہ: $1 دی لائن دے انت تے کوئی ٹردا جوڑ نئیں',
+	'imagemap_invalid_title' => 'مسئلہ:  $1 لائن دے جوڑ تے غلط ناں اے',
 	'imagemap_description' => 'ایس مورت بارے',
 );
 
