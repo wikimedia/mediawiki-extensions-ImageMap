@@ -606,6 +606,7 @@ $messages['frp'] = array(
 	'imagemap_invalid_coord' => 'Èrror : coordonâ envalida a la legne $1, dêt étre un nombro',
 	'imagemap_invalid_desc' => 'Èrror : paramètre « dèsc » envalido, los paramètres possiblos sont : <code>$1</code>',
 	'imagemap_description' => 'A propôs de ceta émâge',
+	'imagemap_desc_types' => 'd’amont a drêta, d’avâl a drêta, d’avâl a gôche, d’amont a gôche, nion',
 	'imagemap_poly_odd' => 'Èrror : trovâ un poligono avouéc un nombro mâl-par de coordonâs a la legne $1',
 );
 
