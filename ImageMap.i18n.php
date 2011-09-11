@@ -1447,6 +1447,7 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (Русский)
+ * @author Dim Grits
  * @author Kaganer
  * @author Александр Сигачёв
  */
@@ -1463,6 +1464,7 @@ $messages['ru'] = array(
 	'imagemap_invalid_coord' => 'Ошибка: ошибочная координата в строке $1, ожидается число',
 	'imagemap_invalid_desc' => 'Ошибка: некорректное значение desc, ожидается одно из следующих значений: <code>$1</code>',
 	'imagemap_description' => 'Описание изображения',
+	'imagemap_desc_types' => 'верхний правый, нижний правый, нижний левый, верхний левый, ни один',
 	'imagemap_poly_odd' => 'Ошибка: в строке $1 обнаружено описание многоугольника с лишними координатами',
 );
 
@@ -1810,6 +1812,7 @@ $messages['tr'] = array(
  * @author AS
  * @author Ahonc
  * @author Alex Khimich
+ * @author Dim Grits
  */
 $messages['uk'] = array(
 	'imagemap_desc' => 'Дозволяє створювати на боці клієнта карти зображень, які спрацьовують при натисканні, за допомогою тегу <code>&lt;imagemap&gt;</code>',
@@ -1824,6 +1827,7 @@ $messages['uk'] = array(
 	'imagemap_invalid_coord' => 'Помилка: помилкова координата в рядку $1, має бути число',
 	'imagemap_invalid_desc' => 'Помилка: помилкове значення desc, має бути одне з таких значень: <code>$1</code>',
 	'imagemap_description' => 'Опис зображення',
+	'imagemap_desc_types' => 'угорі праворуч, унизу праворуч, унизу ліворуч, угорі ліворуч, ніде',
 	'imagemap_poly_odd' => 'Помилка: в рядку $1 знайдений многокутник із непарною кількістю координат',
 );
 
