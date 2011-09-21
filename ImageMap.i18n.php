@@ -999,11 +999,12 @@ $messages['ksh'] = array(
 en dä Reih: $1.',
 );
 
-/** Kurdish (Latin) (Kurdî (Latin))
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
+ * @author Gomada
  */
 $messages['ku-latn'] = array(
-	'imagemap_description' => 'Der barê vê wêneyê',
+	'imagemap_description' => 'Derbarê vî wêneyî de',
 );
 
 /** Latin (Latina)
@@ -1366,7 +1367,13 @@ $messages['pnb'] = array(
 	'imagemap_bad_image' => 'مسئلہ: فوٹو اس صفے واسطے بلیک لسٹ اے',
 	'imagemap_no_link' => 'مسئلہ: $1 دی لائن دے انت تے کوئی ٹردا جوڑ نئیں',
 	'imagemap_invalid_title' => 'مسئلہ:  $1 لائن دے جوڑ تے غلط ناں اے',
+	'imagemap_missing_coord' => 'غلطی: کافی کووارڈینیٹ لکیر $1 تے مورت لئی نئیں دتے گۓ۔',
+	'imagemap_unrecognised_shape' => 'غلطی:لکیر $1 تے مورت نئیں پچھانی جاندی، ہر لکیر ایناں چوں کسے نال شروع ہووے: ڈیفالٹ، ریکٹ، چکر، یا پولی',
+	'imagemap_no_areas' => 'غلطی:کعٹ او کعٹ اک ایریا سپیسیفیکیشن دسنی چائیدی اے۔',
+	'imagemap_invalid_coord' => 'غلطی: ناں منے جان والے کووارڈینیٹ لکیر $1، لازمی اک نمبر ہووے۔',
+	'imagemap_invalid_desc' => 'غلطی: ناں منی جان والی ڈیسک سپیسیفیکیشن، لازمی ایناں چوں ہووے: <کوڈ>$1</کوڈ>',
 	'imagemap_description' => 'ایس مورت بارے',
+	'imagemap_poly_odd' => 'غلطی: لکیر $1 تے پولی لبی وکھے نمبراں دے کوورڈینیٹ نال',
 );
 
 /** Pashto (پښتو)
