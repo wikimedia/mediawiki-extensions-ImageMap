@@ -1362,6 +1362,7 @@ $messages['pms'] = array(
  * @author Khalid Mahmood
  */
 $messages['pnb'] = array(
+	'imagemap_desc' => 'اجازت دیندا اے کلائینٹ سائیڈ کلکایبل امیج نقشے <code>&lt;imagemap&gt;</code> ٹیگ ورتدیاں ہویاں۔',
 	'imagemap_no_image' => 'غلطی: پہلی لائن چ مورت بارے دسو',
 	'imagemap_invalid_image' => 'مسئلہ: اے فوٹو غلط اے یا نئیں ہیگی',
 	'imagemap_bad_image' => 'مسئلہ: فوٹو اس صفے واسطے بلیک لسٹ اے',
