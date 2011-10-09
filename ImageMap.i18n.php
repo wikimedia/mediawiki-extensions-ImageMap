@@ -1631,8 +1631,9 @@ $messages['sq'] = array(
 	'imagemap_poly_odd' => 'Gabim: u gjet poli me numër tek i koordinatave në rreshtin $1',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Millosh
+ * @author Rancher
  * @author Sasa Stefanovic
  * @author Михајло Анђелковић
  */
@@ -1649,6 +1650,7 @@ $messages['sr-ec'] = array(
 	'imagemap_invalid_coord' => 'Грешка: Лоше координате у линији $1; морају бити број.',
 	'imagemap_invalid_desc' => 'Грешка: Лоше desc одређење, мора бити једно од: <code>$1</code>.',
 	'imagemap_description' => 'О овој слици',
+	'imagemap_desc_types' => 'горе-десно, доле-десно, доле-лево, горе-лево, нема',
 	'imagemap_poly_odd' => 'Грешка: нађен је полигон са непарним бројем координата у линији $1',
 );
 
