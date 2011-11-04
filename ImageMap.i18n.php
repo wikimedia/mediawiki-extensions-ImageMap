@@ -1140,6 +1140,7 @@ $messages['mr'] = array(
 );
 
 /** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
  * @author Aviator
  * @author Kurniasan
  */
@@ -1156,7 +1157,7 @@ $messages['ms'] = array(
 	'imagemap_invalid_coord' => 'Ralat: koordinat tidak sah pada baris $1, hanya nombor dibenarkan',
 	'imagemap_invalid_desc' => 'Ralat: spesifikasi keterangan tidak sah, hendaklah salah satu daripada: <code>$1</code>',
 	'imagemap_description' => 'Perihal imej ini',
-	'imagemap_desc_types' => 'puncak-kanan, bawah-kanan, bawah-kiri, puncak-kiri, tiada',
+	'imagemap_desc_types' => 'atas-kanan, bawah-kanan, bawah-kiri, atas-kiri, tiada',
 	'imagemap_poly_odd' => 'Ralat: terdapat poligon dengan bilangan koordinat yang ganjil dalam baris $1',
 );
 
