@@ -219,7 +219,7 @@ $messages['bg'] = array(
 	'imagemap_poly_odd' => 'Грешка: открит е многоъгълник (poly) с нечетен брой координати на ред $1',
 );
 
-/** Bahasa Banjar (Bahasa Banjar)
+/** Banjar (Bahasa Banjar)
  * @author Alamnirvana
  */
 $messages['bjn'] = array(
@@ -911,7 +911,7 @@ $messages['kk-arab'] = array(
 	'imagemap_description' => 'بۇل سۋرەت تۋرالى',
 );
 
-/** Kazakh (Cyrillic) (Қазақша (Cyrillic))
+/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
  * @author AlefZet
  */
 $messages['kk-cyrl'] = array(
@@ -927,7 +927,7 @@ $messages['kk-cyrl'] = array(
 	'imagemap_description' => 'Бұл сурет туралы',
 );
 
-/** Kazakh (Latin) (Қазақша (Latin))
+/** Kazakh (Latin script) (‪Qazaqşa (latın)‬)
  * @author AlefZet
  */
 $messages['kk-latn'] = array(
@@ -1655,7 +1655,7 @@ $messages['sr-ec'] = array(
 	'imagemap_poly_odd' => 'Грешка: нађен је полигон са непарним бројем координата у линији $1',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1745,7 +1745,7 @@ $messages['tet'] = array(
 	'imagemap_description' => "Kona-ba imajen ne'e",
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1762,7 +1762,7 @@ $messages['tg-cyrl'] = array(
 	'imagemap_description' => 'Дар бораи ин акс',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
