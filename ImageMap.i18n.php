@@ -32,9 +32,11 @@ $messages['en'] = array(
 /** Message documentation (Message documentation)
  * @author Purodha
  * @author The Evil IP address
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'imagemap_desc' => '{{desc}}',
+	'imagemap_desc_types' => '{{optional}}',
 );
 
 /** Afrikaans (Afrikaans)
