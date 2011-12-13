@@ -9,7 +9,7 @@ $wgExtensionCredits['parserhook']['ImageMap'] = array(
 	'path'           => __FILE__,
 	'name'           => 'ImageMap',
 	'author'         => 'Tim Starling',
-	'url'            => 'http://www.mediawiki.org/wiki/Extension:ImageMap',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:ImageMap',
 	'descriptionmsg' => 'imagemap_desc',
 );
 
