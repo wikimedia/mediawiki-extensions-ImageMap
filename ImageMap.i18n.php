@@ -1125,6 +1125,7 @@ $messages['ml'] = array(
 );
 
 /** Marathi (मराठी)
+ * @author Kaajawa
  * @author Kaustubh
  * @author Rahuldeshmukh101
  */
@@ -1141,6 +1142,7 @@ $messages['mr'] = array(
 	'imagemap_invalid_coord' => 'Error:  $1 ओळीवर चुकीचे कोऑर्डिनेट्स, संख्या हवी',
 	'imagemap_invalid_desc' => 'Error: चुकीची माहिती, यापैकी एक असायला हवी: <code>$1</code>',
 	'imagemap_description' => 'या चित्राबद्दल माहिती',
+	'imagemap_poly_odd' => 'त्रुटी: रेष क्र. $1 मधे विषम संख्येचे गुणक असलेला बहुभुजक आकार सापडला',
 );
 
 /** Malay (Bahasa Melayu)
@@ -1675,6 +1677,7 @@ $messages['sr-el'] = array(
 	'imagemap_invalid_coord' => 'Greška: Loše koordinate u liniji $1; moraju biti broj.',
 	'imagemap_invalid_desc' => 'Greška: Loše desc određenje, mora biti jedno od: <code>$1</code>.',
 	'imagemap_description' => 'O ovoj slici',
+	'imagemap_desc_types' => 'gore-desno, dole-desno, dole-levo, gore-levo, nema',
 	'imagemap_poly_odd' => 'Greška: nađen je poligon sa neparnim brojem koordinata u liniji $1',
 );
 
