@@ -1174,6 +1174,25 @@ $messages['myv'] = array(
 	'imagemap_description' => 'Те артовкстонть',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['nb'] = array(
+	'imagemap_desc' => 'Gjør at man kan bruke klikkbare bilder ved hjelp av <code>&lt;imagemap&gt;</code>.',
+	'imagemap_no_image' => 'Error: må angi et bilde i første linje',
+	'imagemap_invalid_image' => 'Error: bilde er ugyldig eller ikke-eksisterende',
+	'imagemap_bad_image' => 'Feil: bildet er svartelistet på denne siden',
+	'imagemap_no_link' => 'Error: ingen gyldig lenke ble funnet i slutten av linje $1',
+	'imagemap_invalid_title' => 'Error: ugyldig tittel i lenke på linje $1',
+	'imagemap_missing_coord' => 'Error: ikke nok koordinater for form på linje $1',
+	'imagemap_unrecognised_shape' => 'Error: ugjenkjennelig form på linje $1; hver linje må starte med enten: default, rect, circle eller poly',
+	'imagemap_no_areas' => 'Feil: Minst ett område må spesifiseres',
+	'imagemap_invalid_coord' => 'Error: ugyldig koordinat i slutten av linje $1, må være et tall',
+	'imagemap_invalid_desc' => 'Error: ugyldig desc-spesifisering, må være enten: <code>$1</code>',
+	'imagemap_description' => 'Om dette bildet',
+	'imagemap_poly_odd' => 'Feil: fant poly med et oddetall koordinater på rad $1',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -1251,25 +1270,6 @@ $messages['nn'] = array(
 	'imagemap_invalid_desc' => 'Feil: ugyldig desc-spesifisering, må vere ein av: <code>$1</code>',
 	'imagemap_description' => 'Om dette bilete',
 	'imagemap_poly_odd' => 'Feil: fann poly med eit oddetal koordinatar på rad $1',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
-$messages['nb'] = array(
-	'imagemap_desc' => 'Gjør at man kan bruke klikkbare bilder ved hjelp av <code>&lt;imagemap&gt;</code>.',
-	'imagemap_no_image' => 'Error: må angi et bilde i første linje',
-	'imagemap_invalid_image' => 'Error: bilde er ugyldig eller ikke-eksisterende',
-	'imagemap_bad_image' => 'Feil: bildet er svartelistet på denne siden',
-	'imagemap_no_link' => 'Error: ingen gyldig lenke ble funnet i slutten av linje $1',
-	'imagemap_invalid_title' => 'Error: ugyldig tittel i lenke på linje $1',
-	'imagemap_missing_coord' => 'Error: ikke nok koordinater for form på linje $1',
-	'imagemap_unrecognised_shape' => 'Error: ugjenkjennelig form på linje $1; hver linje må starte med enten: default, rect, circle eller poly',
-	'imagemap_no_areas' => 'Feil: Minst ett område må spesifiseres',
-	'imagemap_invalid_coord' => 'Error: ugyldig koordinat i slutten av linje $1, må være et tall',
-	'imagemap_invalid_desc' => 'Error: ugyldig desc-spesifisering, må være enten: <code>$1</code>',
-	'imagemap_description' => 'Om dette bildet',
-	'imagemap_poly_odd' => 'Feil: fant poly med et oddetall koordinater på rad $1',
 );
 
 /** Occitan (Occitan)
