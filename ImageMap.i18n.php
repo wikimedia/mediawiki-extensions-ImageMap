@@ -1256,7 +1256,7 @@ $messages['nn'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'imagemap_desc' => 'Gjør at man kan bruke klikkbare bilder ved hjelp av <code>&lt;imagemap&gt;</code>.',
 	'imagemap_no_image' => 'Error: må angi et bilde i første linje',
 	'imagemap_invalid_image' => 'Error: bilde er ugyldig eller ikke-eksisterende',
