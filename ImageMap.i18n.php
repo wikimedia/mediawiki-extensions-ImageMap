@@ -1747,6 +1747,13 @@ $messages['sv'] = array(
 	'imagemap_poly_odd' => 'Fel: hittade poly med udda antal koordinater på rad $1',
 );
 
+/** Tamil (தமிழ்)
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'imagemap_description' => 'இந்த படத்தை பற்றி',
+);
+
 /** Telugu (తెలుగు)
  * @author Chaduvari
  * @author Veeven
