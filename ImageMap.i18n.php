@@ -1751,6 +1751,10 @@ $messages['sv'] = array(
  * @author Shanmugamp7
  */
 $messages['ta'] = array(
+	'imagemap_no_image' => 'பிழை:ஒரு படத்தை முதல் வரியில் கண்டிப்பாக குறிப்பிடவேண்டும்.',
+	'imagemap_invalid_image' => 'பிழை:படம் செல்லத்தக்கதல்ல அல்லது இல்லாத ஒன்று',
+	'imagemap_bad_image' => 'பிழை:படம் இந்த பக்கத்தில் ஏற்கத்தகாதது என பட்டியலிடப்பட்டுள்ளது.',
+	'imagemap_invalid_title' => 'பிழை:செல்லத்தகாத தலைப்பு இணைப்பின் வரி $1ல்',
 	'imagemap_description' => 'இந்த படத்தை பற்றி',
 );
 
