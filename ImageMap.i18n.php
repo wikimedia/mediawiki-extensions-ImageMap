@@ -571,6 +571,18 @@ $messages['fi'] = array(
 	'imagemap_poly_odd' => 'Virhe: löytyi polygoni, jossa pariton määrä koordinaatteja rivillä $1',
 );
 
+/** Faroese (Føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'imagemap_no_image' => 'Feilur: tú mást skriva eitt myndanavn á fyrstu linju',
+	'imagemap_invalid_image' => 'Feilur: Myndin er ógyldug ella er ikki til',
+	'imagemap_bad_image' => 'Feilur: Myndin er á svartalista á hesi síðu',
+	'imagemap_no_link' => 'Feilur: ongin galdandi slóð var funnin fyri endan á linju $1',
+	'imagemap_invalid_title' => 'Feilur: skeivt heiti á leinkjuni á linju $1',
+	'imagemap_description' => 'Um hesa myndina',
+);
+
 /** French (Français)
  * @author Grondin
  * @author Urhixidur
