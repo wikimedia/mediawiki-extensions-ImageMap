@@ -697,12 +697,14 @@ $messages['he'] = array(
 );
 
 /** Hindi (हिन्दी)
+ * @author Ansumang
  * @author Kaustubh
  */
 $messages['hi'] = array(
 	'imagemap_desc' => 'क्लायंटके चित्रनक्शे <code>&lt;imagemap&gt;</code> टॅग देकर इस्तेमाल किये जा सकतें हैं',
 	'imagemap_no_image' => 'Error: पहली कतारमें चित्र देना जरूरी हैं',
 	'imagemap_invalid_image' => 'Error: गलत या अस्तित्वमें ना होने वाला चित्र',
+	'imagemap_bad_image' => 'त्रुटि: छबि को इस पृष्ठ पे ब्लाकलिस्ट किया गया है',
 	'imagemap_no_link' => 'Error: $1 कतार के आखिर में वैध कड़ी मिली नहीं',
 	'imagemap_invalid_title' => 'Error: $1 कतारमें दिये कड़ीका अवैध शीर्षक',
 	'imagemap_missing_coord' => 'Error: $1 कतारपर आकार के लिये जरूरी कोऑर्डिनेट्स नहीं हैं',
