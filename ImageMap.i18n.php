@@ -42,6 +42,7 @@ $messages['qqq'] = array(
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  * @author SPQRobin
+ * @author පසිඳු කාවින්ද
  */
 $messages['af'] = array(
 	'imagemap_no_image' => "Fout: moet 'n beeld op die eerste lyn spesifiseer",
@@ -50,6 +51,7 @@ $messages['af'] = array(
 	'imagemap_no_link' => 'Fout: geen geldige skakel was aan die einde van lyn $1 gevind nie',
 	'imagemap_invalid_title' => 'Fout: ongeldige titel in skakel op lyn $1',
 	'imagemap_missing_coord' => 'Fout: nie genoeg koördinate vir vorm op lyn $1',
+	'imagemap_no_areas' => 'Fout: ten minste een gebied spesifikasie moet gegee word',
 	'imagemap_description' => 'Beeldinligting',
 );
 
