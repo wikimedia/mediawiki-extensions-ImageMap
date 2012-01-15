@@ -243,9 +243,7 @@ class ImageMap {
 			return self::error( 'imagemap_no_image' );
 		}
 
-		if ( $mapHTML == '' && $defaultLinkAttribs == '' ) {
-			return self::error( 'imagemap_no_areas' );
-		} elseif ( $mapHTML == '' && $defaultLinkAttribs != '' ) {
+		if ( $mapHTML == '' ) {
 			// no areas defined, default only. It's not a real imagemap, so we do not need some tags
 			$realmap = false;
 		}

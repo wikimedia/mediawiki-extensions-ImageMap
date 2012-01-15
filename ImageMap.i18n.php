@@ -20,7 +20,6 @@ $messages['en'] = array(
 	'imagemap_invalid_title'        => 'Error: invalid title in link at line $1',
 	'imagemap_missing_coord'        => 'Error: not enough coordinates for shape at line $1',
 	'imagemap_unrecognised_shape'   => 'Error: unrecognised shape at line $1, each line must start with one of: default, rect, circle or poly',
-	'imagemap_no_areas'             => 'Error: at least one area specification must be given',
 	'imagemap_invalid_coord'        => 'Error: invalid coordinate at line $1, must be a number',
 	'imagemap_invalid_desc'         => 'Error: invalid desc specification, must be one of: <code>$1</code>',
 	'imagemap_description'          => 'About this image',
