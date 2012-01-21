@@ -357,12 +357,13 @@ $messages['da'] = array(
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author LWChris
  * @author Raimond Spekking
  * @author Umherirrender
  */
 $messages['de'] = array(
-	'imagemap_desc' => "Ermöglicht die Erstellung von verweissensitiven Grafiken ''(image maps)'' mit Hilfe der <code>&lt;imagemap&gt;</code>-Syntax",
+	'imagemap_desc' => 'Ergänzt das Tag <code>&lt;imagemap&gt;</code> zum Erstellen verweissensitiver Grafiken',
 	'imagemap_no_image' => '&lt;imagemap&gt;-Fehler: In der ersten Zeile muss ein Bild angegeben werden',
 	'imagemap_invalid_image' => '&lt;imagemap&gt;-Fehler: Bild ist ungültig oder nicht vorhanden',
 	'imagemap_bad_image' => 'Fehler: Das Bild steht auf der Liste unerwünschter Bilder',
