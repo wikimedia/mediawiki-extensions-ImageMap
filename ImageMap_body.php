@@ -26,7 +26,13 @@ class ImageMap {
 	const TOP_LEFT = 3;
 	const NONE = 4;
 
-	static function render( $input, $params, $parser ) {
+	/**
+	 * @param $input
+	 * @param $params
+	 * @param $parser Parser
+	 * @return array|mixed|string
+	 */
+	public static function render( $input, $params, $parser ) {
 		global $wgScriptPath, $wgUrlProtocols, $wgNoFollowLinks;
 
 		$lines = explode( "\n", $input );
@@ -346,6 +352,11 @@ class ImageMap {
 		return $output;
 	}
 
+	/**
+	 * @param $count int
+	 * @param $lineNum int|string
+	 * @return array|string
+	 */
 	static function tokenizeCoords( $count, $lineNum ) {
 		$coords = array();
 		for ( $i = 0; $i < $count; $i++ ) {
@@ -361,6 +372,11 @@ class ImageMap {
 		return $coords;
 	}
 
+	/**
+	 * @param $name string
+	 * @param $line string|int
+	 * @return string
+	 */
 	static function error( $name, $line = false ) {
 		return '<p class="error">' . wfMsgForContent( $name, $line ) . '</p>';
 	}
