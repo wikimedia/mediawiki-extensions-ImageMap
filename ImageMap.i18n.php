@@ -646,8 +646,12 @@ $messages['gsw'] = array(
 	'imagemap_poly_odd' => 'Fähler: Polygon mit ere uugrade Anzahl vu Koordinate in dr Zyyle $1',
 );
 
-/** Gujarati (ગુજરાતી) */
+/** Gujarati (ગુજરાતી)
+ * @author Sushant savla
+ */
 $messages['gu'] = array(
+	'imagemap_invalid_image' => 'ત્રુટી: ચિત્ર યાતો અવૈધ છે અથવાતો અસ્તિત્વમાં નથી',
+	'imagemap_invalid_title' => 'ત્રુટી: $1 મી લાઈનમાં અયોગ્ય શીર્ષક',
 	'imagemap_description' => 'આ ચિત્ર વિષે',
 );
 
