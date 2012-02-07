@@ -651,6 +651,7 @@ $messages['gsw'] = array(
  */
 $messages['gu'] = array(
 	'imagemap_invalid_image' => 'ત્રુટી: ચિત્ર યાતો અવૈધ છે અથવાતો અસ્તિત્વમાં નથી',
+	'imagemap_bad_image' => 'ત્રુટી: આ પાના પર ચિત્ર પર પ્રતિબંધ મુકેલો છે',
 	'imagemap_invalid_title' => 'ત્રુટી: $1 મી લાઈનમાં અયોગ્ય શીર્ષક',
 	'imagemap_description' => 'આ ચિત્ર વિષે',
 );
