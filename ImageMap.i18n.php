@@ -810,7 +810,7 @@ $messages['ilo'] = array(
 	'imagemap_unrecognised_shape' => 'Biddut: saan a malasing a tabas idiay linia $1, tunggal maysa a linia ket masapul a mangrugi iti maysa nga: kinasigud, rektanggilo, nagtimbukel wenno poly',
 	'imagemap_invalid_coord' => 'Biddut: imbalido a nagsasabtan idiay linia $1, masapul a numero',
 	'imagemap_invalid_desc' => 'Biddut: imbalido a nainaganan a panagipalpalawag, masapul a maysa iti: <code>$1</code>',
-	'imagemap_description' => 'Maipanggep daytoy ngaimahen',
+	'imagemap_description' => 'Maipanggep daytoy nga imahen',
 	'imagemap_poly_odd' => 'Biddut: nabirukan ti poly nga addaan ti pangis a numero iti nagsasabtan idiay linia $1',
 );
 
