@@ -652,6 +652,7 @@ $messages['gsw'] = array(
  * @author Sushant savla
  */
 $messages['gu'] = array(
+	'imagemap_desc' => 'વપરાશ કર્તા (ક્લાયંટ સાઈડ) પર <code>&lt;imagemap&gt;</code> ટેગ વાપરી ક્લીક કરી શકાય તેવા  ચિત્ર નક્શાની પરવાનગી આપે છે.',
 	'imagemap_no_image' => 'ત્રુટિ: પહેલી લીટીમાં ચિત્રની સ્પષ્ટાતા કરેલી હોવી જ જોઈએ',
 	'imagemap_invalid_image' => 'ત્રુટી: ચિત્ર યાતો અવૈધ છે અથવાતો અસ્તિત્વમાં નથી',
 	'imagemap_bad_image' => 'ત્રુટી: આ પાના પર ચિત્ર પર પ્રતિબંધ મુકેલો છે',
