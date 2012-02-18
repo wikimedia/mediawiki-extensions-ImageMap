@@ -113,9 +113,10 @@ $messages['arz'] = array(
 
 /** Asturian (Asturianu)
  * @author Esbardu
+ * @author Xuacu
  */
 $messages['ast'] = array(
-	'imagemap_desc' => "Permite los mapes d'imaxe clicables per aciu de la etiqueta <code>&lt;imagemap&gt;</code>",
+	'imagemap_desc' => "Permite nel llau del cliente los mapes d'imaxe que se puen calcar usando la etiqueta <code>&lt;imagemap&gt;</code>",
 	'imagemap_no_image' => 'Error: ha especificase una imaxe na primer llinia',
 	'imagemap_invalid_image' => 'Error: la imaxe nun ye válida o nun esiste',
 	'imagemap_bad_image' => "Error: La imaxe ta na llista prieta d'esta páxina",
