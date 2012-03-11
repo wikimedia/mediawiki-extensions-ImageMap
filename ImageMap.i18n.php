@@ -1701,6 +1701,7 @@ $messages['sv'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author Shanmugamp7
  */
 $messages['ta'] = array(
@@ -1708,7 +1709,7 @@ $messages['ta'] = array(
 	'imagemap_invalid_image' => 'பிழை:படம் செல்லத்தக்கதல்ல அல்லது இல்லாத ஒன்று',
 	'imagemap_bad_image' => 'பிழை:படம் இந்த பக்கத்தில் ஏற்கத்தகாதது என பட்டியலிடப்பட்டுள்ளது.',
 	'imagemap_invalid_title' => 'பிழை:செல்லத்தகாத தலைப்பு இணைப்பின் வரி $1ல்',
-	'imagemap_description' => 'இந்த படத்தை பற்றி',
+	'imagemap_description' => 'இப் படத்தைப் பற்றி',
 );
 
 /** Telugu (తెలుగు)
