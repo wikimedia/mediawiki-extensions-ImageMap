@@ -891,11 +891,13 @@ $messages['jv'] = array(
 
 /** Georgian (ქართული)
  * @author BRUTE
+ * @author David1010
  * @author ITshnik
  * @author Malafaya
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
+	'imagemap_desc' => 'უფლებას აძლევს კლიენტის ინტერაქტიულ სურათის რუკებს გამოიყენოს <code>&lt;imagemap&gt;</code> ტეგები',
 	'imagemap_no_image' => 'შეცდომა: პირველ ხაზზე უნდა მიუთითოთ სურათი',
 	'imagemap_invalid_image' => 'შეცდომა: სურათი მცდარია ან არ არსებობს',
 	'imagemap_bad_image' => 'შეცდომა: სურათი შავ სიაშია ამ გვერდზე',
