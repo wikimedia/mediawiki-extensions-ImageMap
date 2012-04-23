@@ -1236,11 +1236,11 @@ $messages['ne'] = array(
  */
 $messages['nl'] = array(
 	'imagemap_desc' => 'Maakt aanklikbare imagemaps mogelijk met de tag <code>&lt;imagemap&gt;</code>',
-	'imagemap_no_image' => '&lt;imagemap&gt;: geef een afbeelding op in de eerste regel',
-	'imagemap_invalid_image' => '&lt;imagemap&gt;: de afbeelding is corrupt of bestaat niet',
+	'imagemap_no_image' => 'Fout: geef een afbeelding op in de eerste regel',
+	'imagemap_invalid_image' => 'Fout: de afbeelding is corrupt of bestaat niet',
 	'imagemap_bad_image' => 'Fout: de afbeelding staat op de zwarte lijst voor deze pagina',
 	'imagemap_no_link' => '&lt;imagemap&gt;: er is geen geldige verwijzing aangetroffen aan het einde van regel $1',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: er staat een ongeldige titel in de verwijzing op regel $1',
+	'imagemap_invalid_title' => 'Fout: er staat een ongeldige titel in de verwijzing op regel $1',
 	'imagemap_missing_coord' => '&lt;imagemap&gt;: niet genoeg coördinaten voor vorm in regel $1',
 	'imagemap_unrecognised_shape' => "&lt;imagemap&gt;: niet herkende vorm in regel $1, iedere regel moet beginnen met één van de commando's: default, rect, circle of poly",
 	'imagemap_invalid_coord' => '&lt;imagemap&gt;: ongeldige coördinaten in regel $1, moet een getal zijn',
