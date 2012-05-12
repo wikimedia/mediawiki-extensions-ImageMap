@@ -111,6 +111,13 @@ $messages['arz'] = array(
 	'imagemap_poly_odd' => 'خطأ: تم العثور على مضلع بعدد فردى من الأضلاع فى السطر $1',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ */
+$messages['as'] = array(
+	'imagemap_description' => 'এই ছবিখনৰ বিষয়ে',
+);
+
 /** Asturian (Asturianu)
  * @author Esbardu
  * @author Xuacu
@@ -514,13 +521,14 @@ $messages['ext'] = array(
 
 /** Persian (فارسی)
  * @author Huji
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'imagemap_desc' => 'امکان ایجاد نقشه‌های تصویری قابل کلیک کردن در سمت کاربر را با استفاده از برچسب <code>&lt;imagemap&gt;</code> فراهم می‌آورد',
 	'imagemap_no_image' => '<imagemap>: باید در اولین سطر یک تصویر را مشخص کنید',
 	'imagemap_invalid_image' => '<imagemap>: تصویر غیرمجاز است یا وجود ندارد',
 	'imagemap_bad_image' => 'خطا: تصویر در این صفحه در فهرست سیاه قرار دارد',
-	'imagemap_no_link' => '<imagemap>: هیچ پیوند مجازی تا انتهای سطر $1 پیدا نشد',
+	'imagemap_no_link' => 'خطا: هیچ پیوند مجازی در انتهای خط $1 یافت نشد',
 	'imagemap_invalid_title' => '<imagemap>: عنوان غیرمجاز در پیوند سطر $1',
 	'imagemap_missing_coord' => '<imagemap>: تعداد مختصات در سطر $1 برای شکل کافی نیست',
 	'imagemap_unrecognised_shape' => '<imagemap>: شکل ناشناخته در سطر $1، هر سطر باید با یکی از این دستورات آغاز شود: default، rect، circle یا poly',
@@ -630,6 +638,7 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  */
 $messages['gsw'] = array(
@@ -637,8 +646,8 @@ $messages['gsw'] = array(
 	'imagemap_no_image' => 'Fähler: in dr erschte Zyylete muess e Bild aagee wäre',
 	'imagemap_invalid_image' => 'Fähler: Bild ist nit giltig oder s git s nit',
 	'imagemap_bad_image' => 'Fähler: S Bild stoht uf dr Lischt vu nit gwinschte Bilder',
-	'imagemap_no_link' => 'Fähler: Am Änd vu Zyyle $1 isch kei giltig Gleich gfunde wore',
-	'imagemap_invalid_title' => 'Fähler: uugiltiger Titel im Gleich in dr Zyyle $1',
+	'imagemap_no_link' => 'Fähler: Am Änd vu Zyyle $1 isch kei giltige Link gfunde wore',
+	'imagemap_invalid_title' => 'Fähler: uugiltiger Titel im Link in dr Zyyle $1',
 	'imagemap_missing_coord' => 'Fähler: Z wenig Koordinate in dr Zyyle $1 fir dr Umriss',
 	'imagemap_unrecognised_shape' => 'Fähler: Nit bekannti Umrissform in dr Zyyle $1. Jedi Zyyle muess mit eim vu däne Parameter aafange: <tt>default, rect, circle</tt> oder <tt>poly</tt>',
 	'imagemap_invalid_coord' => 'Fähler: Uugiltigi Koordinate in dr Zyyle $1: s sin nume Zahle erlaubt',
@@ -1317,6 +1326,13 @@ $messages['pdc'] = array(
 	'imagemap_description' => 'Iwwer sell Pikder',
 );
 
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'imagemap_description' => 'Iwas Bild',
+);
+
 /** Polish (Polski)
  * @author Derbeth
  * @author Leinad
@@ -1753,7 +1769,7 @@ $messages['tg-cyrl'] = array(
 	'imagemap_description' => 'Дар бораи ин акс',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1865,7 +1881,7 @@ $messages['vec'] = array(
 	'imagemap_poly_odd' => "Erór: gò catà un polìgono co' un nùmaro dispari de coordinate in te la riga $1",
 );
 
-/** Veps (Vepsän kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
