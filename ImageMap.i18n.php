@@ -839,20 +839,21 @@ $messages['is'] = array(
 
 /** Italian (Italiano)
  * @author Anyfile
+ * @author Beta16
  * @author BrokenArrow
  * @author Darth Kule
  */
 $messages['it'] = array(
 	'imagemap_desc' => "Consente di realizzare ''image map'' cliccabili lato client con il tag <code>&lt;imagemap&gt;</code>",
 	'imagemap_no_image' => "Errore: si deve specificare un'immagine nella prima riga",
-	'imagemap_invalid_image' => "&lt;imagemap&gt;: l'immagine non è valida o non esiste",
+	'imagemap_invalid_image' => "Errore: l'immagine non è valida o non esiste",
 	'imagemap_bad_image' => "Errore: l'immagine si trova nella blacklist per questa pagina",
-	'imagemap_no_link' => '&lt;imagemap&gt;: non è stato trovato alcun collegamento valido alla fine della riga $1',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: titolo del collegamento non valido nella riga $1',
-	'imagemap_missing_coord' => '&lt;imagemap&gt;: non ci sono abbastanza coordinate per la forma specificata nella riga $1',
-	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: Forma (shape) non riconosciuta nella riga $1, ogni riga deve iniziare con uno dei seguenti: default, rect, circle o poly',
-	'imagemap_invalid_coord' => '&lt;imagemap&gt;: coordinata non valida nella riga $1, deve essere un numero',
-	'imagemap_invalid_desc' => '&lt;imagemap&gt;: Valore non valido per il parametro desc, deve essere uno dei seguenti: $1',
+	'imagemap_no_link' => 'Errore: non è stato trovato alcun collegamento valido alla fine della riga $1',
+	'imagemap_invalid_title' => 'Errore: titolo del collegamento non valido alla riga $1',
+	'imagemap_missing_coord' => 'Errore: non ci sono abbastanza coordinate per la forma specificata alla riga $1',
+	'imagemap_unrecognised_shape' => 'Errore: forma specificata non riconosciuta alla riga $1, ogni riga deve iniziare con uno dei seguenti valori: default, rect, circle o poly',
+	'imagemap_invalid_coord' => 'Errore: coordinata non valida alla riga $1, deve essere un numero',
+	'imagemap_invalid_desc' => 'Errore: valore non valido per il parametro desc, deve essere uno dei seguenti: $1',
 	'imagemap_description' => "Informazioni sull'immagine",
 	'imagemap_poly_odd' => 'Errore: trovato poligono con un numero dispari di coordinate nella riga $1',
 );
@@ -1248,12 +1249,12 @@ $messages['nl'] = array(
 	'imagemap_no_image' => 'Fout: geef een afbeelding op in de eerste regel',
 	'imagemap_invalid_image' => 'Fout: de afbeelding is corrupt of bestaat niet',
 	'imagemap_bad_image' => 'Fout: de afbeelding staat op de zwarte lijst voor deze pagina',
-	'imagemap_no_link' => '&lt;imagemap&gt;: er is geen geldige verwijzing aangetroffen aan het einde van regel $1',
+	'imagemap_no_link' => 'Fout: er is geen geldige verwijzing aangetroffen aan het einde van regel $1',
 	'imagemap_invalid_title' => 'Fout: er staat een ongeldige titel in de verwijzing op regel $1',
 	'imagemap_missing_coord' => 'Fout: niet genoeg coördinaten voor vorm in regel $1',
-	'imagemap_unrecognised_shape' => "&lt;imagemap&gt;: niet herkende vorm in regel $1, iedere regel moet beginnen met één van de commando's: default, rect, circle of poly",
-	'imagemap_invalid_coord' => '&lt;imagemap&gt;: ongeldige coördinaten in regel $1, moet een getal zijn',
-	'imagemap_invalid_desc' => '&lt;imagemap&gt;: ongeldige beschrijvingsspecificatie, dit moet er één zijn uit de volgende lijst: $1',
+	'imagemap_unrecognised_shape' => "Fout: niet herkende vorm in regel $1, iedere regel moet beginnen met één van de commando's: default, rect, circle of poly",
+	'imagemap_invalid_coord' => 'Fout: ongeldige coördinaten in regel $1, moet een getal zijn',
+	'imagemap_invalid_desc' => 'Fout: ongeldige beschrijvingsspecificatie, dit moet er één zijn uit de volgende lijst: $1',
 	'imagemap_description' => 'Over deze afbeelding',
 	'imagemap_poly_odd' => 'Fout: polygoon gevonden met een oneven aantal coördinaten op regel $1',
 );
