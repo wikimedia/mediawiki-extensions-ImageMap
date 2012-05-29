@@ -347,14 +347,15 @@ $messages['cy'] = array(
 /** Danish (Dansk)
  * @author Byrial
  * @author Peter Alberti
+ * @author Tjernobyl
  */
 $messages['da'] = array(
 	'imagemap_desc' => 'Muliggør klikbare billeder med brug af <code>&lt;imagemap&gt;</code>-tagget.',
-	'imagemap_no_image' => '&lt;imagemap&gt;: Der skal angives et billednavn i første linje',
-	'imagemap_invalid_image' => '&lt;imagemap&gt;: Billedet er ugyldigt eller findes ikke',
+	'imagemap_no_image' => 'Fejl: Der skal angives et billede i første linje',
+	'imagemap_invalid_image' => 'Fejl: Billedet er ugyldigt eller findes ikke',
 	'imagemap_bad_image' => 'Fejl: billedet er sortlistet på denne side',
-	'imagemap_no_link' => '&lt;imagemap&gt;: Fandt ikke en brugbar henvisning i slutningen af linje $1',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: Ugyldig titel i henvisning på linje $1',
+	'imagemap_no_link' => 'Fejl: Fandt ikke en brugbar henvisning i slutningen af linje $1',
+	'imagemap_invalid_title' => 'Fejl: Ugyldig titel i henvisning på linje $1',
 	'imagemap_missing_coord' => '&lt;imagemap&gt;: Utilstrækkeligt antal koordinater til omridset i linje $1',
 	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: Ukendt omridstype i linje $1. Alle linjer skal starte med en af:default, rect, circle or poly',
 	'imagemap_invalid_coord' => '&lt;imagemap&gt;: Ugyldig koordinat på linje $1, koordinater skal være tal',
