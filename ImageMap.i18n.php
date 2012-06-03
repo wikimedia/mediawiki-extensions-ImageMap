@@ -355,7 +355,7 @@ $messages['cy'] = array(
 	'imagemap_description' => "Ynglŷn â'r ddelwedd hon",
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author Byrial
  * @author Peter Alberti
  * @author Tjernobyl
