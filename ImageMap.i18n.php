@@ -1026,7 +1026,7 @@ $messages['ksh'] = array(
 	'imagemap_unrecognised_shape' => 'Do es ene Fääler met <code>&lt;imagemap&gt;</code> opjefalle: Dä Name förr_enne Ömreß en de {{PLURAL:$1|eetzte|$1-te|nullte}} Reih eß verkeeht. Et mööt „<tt>rect</tt>“, „<tt>circle</tt>“, „<tt>poly</tt>“, udder „<tt>default</tt>“ do shtonn.',
 	'imagemap_invalid_coord' => "Do es ene Fääler met <code>&lt;imagemap&gt;</code> opjefalle: En de {{PLURAL:$1|eetzte|$1-te|nullte}} Reih eß jet verkeeht met de Ko'oddinate. Do mööte luuter Zahle shtonn, es äver nit esu.",
 	'imagemap_invalid_desc' => 'Do es ene Fääler met <code>&lt;imagemap&gt;</code> opjefalle: Dä Parammeeter „<tt><nowiki>desc</nowiki></tt>“ eß verkeeht aanjejovve. Bruche kanns De nor ein fun dänne hee: <code>$1</code>',
-	'imagemap_description' => 'Övver dat Beld hee',
+	'imagemap_description' => 'Övver dat Beld heh',
 	'imagemap_desc_types' => 'bovve räähß, unge räähß, unge lengkß, bovve lengkß, nix',
 	'imagemap_poly_odd' => 'Do es ene Fääler met <imagemap> opjefalle: De Parammeeter för „poly“ möße Zahle-Päärche sin, ävver hee es ei Zahl zovill udder zowinnisch
 en dä Reih: $1.',
