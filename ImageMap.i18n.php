@@ -129,7 +129,7 @@ $messages['as'] = array(
 	'imagemap_poly_odd' => 'ত্ৰুটী: $1 শাৰীত অযৌগ স্থানাংক সংখ্যাৰে poly পোৱা গৈছে',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Esbardu
  * @author Xuacu
  */
@@ -148,7 +148,7 @@ $messages['ast'] = array(
 	'imagemap_poly_odd' => 'Error: atopóse un polígonu con un númberu impar de coordenaes na llinia $1',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Vago
  */
 $messages['az'] = array(
@@ -216,7 +216,7 @@ $messages['be-tarask'] = array(
 	'imagemap_poly_odd' => 'Памылка: у радку $1 знойдзены шматкутнік зь няцотнай колькасьцю каардынатаў',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author Spiritia
  */
 $messages['bg'] = array(
@@ -261,7 +261,7 @@ $messages['bo'] = array(
 	'imagemap_description' => 'བརྙན་རིས་འདིའི་སྐོར།',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -279,7 +279,7 @@ $messages['br'] = array(
 	'imagemap_poly_odd' => 'Fazi : kavet ez eus ul lieskorn dezhañ un niver daveennoù ampar el linenn $1',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -298,7 +298,7 @@ $messages['bs'] = array(
 	'imagemap_poly_odd' => 'Greška: pronađen poly sa neparnim brojem koordinata u redu $1',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author SMP
  * @author Toniher
  */
@@ -324,12 +324,12 @@ $messages['ce'] = array(
 	'imagemap_invalid_image' => 'Гlалат: нийса дац йа ишта сурт дац кху чохь',
 );
 
-/** Corsican (Corsu) */
+/** Corsican (corsu) */
 $messages['co'] = array(
 	'imagemap_description' => "À prupositu d'issa imagine",
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Li-sung
  * @author Mormegil
  */
@@ -472,7 +472,7 @@ $messages['eo'] = array(
 	'imagemap_poly_odd' => 'Eraro: troviĝis poligono kun malpara nombro de koordinatoj en linio $1',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Drini
  * @author Remember the dot
@@ -493,7 +493,7 @@ $messages['es'] = array(
 	'imagemap_poly_odd' => 'Error: se encontró un polígono con un número de coordinates impar en la linea $1',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Avjoska
  * @author Pikne
  * @author Silvar
@@ -513,7 +513,7 @@ $messages['et'] = array(
 	'imagemap_poly_odd' => 'Tõrge: Real $1 on polügoon paaritu arvu koordinaatidega.',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Kobazulo
  */
@@ -524,7 +524,7 @@ $messages['eu'] = array(
 	'imagemap_description' => 'Irudi honen inguruan',
 );
 
-/** Extremaduran (Estremeñu)
+/** Extremaduran (estremeñu)
  * @author Better
  */
 $messages['ext'] = array(
@@ -550,7 +550,7 @@ $messages['fa'] = array(
 	'imagemap_poly_odd' => 'خطا: چند ضلعی با تعداد فرعی از مختصات در سطر $1 پیدا شد',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Agony
  * @author Nike
  * @author Str4nd
@@ -571,7 +571,7 @@ $messages['fi'] = array(
 	'imagemap_poly_odd' => 'Virhe: löytyi polygoni, jossa pariton määrä koordinaatteja rivillä $1',
 );
 
-/** Faroese (Føroyskt)
+/** Faroese (føroyskt)
  * @author EileenSanda
  */
 $messages['fo'] = array(
@@ -583,7 +583,7 @@ $messages['fo'] = array(
 	'imagemap_description' => 'Um hesa myndina',
 );
 
-/** French (Français)
+/** French (français)
  * @author Grondin
  * @author Urhixidur
  * @author Verdy p
@@ -603,7 +603,7 @@ $messages['fr'] = array(
 	'imagemap_poly_odd' => 'Erreur : trouvé un polygone avec un nombre impair de coordonnées à la ligne $1',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -725,7 +725,7 @@ $messages['hi'] = array(
 	'imagemap_description' => 'इस चित्र के बारे में',
 );
 
-/** Croatian (Hrvatski)
+/** Croatian (hrvatski)
  * @author Dalibor Bosits
  * @author SpeedyGonsales
  */
@@ -762,7 +762,7 @@ $messages['hsb'] = array(
 	'imagemap_poly_odd' => 'Zmylk: polygon z njerunej ličbu koordinatow na lince $1',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author KossuthRad
  * @author Tgr
@@ -782,7 +782,7 @@ $messages['hu'] = array(
 	'imagemap_poly_odd' => 'Hiba: az $1. sorban páratlan számú koordináta található',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -844,12 +844,12 @@ $messages['io'] = array(
 	'imagemap_description' => 'Pri ca imajo',
 );
 
-/** Icelandic (Íslenska) */
+/** Icelandic (íslenska) */
 $messages['is'] = array(
 	'imagemap_description' => 'Um þessa mynd',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Anyfile
  * @author Beta16
  * @author BrokenArrow
@@ -1087,7 +1087,7 @@ $messages['li'] = array(
 	'imagemap_poly_odd' => 'Fout: polygoon gevonje met een oneven aantal coördinate op regel $1',
 );
 
-/** Lithuanian (Lietuvių)
+/** Lithuanian (lietuvių)
  * @author Garas
  * @author Matasg
  */
@@ -1103,7 +1103,7 @@ $messages['lt'] = array(
 	'imagemap_description' => 'Apie šį paveikslėlį',
 );
 
-/** Latvian (Latviešu)
+/** Latvian (latviešu)
  * @author Xil
  */
 $messages['lv'] = array(
@@ -1113,7 +1113,7 @@ $messages['lv'] = array(
 	'imagemap_description' => 'Par šo attēlu',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -1272,7 +1272,7 @@ $messages['nl'] = array(
 	'imagemap_poly_odd' => 'Fout: polygoon gevonden met een oneven aantal coördinaten op regel $1',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Frokor
  */
 $messages['nn'] = array(
@@ -1290,7 +1290,7 @@ $messages['nn'] = array(
 	'imagemap_poly_odd' => 'Feil: fann poly med eit oddetal koordinatar på rad $1',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -1347,7 +1347,7 @@ $messages['pfl'] = array(
 	'imagemap_description' => 'Iwas Bild',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Derbeth
  * @author Leinad
  * @author Sp5uhe
@@ -1411,7 +1411,7 @@ $messages['ps'] = array(
 	'imagemap_description' => 'ددې انځور په اړه',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  * @author Malafaya
  */
@@ -1430,7 +1430,7 @@ $messages['pt'] = array(
 	'imagemap_poly_odd' => 'Erro: encontrado polígono com número ímpar de coordenadas na linha $1',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Carla404
  * @author Eduardo.mps
  */
@@ -1457,7 +1457,7 @@ $messages['qu'] = array(
 	'imagemap_description' => 'Kay rikchamanta',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author Cin
  * @author KlaudiuMihaila
  * @author Mihai
@@ -1478,7 +1478,7 @@ $messages['ro'] = array(
 	'imagemap_poly_odd' => 'Eroare: a fost găsit un poligon cu un număr impar de coordonate în linia $1',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -1496,7 +1496,7 @@ $messages['roa-tara'] = array(
 	'imagemap_poly_odd' => "Errore: acchiate 'nu poligone cu numere dispare de coordinate sus a linèe $1",
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Dim Grits
  * @author Kaganer
  * @author Александр Сигачёв
@@ -1535,7 +1535,7 @@ $messages['rue'] = array(
 	'imagemap_poly_odd' => 'Хыба: на рядку $1 найденый многокутник з непарным чіслом коордінат',
 );
 
-/** Sakha (Саха тыла)
+/** Sakha (саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
@@ -1553,7 +1553,7 @@ $messages['sah'] = array(
 	'imagemap_poly_odd' => 'Алҕас: $1 строкааҕа наһаа элбэх координааталаах многоугольник туһунан булулунна',
 );
 
-/** Sicilian (Sicilianu)
+/** Sicilian (sicilianu)
  * @author Santu
  */
 $messages['scn'] = array(
@@ -1592,7 +1592,7 @@ $messages['si'] = array(
 	'imagemap_poly_odd' => 'දෝෂය: $1 පේළියෙහි ඛණ්ඩාංක ඔත්තේ ගණනක් සමග poly හමුවිය',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1610,7 +1610,7 @@ $messages['sk'] = array(
 	'imagemap_poly_odd' => 'Chyba: nájdený mnohouholník s nepárnym počtom súradníc na riadku $1',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1628,7 +1628,7 @@ $messages['sl'] = array(
 	'imagemap_poly_odd' => 'Napaka: najden večkotnik z lihim številom koordinat v vrstici $1',
 );
 
-/** Albanian (Shqip)
+/** Albanian (shqip)
  * @author Olsi
  */
 $messages['sq'] = array(
@@ -1646,7 +1646,7 @@ $messages['sq'] = array(
 	'imagemap_poly_odd' => 'Gabim: u gjet poli me numër tek i koordinatave në rreshtin $1',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -1668,7 +1668,7 @@ $messages['sr-ec'] = array(
 	'imagemap_poly_odd' => 'Грешка: нађен је полигон са непарним бројем координата у линији $1',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -1712,7 +1712,7 @@ $messages['su'] = array(
 	'imagemap_description' => 'Ngeunaan ieu gambar',
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Boivie
  * @author Lejonel
  * @author M.M.S.
@@ -1760,14 +1760,14 @@ $messages['te'] = array(
 	'imagemap_description' => 'ఈ బొమ్మ గురించి',
 );
 
-/** Tetum (Tetun)
+/** Tetum (tetun)
  * @author MF-Warburg
  */
 $messages['tet'] = array(
 	'imagemap_description' => "Kona-ba imajen ne'e",
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -1783,7 +1783,7 @@ $messages['tg-cyrl'] = array(
 	'imagemap_description' => 'Дар бораи ин акс',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -1855,7 +1855,7 @@ $messages['tr'] = array(
 	'imagemap_poly_odd' => 'Hata: $1. satırda tek sayıda koordinata sahip poly bulundu',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author AS
  * @author Ahonc
  * @author Alex Khimich
@@ -1877,7 +1877,7 @@ $messages['uk'] = array(
 	'imagemap_poly_odd' => 'Помилка: в рядку $1 знайдений многокутник із непарною кількістю координат',
 );
 
-/** Vèneto (Vèneto)
+/** vèneto (vèneto)
  * @author Candalua
  */
 $messages['vec'] = array(
@@ -1972,7 +1972,7 @@ $messages['yue'] = array(
 	'imagemap_poly_odd' => '錯誤: 響第$1行搵到單數嘅多邊坐標',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Shinjiman
  */
 $messages['zh-hans'] = array(
@@ -1991,7 +1991,7 @@ $messages['zh-hans'] = array(
 	'imagemap_poly_odd' => '错误: 在第$1行找到单数的多边坐标',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Mark85296341
  * @author Shinjiman
  * @author Tomchiukc
