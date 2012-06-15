@@ -116,6 +116,7 @@ $messages['arz'] = array(
  * @author Gitartha.bordoloi
  */
 $messages['as'] = array(
+	'imagemap_desc' => '<code>&lt;imagemap&gt;</code> টেগ্‌ ব্যৱহাৰ কৰি ক্লায়েণ্ট-চাইড ক্লিকেবল্‌ ইমেজ্‌ মেপৰ অনুমতি দিয়ে',
 	'imagemap_no_image' => 'ত্ৰুটী: প্ৰথম শাৰীত এখন ছবি নিৰ্দিষ্ট কৰিবই লাগিব',
 	'imagemap_invalid_image' => 'ত্ৰুটী: ছবিখন অবৈধ বা ছবিখন নাই',
 	'imagemap_bad_image' => 'ত্ৰুটী: এই পৃষ্ঠাত ছবিখন ব্লেকলিষ্টেড কৰা হৈছে',
