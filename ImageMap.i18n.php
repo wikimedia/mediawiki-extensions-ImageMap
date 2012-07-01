@@ -53,7 +53,7 @@ $messages['af'] = array(
 	'imagemap_description' => 'Beeldinligting',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author Juanpabl
  */
 $messages['an'] = array(
@@ -197,7 +197,7 @@ $messages['bcl'] = array(
 	'imagemap_description' => 'Manónongod sa retratong ini',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -417,7 +417,7 @@ $messages['diq'] = array(
 	'imagemap_poly_odd' => 'xeta: satıro $1. de poliyo ke wayirê yew koordinat diya',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -623,7 +623,7 @@ $messages['frp'] = array(
 	'imagemap_poly_odd' => 'Èrror : trovâ un poligono avouéc un nombro mâl-par de coordonâs a la legne $1',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  * @author Xosé
@@ -745,7 +745,7 @@ $messages['hr'] = array(
 	'imagemap_poly_odd' => 'Greška: pronađen poly s neobičnim brojem koordinata u redu $1',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -1518,7 +1518,7 @@ $messages['ru'] = array(
 	'imagemap_poly_odd' => 'Ошибка: в строке $1 обнаружено описание многоугольника с лишними координатами',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
