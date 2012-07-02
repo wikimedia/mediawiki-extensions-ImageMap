@@ -1717,18 +1717,19 @@ $messages['su'] = array(
  * @author Boivie
  * @author Lejonel
  * @author M.M.S.
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'imagemap_desc' => 'Lägger till taggen <code>&lt;imagemap&gt;</code> för klickbara bilder',
-	'imagemap_no_image' => '&lt;imagemap&gt;: en bild måste anges på första raden',
-	'imagemap_invalid_image' => '&lt;imagemap&gt;: bilden är ogiltig eller existerar inte',
+	'imagemap_no_image' => 'Fel: en bild måste anges på första raden',
+	'imagemap_invalid_image' => 'Fel: bilden är ogiltig eller existerar inte',
 	'imagemap_bad_image' => 'Fel: bilden är svartlistad på den här sidan',
-	'imagemap_no_link' => '&lt;imagemap&gt;: ingen giltig länk fanns i slutet av rad $1',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: felaktig titel i länken på rad $1',
-	'imagemap_missing_coord' => '&lt;imagemap&gt;: koordinater saknas för området på rad $1',
-	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: okänd områdesform på rad $1, varje rad måste börja med något av följande: <tt>default, rect, circle, poly</tt>',
-	'imagemap_invalid_coord' => '&lt;imagemap&gt;: ogiltig koordinat på rad $1, koordinater måste vara tal',
-	'imagemap_invalid_desc' => '&lt;imagemap&gt;: ogiltig specifikation av desc, den måste var en av följande: <code>$1</code>',
+	'imagemap_no_link' => 'Fel: ingen giltig länk fanns i slutet av rad $1',
+	'imagemap_invalid_title' => 'Fel: felaktig titel i länken på rad $1',
+	'imagemap_missing_coord' => 'Fel: koordinater saknas för området på rad $1',
+	'imagemap_unrecognised_shape' => 'Fel: okänd områdesform på rad $1, varje rad måste börja med något av följande: default, rect, circle or poly',
+	'imagemap_invalid_coord' => 'Fel: ogiltig koordinat på rad $1, måste vara ett tal',
+	'imagemap_invalid_desc' => 'Fel: ogiltig specifikation av desc, den måste var en av följande: <code>$1</code>',
 	'imagemap_description' => 'Bildinformation',
 	'imagemap_poly_odd' => 'Fel: hittade poly med udda antal koordinater på rad $1',
 );
@@ -1940,9 +1941,18 @@ $messages['vo'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'imagemap_desc' => 'דערמעגלעכט קליענט־זײַט בילד מאפעס מיטן  <code>&lt;imagemap&gt;</code> טאַג',
+	'imagemap_no_image' => 'טעות: מען מוז ספעציפיצירן א בילד אין דער ערשטער שורה',
 	'imagemap_invalid_image' => 'טעות: בילד איז אומגילטיק אָדער נישט פֿאַרהאַנען',
+	'imagemap_bad_image' => 'טעות: מען טאר נישט שטעלן דאס בילד אויף דעם בלאט',
+	'imagemap_no_link' => 'טעות: נישט געטראפן קיין גילטיקן לינק ביים סוף פון שורה $1',
 	'imagemap_invalid_title' => 'טעות: אומגילטיקער טיטל אין פֿאַרבינדונג אין שורה $1',
+	'imagemap_missing_coord' => 'טעות: נישט גענוג קאארדינאטן פאר פארעם אין שורה $1',
+	'imagemap_unrecognised_shape' => 'טעות: אומבאקאנטע פארעם אין שורה $1, יעדע שורה מוז אנהייבן מיט איינעם פון: default, rect, circle or poly',
+	'imagemap_invalid_coord' => 'טעות: אומגילטיקער קאארדינאט אין שורה $1, מוז זיין א נומער',
+	'imagemap_invalid_desc' => 'טעות: אומגילטיקע desc פאראמעטער, מוז זיין איינער פון: <code>$1</code>',
 	'imagemap_description' => 'וועגן דעם בילד',
+	'imagemap_poly_odd' => 'טעות: געטראפן poly מיט נומיקער צאל קאארדינאטן אין שורה $1',
 );
 
 /** Yoruba (Yorùbá)
