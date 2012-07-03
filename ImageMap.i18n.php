@@ -1598,15 +1598,15 @@ $messages['si'] = array(
  */
 $messages['sk'] = array(
 	'imagemap_desc' => 'Poskytuje klikateľné obrázkové mapy spracúvané na strane klienta pomocou značky <code>&lt;imagemap&gt;</code>',
-	'imagemap_no_image' => '&lt;imagemap&gt;: musí mať na prvom riadku uvedený obrázok',
-	'imagemap_invalid_image' => '&lt;imagemap&gt;: obrázok je neplatný alebo neexistuje',
+	'imagemap_no_image' => 'Chyba: musí mať na prvom riadku uvedený obrázok',
+	'imagemap_invalid_image' => 'Chyba: obrázok je neplatný alebo neexistuje',
 	'imagemap_bad_image' => 'Chyba: obrázok na tejto stránke sa nachádza na čiernej listine',
-	'imagemap_no_link' => '&lt;imagemap&gt;: na konci riadka $1 nebol nájdený platný odkaz',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: neplatný nadpis v odkaze na riadku $1',
-	'imagemap_missing_coord' => '&lt;imagemap&gt;: nedostatok súradníc na vytvorenie tvaru na riadku $1',
-	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: nerozpoznaný tvar na riadku $1, každý riadok musí začínať jedným z: default, rect, circle alebo poly',
-	'imagemap_invalid_coord' => '&lt;imagemap&gt;: neplatná súradnica na riadku $1, musí to byť číslo',
-	'imagemap_invalid_desc' => '&lt;imagemap&gt;: neplatný popis, musí byť jedno z nasledovných: $1',
+	'imagemap_no_link' => 'Chyba: na konci riadka $1 nebol nájdený platný odkaz',
+	'imagemap_invalid_title' => 'Chyba: neplatný nadpis v odkaze na riadku $1',
+	'imagemap_missing_coord' => 'Chyba: nedostatok súradníc na vytvorenie tvaru na riadku $1',
+	'imagemap_unrecognised_shape' => 'Chyba: nerozpoznaný tvar na riadku $1, každý riadok musí začínať jedným z: default, rect, circle alebo poly',
+	'imagemap_invalid_coord' => 'Chyba: neplatná súradnica na riadku $1, musí to byť číslo',
+	'imagemap_invalid_desc' => 'Chyba: neplatný popis, musí byť jedno z nasledovných: <code>$1</code>',
 	'imagemap_description' => 'O tomto obrázku',
 	'imagemap_poly_odd' => 'Chyba: nájdený mnohouholník s nepárnym počtom súradníc na riadku $1',
 );
