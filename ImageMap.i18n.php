@@ -1664,7 +1664,7 @@ $messages['sr-ec'] = array(
 	'imagemap_unrecognised_shape' => 'Грешка: Непрепозната крива у линији $1, свака линија мора почети једном од: default, rect, circle или poly.',
 	'imagemap_invalid_coord' => 'Грешка: Лоше координате у линији $1; морају бити број.',
 	'imagemap_invalid_desc' => 'Грешка: Лоше desc одређење, мора бити једно од: <code>$1</code>.',
-	'imagemap_description' => 'О овој слици',
+	'imagemap_description' => 'О слици',
 	'imagemap_desc_types' => 'горе-десно, доле-десно, доле-лево, горе-лево, нема',
 	'imagemap_poly_odd' => 'Грешка: нађен је полигон са непарним бројем координата у линији $1',
 );
