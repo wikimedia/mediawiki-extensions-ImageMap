@@ -156,7 +156,7 @@ $messages['az'] = array(
 	'imagemap_desc_types' => 'yuxarı-sağ, aşağı-sağ, aşağı-sol, yuxarı-sol, heç nə',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Assele
  */
 $messages['ba'] = array(
@@ -318,7 +318,7 @@ $messages['ca'] = array(
 	'imagemap_poly_odd' => 'Error: poly amb un nombre senar de coordenades a la línia $1',
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -950,7 +950,7 @@ $messages['kk-arab'] = array(
 	'imagemap_description' => 'بۇل سۋرەت تۋرالى',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
  * @author AlefZet
  */
 $messages['kk-cyrl'] = array(
@@ -965,7 +965,7 @@ $messages['kk-cyrl'] = array(
 	'imagemap_description' => 'Бұл сурет туралы',
 );
 
-/** Kazakh (Latin script) (‪Qazaqşa (latın)‬)
+/** Kazakh (Latin script) (‪qazaqşa (latın)‬)
  * @author AlefZet
  */
 $messages['kk-latn'] = array(
@@ -1193,14 +1193,14 @@ $messages['ms'] = array(
 	'imagemap_poly_odd' => 'Ralat: terdapat poligon dengan bilangan koordinat yang ganjil dalam baris $1',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
 	'imagemap_description' => 'Те артовкстонть',
 );
 
-/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $messages['nb'] = array(
 	'imagemap_desc' => 'Gjør at man kan bruke klikkbare bilder ved hjelp av <code>&lt;imagemap&gt;</code>.',
 	'imagemap_no_image' => 'Error: må angi et bilde i første linje',
@@ -1897,7 +1897,7 @@ $messages['vec'] = array(
 	'imagemap_poly_odd' => "Erór: gò catà un polìgono co' un nùmaro dispari de coordinate in te la riga $1",
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
