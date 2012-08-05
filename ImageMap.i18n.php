@@ -1536,6 +1536,18 @@ $messages['rue'] = array(
 	'imagemap_poly_odd' => 'Хыба: на рядку $1 найденый многокутник з непарным чіслом коордінат',
 );
 
+/** Sanskrit (संस्कृतम्)
+ * @author Shubha
+ */
+$messages['sa'] = array(
+	'imagemap_no_image' => 'Error: प्रथमपङ्क्तौ चित्रं निर्देष्टव्यम्',
+	'imagemap_invalid_image' => 'Error: इदं चित्रम् अमान्यम् अथवा अविद्यमानम्',
+	'imagemap_bad_image' => 'दोषः: चित्रम् अस्मिन् पृष्ठे अमानितमस्ति',
+	'imagemap_no_link' => 'दोषः: $1 पङ्क्तेः अन्ते मान्यः अनुबन्धः कोपि न दृष्टः ।',
+	'imagemap_invalid_title' => 'दोषः: $1 पङ्क्तौ अनुबन्धस्य अमान्यं शिरोनाम विद्यते',
+	'imagemap_missing_coord' => 'दोषः : $1 पङ्क्तौ आकाराय आवश्यकाः बिन्दवः न विद्यन्ते',
+);
+
 /** Sakha (саха тыла)
  * @author HalanTul
  */
