@@ -500,7 +500,7 @@ $messages['es'] = array(
  * @author Silvar
  */
 $messages['et'] = array(
-	'imagemap_desc' => 'Lubab kliendipoolse klõpsatava pildi ala, mis kasutab <code>&lt;imagemap&gt;</code>-märgendit.',
+	'imagemap_desc' => 'Lubab kliendipoolse klõpsatava pildi ala, mis kasutab <code>&lt;imagemap&gt;</code>-silti.',
 	'imagemap_no_image' => 'Tõrge: Esimesel real peab määrama pildi.',
 	'imagemap_invalid_image' => 'Tõrge: Pilt on vigane või teda pole olemas.',
 	'imagemap_bad_image' => 'Tõrge: Pilt on siin lehel mustas nimekirjas.',
