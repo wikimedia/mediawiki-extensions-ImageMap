@@ -711,6 +711,7 @@ $messages['he'] = array(
 /** Hindi (हिन्दी)
  * @author Ansumang
  * @author Kaustubh
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
 	'imagemap_desc' => 'क्लायंटके चित्रनक्शे <code>&lt;imagemap&gt;</code> टॅग देकर इस्तेमाल किये जा सकतें हैं',
@@ -722,7 +723,7 @@ $messages['hi'] = array(
 	'imagemap_missing_coord' => 'Error: $1 कतारपर आकार के लिये जरूरी कोऑर्डिनेट्स नहीं हैं',
 	'imagemap_unrecognised_shape' => 'Error: $1 कतारमें गलत आकार, हर कतार: default, rect, circle अथवा poly से शुरू होनी चाहियें',
 	'imagemap_invalid_coord' => 'Error: $1 कतार में गलत कोऑर्डिनेट्स, संख्या चाहिये',
-	'imagemap_invalid_desc' => 'Error: गलत ज़ानकारी, इसमेंसे एक होनी चाहिये: <code>$1</code>',
+	'imagemap_invalid_desc' => 'त्रुटि: गलत जानकारी, इसमें से एक होनी चाहिये: <code>$1</code>',
 	'imagemap_description' => 'इस चित्र के बारे में',
 );
 
