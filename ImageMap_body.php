@@ -33,7 +33,7 @@ class ImageMap {
 	 * @return array|mixed|string
 	 */
 	public static function render( $input, $params, $parser ) {
-		global $wgScriptPath, $wgUrlProtocols, $wgNoFollowLinks;
+		global $wgExtensionAssetsPath, $wgUrlProtocols, $wgNoFollowLinks;
 
 		$lines = explode( "\n", $input );
 
@@ -220,7 +220,7 @@ class ImageMap {
 				# in Title.php to return an empty string in this case
 				$attribs['href'] = $title->getFragmentForURL();
 			} else {
-				$attribs['href'] = $title->escapeLocalURL() . $title->getFragmentForURL();
+				$attribs['href'] = $title->getLocalURL() . $title->getFragmentForURL();
 			}
 			if ( $shape != 'default' ) {
 				$attribs['shape'] = $shape;
@@ -319,7 +319,7 @@ class ImageMap {
 			);
 
 			$descAnchor = $descWrapper->appendChild( new DOMElement( 'a' ) );
-			$descAnchor->setAttribute( 'href', $imageTitle->escapeLocalURL() );
+			$descAnchor->setAttribute( 'href', $imageTitle->getLocalURL() );
 			$descAnchor->setAttribute(
 				'title',
 				wfMessage( 'imagemap_description' )->inContentLanguage()->text()
@@ -329,7 +329,7 @@ class ImageMap {
 				'alt',
 				wfMessage( 'imagemap_description' )->inContentLanguage()->text()
 			);
-			$descImg->setAttribute( 'src', "$wgScriptPath/extensions/ImageMap/desc-20.png" );
+			$descImg->setAttribute( 'src', "$wgExtensionAssetsPath/ImageMap/desc-20.png" );
 			$descImg->setAttribute( 'style', 'border: none;' );
 		}
 
