@@ -12,20 +12,20 @@ $messages = array();
  * @author Tim Starling
  */
 $messages['en'] = array(
-	'imagemap_desc'                 => 'Allows client-side clickable image maps using <code>&lt;imagemap&gt;</code> tag',
-	'imagemap_no_image'             => 'Error: must specify an image in the first line',
-	'imagemap_invalid_image'        => 'Error: image is invalid or non-existent',
-	'imagemap_bad_image'            => 'Error: image is blacklisted on this page',
-	'imagemap_no_link'              => 'Error: no valid link was found at the end of line $1',
-	'imagemap_invalid_title'        => 'Error: invalid title in link at line $1',
-	'imagemap_missing_coord'        => 'Error: not enough coordinates for shape at line $1',
-	'imagemap_unrecognised_shape'   => 'Error: unrecognised shape at line $1, each line must start with one of: default, rect, circle or poly',
-	'imagemap_invalid_coord'        => 'Error: invalid coordinate at line $1, must be a number',
-	'imagemap_invalid_desc'         => 'Error: invalid desc specification, must be one of: <code>$1</code>',
-	'imagemap_description'          => 'About this image',
+	'imagemap_desc' => 'Allows client-side clickable image maps using <code>&lt;imagemap&gt;</code> tag',
+	'imagemap_no_image' => 'Error: Must specify an image in the first line.',
+	'imagemap_invalid_image' => 'Error: Image is invalid or non-existent.',
+	'imagemap_bad_image' => 'Error: Image is blacklisted on this page.',
+	'imagemap_no_link' => 'Error: No valid link was found at the end of line $1.',
+	'imagemap_invalid_title' => 'Error: Invalid title in link at line $1.',
+	'imagemap_missing_coord' => 'Error: Not enough coordinates for shape at line $1.',
+	'imagemap_unrecognised_shape' => 'Error: Unrecognised shape at line $1, each line must start with one of: <code>default</code>, <code>rect</code>, <code>circle</code> or <code>poly</code>.',
+	'imagemap_invalid_coord' => 'Error: Invalid coordinate at line $1, must be a number.',
+	'imagemap_invalid_desc' => 'Error: Invalid desc specification, must be one of: <code>$1</code>.',
+	'imagemap_description' => 'About this image',
 	# Note to translators: keep the same order
-	'imagemap_desc_types'           => 'top-right, bottom-right, bottom-left, top-left, none',
-	'imagemap_poly_odd'             => 'Error: found poly with odd number of coordinates on line $1',
+	'imagemap_desc_types' => 'top-right, bottom-right, bottom-left, top-left, none',
+	'imagemap_poly_odd' => 'Error: Found poly with odd number of coordinates on line $1',
 );
 
 /** Message documentation (Message documentation)
@@ -35,7 +35,7 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'imagemap_desc' => '{{desc}}',
-	'imagemap_desc_types' => '{{optional}}',
+	'imagemap_desc_types' => '{{optional}}{{doc-important|Keep the same order.}}',
 );
 
 /** Afrikaans (Afrikaans)
