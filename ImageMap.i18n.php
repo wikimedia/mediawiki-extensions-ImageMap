@@ -29,12 +29,14 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Kghbln
  * @author Purodha
  * @author The Evil IP address
  * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'imagemap_desc' => '{{desc}}',
+	'imagemap_unrecognised_shape' => '{{doc-important|Do not translate the parameters <code>default</code>, <code>rect</code>, <code>circle</code> or <code>poly</code>.}}',
 	'imagemap_desc_types' => '{{optional}}{{doc-important|Keep the same order.}}',
 );
 
@@ -391,7 +393,7 @@ $messages['de'] = array(
 	'imagemap_no_link' => '&lt;imagemap&gt;-Fehler: Am Ende von Zeile $1 wurde kein gültiger Link gefunden',
 	'imagemap_invalid_title' => '&lt;imagemap&gt;-Fehler: ungültiger Titel im Link in Zeile $1',
 	'imagemap_missing_coord' => '&lt;imagemap&gt;-Fehler: Zu wenige Koordinaten in Zeile $1 für den Umriss',
-	'imagemap_unrecognised_shape' => 'Fehler: Es befindet sich eine unbekannte Umrissform in Zeile $1. Jede Zeile muss mit einem der folgenden Parameter anfangen: <code><code>default</code></code>, <code><code>rect</code></code>, <code><code>circle</code></code> oder <code><code>poly</code></code>',
+	'imagemap_unrecognised_shape' => 'Fehler: Es befindet sich eine unbekannte Umrissform in Zeile $1. Jede Zeile muss mit einem der folgenden Parameter anfangen: <code>default</code>, <code>rect</code>, <code>circle</code> oder <code>poly</code>',
 	'imagemap_invalid_coord' => '&lt;imagemap&gt;-Fehler: Ungültige Koordinate in Zeile $1: es sind nur Zahlen erlaubt',
 	'imagemap_invalid_desc' => '&lt;imagemap&gt;-Fehler: Ungültiger „desc“-Parameter, möglich sind: <code>$1</code>',
 	'imagemap_description' => 'Über dieses Bild',
@@ -629,18 +631,19 @@ $messages['frp'] = array(
  * @author Xosé
  */
 $messages['gl'] = array(
-	'imagemap_desc' => 'Permite mapas de imaxe nos que se poden facer clic usando a etiqueta <code>&lt;imagemap&gt;</code>',
-	'imagemap_no_image' => 'Erro: debe especificar unha imaxe na primeira liña',
-	'imagemap_invalid_image' => 'Erro: a imaxe non é válida ou non existe',
-	'imagemap_bad_image' => 'Erro: a imaxe atópase na lista negra desta páxina',
-	'imagemap_no_link' => 'Erro: non se atopou ningunha ligazón válida ao final da liña $1',
-	'imagemap_invalid_title' => 'Erro: título non válido na ligazón na liña $1',
-	'imagemap_missing_coord' => 'Erro: non abondan as coordenadas para crear un polígono, na liña $1',
-	'imagemap_unrecognised_shape' => 'Erro: forma descoñecida na liña $1, cada liña debe comezar con un dos seguintes: por defecto, <code>rect</code>ángulo, círculo ou polígono',
-	'imagemap_invalid_coord' => 'Erro: coordenada non válida na liña $1, debe ser un número',
-	'imagemap_invalid_desc' => 'Erro: especificación da descrición non válida, debe ser unha de: <code>$1</code>',
+	'imagemap_desc' => 'Permite mapas de imaxe nos que se pode facer clic usando a etiqueta <code>&lt;imagemap&gt;</code>',
+	'imagemap_no_image' => 'Erro: Cómpre especificar unha imaxe na primeira liña.',
+	'imagemap_invalid_image' => 'Erro: A imaxe non é válida ou non existe.',
+	'imagemap_bad_image' => 'Erro: A imaxe atópase na lista negra desta páxina.',
+	'imagemap_no_link' => 'Erro: Non se atopou ningunha ligazón válida ao final da liña $1.',
+	'imagemap_invalid_title' => 'Erro: Título incorrecto na ligazón da liña $1.',
+	'imagemap_missing_coord' => 'Erro: Non abondan as coordenadas para a forma na liña $1.',
+	'imagemap_unrecognised_shape' => 'Erro: Forma descoñecida na liña $1. Cada liña debe comezar con algunha das seguintes secuencias: <code>default</code>, <code>rect</code>, <code>circle</code> ou <code>poly</code>.',
+	'imagemap_invalid_coord' => 'Erro: Coordenada non válida na liña $1; debe ser un número.',
+	'imagemap_invalid_desc' => 'Erro: Especificación da descrición non válida. Os valores posibles son: <code>$1</code>.',
 	'imagemap_description' => 'Acerca desta imaxe',
-	'imagemap_poly_odd' => 'Erro: atopouse un polígono cun número impar de coordenadas na liña $1',
+	'imagemap_desc_types' => 'arriba-dereita, abaixo-dereita, abaixo-esquerda, arriba-esquerda, ningunha',
+	'imagemap_poly_odd' => 'Erro: Atopouse un polígono cun número impar de coordenadas na liña $1',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
@@ -893,16 +896,16 @@ $messages['it'] = array(
 $messages['ja'] = array(
 	'imagemap_desc' => '<code>&lt;imagemap&gt;</code>タグによるクライアントサイドのクリッカブルマップ機能を有効にする',
 	'imagemap_no_image' => 'エラー: 最初の行で画像を指定してください。',
-	'imagemap_invalid_image' => 'エラー: 画像が無効であるか、存在しません。',
-	'imagemap_bad_image' => 'エラー: このページでは画像が排除されています',
-	'imagemap_no_link' => 'エラー: 有効なリンクが$1行目の最後に存在しません。',
-	'imagemap_invalid_title' => 'エラー: $1行目のリンクのタイトルが無効です。',
-	'imagemap_missing_coord' => 'エラー: $1行目にある図形の座標指定が不足しています。',
-	'imagemap_unrecognised_shape' => 'エラー: $1行目の図形は認められません。各行は次のどれかで始まる必要があります: <code>default</code>, <code>rect</code>, <code>circle</code>, <code>poly</code>',
-	'imagemap_invalid_coord' => 'エラー: $1行目の座標が無効です。数字を指定してください。',
-	'imagemap_invalid_desc' => 'エラー: 無効なdescの指定です。次のどれかを指定してください: <code>$1</code>',
+	'imagemap_invalid_image' => 'エラー: 画像が無効、または存在しません。',
+	'imagemap_bad_image' => 'エラー: このページでは画像が排除されています。',
+	'imagemap_no_link' => 'エラー: $1 行目の末尾に有効なリンクが見つかりません。',
+	'imagemap_invalid_title' => 'エラー: $1 行目のリンクのタイトルが無効です。',
+	'imagemap_missing_coord' => 'エラー: $1 行目の図形の座標指定が不足しています。',
+	'imagemap_unrecognised_shape' => 'エラー: $1 行目の図形を認識できません。各行の先頭は以下のいずれかにしてください: <code>default</code>, <code>rect</code>, <code>circle</code>, <code>poly</code>',
+	'imagemap_invalid_coord' => 'エラー: $1 行目の座標が無効です。数字を指定してください。',
+	'imagemap_invalid_desc' => 'エラー: desc の指定が無効です。以下のいずれかを指定してください: <code>$1</code>',
 	'imagemap_description' => '画像の詳細',
-	'imagemap_poly_odd' => 'エラー: $1行目に、奇数個の座標値が指定されたpolyがあります。',
+	'imagemap_poly_odd' => 'エラー: $1 行目に、座標値が奇数個の poly があります。',
 );
 
 /** Javanese (Basa Jawa)
@@ -1294,7 +1297,7 @@ $messages['nl'] = array(
 	'imagemap_no_link' => 'Fout: er is geen geldige verwijzing aangetroffen aan het einde van regel $1',
 	'imagemap_invalid_title' => 'Fout: er staat een ongeldige titel in de verwijzing op regel $1',
 	'imagemap_missing_coord' => 'Fout: niet genoeg coördinaten voor vorm in regel $1',
-	'imagemap_unrecognised_shape' => "Fout: niet herkende vorm in regel $1, iedere regel moet beginnen met één van de commando's: <code>default</code>, <code>rect</code>, <code>circle</code> of <code>poly</code>",
+	'imagemap_unrecognised_shape' => "Fout: niet herkende vorm in regel $1. Iedere regel moet beginnen met één van de commando's: <code>default</code>, <code>rect</code>, <code>circle</code> of <code>poly</code>.",
 	'imagemap_invalid_coord' => 'Fout: ongeldige coördinaten in regel $1, moet een getal zijn',
 	'imagemap_invalid_desc' => 'Fout: ongeldige beschrijvingsspecificatie, dit moet er één zijn uit de volgende lijst: $1',
 	'imagemap_description' => 'Over deze afbeelding',
