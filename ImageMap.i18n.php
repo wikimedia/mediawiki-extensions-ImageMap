@@ -733,13 +733,14 @@ $messages['hi'] = array(
 
 /** Croatian (hrvatski)
  * @author Dalibor Bosits
+ * @author Roberta F.
  * @author SpeedyGonsales
  */
 $messages['hr'] = array(
 	'imagemap_desc' => 'Omogućava strani klijenta klikabilne slike karata korištenjem <code>&lt;imagemap&gt;</code> oznake',
 	'imagemap_no_image' => 'Error: morate navesti ime slike koju rabite u prvom retku',
 	'imagemap_invalid_image' => 'Error: slika ne postoji ili je krivog tipa',
-	'imagemap_bad_image' => 'Greška: slika je na crnom popisu na ovoj stranici',
+	'imagemap_bad_image' => 'Pogrješka: slika je na crnom popisu na ovoj stranici',
 	'imagemap_no_link' => 'Error: nema (ispravne) poveznice na kraju retka $1',
 	'imagemap_invalid_title' => 'Error: loš naziv u poveznici u retku $1',
 	'imagemap_missing_coord' => 'Error: nedovoljan broj koordinata za oblik u retku $1',
@@ -747,7 +748,7 @@ $messages['hr'] = array(
 	'imagemap_invalid_coord' => 'Error: nevaljane koordinate u retku $1, mora biti broj',
 	'imagemap_invalid_desc' => 'Error: nevaljan opis, mora biti jedan od: <code>$1</code>',
 	'imagemap_description' => "Ovo je slika/karta s poveznicama (''imagemap'')",
-	'imagemap_poly_odd' => 'Greška: pronađen poly s neobičnim brojem koordinata u redu $1',
+	'imagemap_poly_odd' => 'Pogrješka: pronađen poly s neobičnim brojem koordinata u redu $1',
 );
 
 /** Upper Sorbian (hornjoserbsce)
