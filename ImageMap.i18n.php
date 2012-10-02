@@ -199,7 +199,7 @@ $messages['bcl'] = array(
 	'imagemap_description' => 'Manónongod sa retratong ini',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -951,7 +951,7 @@ $messages['ka'] = array(
 	'imagemap_poly_odd' => 'შეცდომა: $1 ხაზში არის შეცდომით აღწერილი მრავალკუთხედით ზედმეტი კორდინატებით.',
 );
 
-/** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬)
+/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏)
  * @author AlefZet
  */
 $messages['kk-arab'] = array(
@@ -966,7 +966,7 @@ $messages['kk-arab'] = array(
 	'imagemap_description' => 'بۇل سۋرەت تۋرالى',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * @author AlefZet
  */
 $messages['kk-cyrl'] = array(
@@ -981,7 +981,7 @@ $messages['kk-cyrl'] = array(
 	'imagemap_description' => 'Бұл сурет туралы',
 );
 
-/** Kazakh (Latin script) (‪qazaqşa (latın)‬)
+/** Kazakh (Latin script) (qazaqşa (latın)‎)
  * @author AlefZet
  */
 $messages['kk-latn'] = array(
@@ -1050,7 +1050,7 @@ $messages['ksh'] = array(
 en dä Reih: $1.',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  * @author Gomada
  */
@@ -1233,7 +1233,7 @@ $messages['myv'] = array(
 	'imagemap_description' => 'Те артовкстонть',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $messages['nb'] = array(
 	'imagemap_desc' => 'Gjør at man kan bruke klikkbare bilder ved hjelp av <code>&lt;imagemap&gt;</code>.',
 	'imagemap_no_image' => 'Error: må angi et bilde i første linje',
@@ -1306,7 +1306,7 @@ $messages['nl'] = array(
 	'imagemap_poly_odd' => 'Fout: polygoon gevonden met een oneven aantal coördinaten op regel $1',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
  */
 $messages['nn'] = array(
@@ -1698,7 +1698,7 @@ $messages['sq'] = array(
 	'imagemap_poly_odd' => 'Gabim: u gjet poli me numër tek i koordinatave në rreshtin $1',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Millosh
  * @author Rancher
  * @author Sasa Stefanovic
@@ -1720,7 +1720,7 @@ $messages['sr-ec'] = array(
 	'imagemap_poly_odd' => 'Грешка: нађен је полигон са непарним бројем координата у линији $1',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -2044,7 +2044,7 @@ $messages['yue'] = array(
 	'imagemap_poly_odd' => '錯誤: 響第$1行搵到單數嘅多邊坐標',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Shinjiman
  */
 $messages['zh-hans'] = array(
@@ -2063,7 +2063,7 @@ $messages['zh-hans'] = array(
 	'imagemap_poly_odd' => '错误: 在第$1行找到单数的多边坐标',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Mark85296341
  * @author Shinjiman
  * @author Tomchiukc
