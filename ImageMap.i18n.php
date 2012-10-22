@@ -181,14 +181,14 @@ $messages['ba'] = array(
  */
 $messages['bcc'] = array(
 	'imagemap_desc' => 'اجازت دن استفاده چه برچسپ<code>&lt;imagemap&gt;</code>نقشه یان تصاویر کلیکی کاربر-جهت',
-	'imagemap_no_image' => '&lt;imagemap&gt;: بایدن یک تصویری ته خط اول مشخص کنیت',
-	'imagemap_invalid_image' => '&lt;imagemap&gt;: عکس نامعتبر یا موجود نهنت',
-	'imagemap_no_link' => '&lt;imagemap&gt;: هچ معتبرین لینکی ته آهر خط$1پیداگ نه بوت',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: نامعتبراین عنوان ته لینک ته خط $1',
-	'imagemap_missing_coord' => '&lt;imagemap&gt;: کافی ان هماهنگی په شکل نیست ته خط $1',
-	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: ناشناسین شکل ته خط $1، هر خط بایدن گون یکی چه شان شروه بیت:پیشفرض،مربع, گردیم یا باز',
-	'imagemap_invalid_coord' => '&lt;imagemap&gt;: نامعتبراین هماهنگی ته خطا $1, بایدن یک شماره بیت',
-	'imagemap_invalid_desc' => '&lt;imagemap&gt;: نامعتبراین مشخصه ای توضیح، بایدن یکی چه شان بیت: <code>$1</code>',
+	'imagemap_no_image' => '&lt;imagemap&gt;: بایدن یک تصویری ته خط اول مشخص کنیت', # Fuzzy
+	'imagemap_invalid_image' => '&lt;imagemap&gt;: عکس نامعتبر یا موجود نهنت', # Fuzzy
+	'imagemap_no_link' => '&lt;imagemap&gt;: هچ معتبرین لینکی ته آهر خط$1پیداگ نه بوت', # Fuzzy
+	'imagemap_invalid_title' => '&lt;imagemap&gt;: نامعتبراین عنوان ته لینک ته خط $1', # Fuzzy
+	'imagemap_missing_coord' => '&lt;imagemap&gt;: کافی ان هماهنگی په شکل نیست ته خط $1', # Fuzzy
+	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: ناشناسین شکل ته خط $1، هر خط بایدن گون یکی چه شان شروه بیت:پیشفرض،مربع, گردیم یا باز', # Fuzzy
+	'imagemap_invalid_coord' => '&lt;imagemap&gt;: نامعتبراین هماهنگی ته خطا $1, بایدن یک شماره بیت', # Fuzzy
+	'imagemap_invalid_desc' => '&lt;imagemap&gt;: نامعتبراین مشخصه ای توضیح، بایدن یکی چه شان بیت: <code>$1</code>', # Fuzzy
 	'imagemap_description' => 'ای عکسء باره',
 );
 
@@ -327,7 +327,8 @@ $messages['ce'] = array(
 	'imagemap_invalid_image' => 'Гlалат: нийса дац йа ишта сурт дац кху чохь',
 );
 
-/** Corsican (corsu) */
+/** Corsican (corsu)
+ */
 $messages['co'] = array(
 	'imagemap_description' => "À prupositu d'issa imagine",
 );
@@ -813,15 +814,15 @@ $messages['ia'] = array(
  */
 $messages['id'] = array(
 	'imagemap_desc' => 'Menyediakan peta gambar yang dapat diklik dari klien dengan menggunakan tag <code>&lt;imagemap&gt;</code>',
-	'imagemap_no_image' => '&lt;imagemap&gt;: harus memberikan suatu gambar di baris pertama',
-	'imagemap_invalid_image' => '&lt;imagemap&gt;: gambar tidak sah atau tidak ditemukan',
+	'imagemap_no_image' => '&lt;imagemap&gt;: harus memberikan suatu gambar di baris pertama', # Fuzzy
+	'imagemap_invalid_image' => '&lt;imagemap&gt;: gambar tidak sah atau tidak ditemukan', # Fuzzy
 	'imagemap_bad_image' => 'Kesalahan: berkas tidak diperbolehkan pada halaman ini',
-	'imagemap_no_link' => '&lt;imagemap&gt;: tidak ditemukan pranala yang sah di akhir baris ke $1',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: judul tidak sah pada pranala di baris ke $1',
-	'imagemap_missing_coord' => '&lt;imagemap&gt;: tidak cukup koordinat untuk bentuk pada baris ke $1',
-	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: bentuk tak dikenali pada baris ke $1, tiap baris harus dimulai dengan salah satu dari: <code>default</code>, <code>rect</code>, <code>circle</code> atau <code>poly</code>',
-	'imagemap_invalid_coord' => '&lt;imagemap&gt;: koordinat tidak sah pada baris ke $1, haruslah berupa angka',
-	'imagemap_invalid_desc' => '&lt;imagemap&gt;: spesifikasi desc tidak sah, harus salah satu dari: $1',
+	'imagemap_no_link' => '&lt;imagemap&gt;: tidak ditemukan pranala yang sah di akhir baris ke $1', # Fuzzy
+	'imagemap_invalid_title' => '&lt;imagemap&gt;: judul tidak sah pada pranala di baris ke $1', # Fuzzy
+	'imagemap_missing_coord' => '&lt;imagemap&gt;: tidak cukup koordinat untuk bentuk pada baris ke $1', # Fuzzy
+	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: bentuk tak dikenali pada baris ke $1, tiap baris harus dimulai dengan salah satu dari: <code>default</code>, <code>rect</code>, <code>circle</code> atau <code>poly</code>', # Fuzzy
+	'imagemap_invalid_coord' => '&lt;imagemap&gt;: koordinat tidak sah pada baris ke $1, haruslah berupa angka', # Fuzzy
+	'imagemap_invalid_desc' => '&lt;imagemap&gt;: spesifikasi desc tidak sah, harus salah satu dari: $1', # Fuzzy
 	'imagemap_description' => 'Tentang gambar ini',
 	'imagemap_poly_odd' => 'Kesalahan: terdapat poligon dengan nomor koordinat salah pada baris $1',
 );
@@ -955,14 +956,14 @@ $messages['ka'] = array(
  * @author AlefZet
  */
 $messages['kk-arab'] = array(
-	'imagemap_no_image' => '&lt;imagemap&gt;: بٸرٸنشٸ جولدا سۋرەتتٸ كٶرسەتۋ قاجەت',
-	'imagemap_invalid_image' => '&lt;imagemap&gt;: سۋرەت جارامسىز نەمەسە جوق',
-	'imagemap_no_link' => '&lt;imagemap&gt;: $1 جول اياعىندا جارامدى سٸلتەمە تابىلمادى',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: $1 جول اياعىنداعى سٸلتەمەدە جارامسىز اتاۋ',
-	'imagemap_missing_coord' => '&lt;imagemap&gt;: $1 جولداعى كەسكٸن ٷشٸن كوورديناتتار جەتٸكسٸز',
-	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: $1 جولداعى كەسكٸن جارامسىز, ٵربٸر جول مىنانىڭ بٸرەۋٸنەن باستالۋ قاجەت:',
-	'imagemap_invalid_coord' => '&lt;imagemap&gt;: $1 جولىندا جارامسىز كوورديناتا, سان بولۋى قاجەت',
-	'imagemap_invalid_desc' => '&lt;imagemap&gt;: جارامسىز سيپاتتاما ماماندانىمى, مىنانىڭ بٸرەۋٸ بولۋى قاجەت: $1',
+	'imagemap_no_image' => '&lt;imagemap&gt;: بٸرٸنشٸ جولدا سۋرەتتٸ كٶرسەتۋ قاجەت', # Fuzzy
+	'imagemap_invalid_image' => '&lt;imagemap&gt;: سۋرەت جارامسىز نەمەسە جوق', # Fuzzy
+	'imagemap_no_link' => '&lt;imagemap&gt;: $1 جول اياعىندا جارامدى سٸلتەمە تابىلمادى', # Fuzzy
+	'imagemap_invalid_title' => '&lt;imagemap&gt;: $1 جول اياعىنداعى سٸلتەمەدە جارامسىز اتاۋ', # Fuzzy
+	'imagemap_missing_coord' => '&lt;imagemap&gt;: $1 جولداعى كەسكٸن ٷشٸن كوورديناتتار جەتٸكسٸز', # Fuzzy
+	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: $1 جولداعى كەسكٸن جارامسىز, ٵربٸر جول مىنانىڭ بٸرەۋٸنەن باستالۋ قاجەت:', # Fuzzy
+	'imagemap_invalid_coord' => '&lt;imagemap&gt;: $1 جولىندا جارامسىز كوورديناتا, سان بولۋى قاجەت', # Fuzzy
+	'imagemap_invalid_desc' => '&lt;imagemap&gt;: جارامسىز سيپاتتاما ماماندانىمى, مىنانىڭ بٸرەۋٸ بولۋى قاجەت: $1', # Fuzzy
 	'imagemap_description' => 'بۇل سۋرەت تۋرالى',
 );
 
@@ -970,14 +971,14 @@ $messages['kk-arab'] = array(
  * @author AlefZet
  */
 $messages['kk-cyrl'] = array(
-	'imagemap_no_image' => '&lt;imagemap&gt;: бірінші жолда суретті көрсету қажет',
-	'imagemap_invalid_image' => '&lt;imagemap&gt;: сурет жарамсыз немесе жоқ',
-	'imagemap_no_link' => '&lt;imagemap&gt;: $1 жол аяғында жарамды сілтеме табылмады',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: $1 жол аяғындағы сілтемеде жарамсыз атау',
-	'imagemap_missing_coord' => '&lt;imagemap&gt;: $1 жолдағы кескін үшін координаттар жетіксіз',
-	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: $1 жолдағы кескін жарамсыз, әрбір жол мынаның біреуінен басталу қажет:',
-	'imagemap_invalid_coord' => '&lt;imagemap&gt;: $1 жолында жарамсыз координата, сан болуы қажет',
-	'imagemap_invalid_desc' => '&lt;imagemap&gt;: жарамсыз сипаттама маманданымы, мынаның біреуі болуы қажет: $1',
+	'imagemap_no_image' => '&lt;imagemap&gt;: бірінші жолда суретті көрсету қажет', # Fuzzy
+	'imagemap_invalid_image' => '&lt;imagemap&gt;: сурет жарамсыз немесе жоқ', # Fuzzy
+	'imagemap_no_link' => '&lt;imagemap&gt;: $1 жол аяғында жарамды сілтеме табылмады', # Fuzzy
+	'imagemap_invalid_title' => '&lt;imagemap&gt;: $1 жол аяғындағы сілтемеде жарамсыз атау', # Fuzzy
+	'imagemap_missing_coord' => '&lt;imagemap&gt;: $1 жолдағы кескін үшін координаттар жетіксіз', # Fuzzy
+	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: $1 жолдағы кескін жарамсыз, әрбір жол мынаның біреуінен басталу қажет:', # Fuzzy
+	'imagemap_invalid_coord' => '&lt;imagemap&gt;: $1 жолында жарамсыз координата, сан болуы қажет', # Fuzzy
+	'imagemap_invalid_desc' => '&lt;imagemap&gt;: жарамсыз сипаттама маманданымы, мынаның біреуі болуы қажет: $1', # Fuzzy
 	'imagemap_description' => 'Бұл сурет туралы',
 );
 
@@ -985,14 +986,14 @@ $messages['kk-cyrl'] = array(
  * @author AlefZet
  */
 $messages['kk-latn'] = array(
-	'imagemap_no_image' => '&lt;imagemap&gt;: birinşi jolda swretti körsetw qajet',
-	'imagemap_invalid_image' => '&lt;imagemap&gt;: swret jaramsız nemese joq',
-	'imagemap_no_link' => '&lt;imagemap&gt;: $1 jol ayağında jaramdı silteme tabılmadı',
-	'imagemap_invalid_title' => '&lt;imagemap&gt;: $1 jol ayağındağı siltemede jaramsız ataw',
-	'imagemap_missing_coord' => '&lt;imagemap&gt;: $1 joldağı keskin üşin koordïnattar jetiksiz',
-	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: $1 joldağı keskin jaramsız, ärbir jol mınanıñ birewinen bastalw qajet:',
-	'imagemap_invalid_coord' => '&lt;imagemap&gt;: $1 jolında jaramsız koordïnata, san bolwı qajet',
-	'imagemap_invalid_desc' => '&lt;imagemap&gt;: jaramsız sïpattama mamandanımı, mınanıñ birewi bolwı qajet: $1',
+	'imagemap_no_image' => '&lt;imagemap&gt;: birinşi jolda swretti körsetw qajet', # Fuzzy
+	'imagemap_invalid_image' => '&lt;imagemap&gt;: swret jaramsız nemese joq', # Fuzzy
+	'imagemap_no_link' => '&lt;imagemap&gt;: $1 jol ayağında jaramdı silteme tabılmadı', # Fuzzy
+	'imagemap_invalid_title' => '&lt;imagemap&gt;: $1 jol ayağındağı siltemede jaramsız ataw', # Fuzzy
+	'imagemap_missing_coord' => '&lt;imagemap&gt;: $1 joldağı keskin üşin koordïnattar jetiksiz', # Fuzzy
+	'imagemap_unrecognised_shape' => '&lt;imagemap&gt;: $1 joldağı keskin jaramsız, ärbir jol mınanıñ birewinen bastalw qajet:', # Fuzzy
+	'imagemap_invalid_coord' => '&lt;imagemap&gt;: $1 jolında jaramsız koordïnata, san bolwı qajet', # Fuzzy
+	'imagemap_invalid_desc' => '&lt;imagemap&gt;: jaramsız sïpattama mamandanımı, mınanıñ birewi bolwı qajet: $1', # Fuzzy
 	'imagemap_description' => 'Bul swret twralı',
 );
 
@@ -1233,7 +1234,8 @@ $messages['myv'] = array(
 	'imagemap_description' => 'Те артовкстонть',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk (bokmål)‎)
+ */
 $messages['nb'] = array(
 	'imagemap_desc' => 'Gjør at man kan bruke klikkbare bilder ved hjelp av <code>&lt;imagemap&gt;</code>.',
 	'imagemap_no_image' => 'Error: må angi et bilde i første linje',
@@ -1282,7 +1284,8 @@ $messages['nds-nl'] = array(
 	'imagemap_description' => 'Over disse aofbeelding',
 );
 
-/** Nepali (नेपाली) */
+/** Nepali (नेपाली)
+ */
 $messages['ne'] = array(
 	'imagemap_description' => 'यो चित्रको बारेमा',
 );
@@ -2083,4 +2086,3 @@ $messages['zh-hant'] = array(
 	'imagemap_desc_types' => '右上, 右下, 左下, 左上, 無',
 	'imagemap_poly_odd' => '錯誤：在第 $1 行找到單數的多邊坐標',
 );
-
