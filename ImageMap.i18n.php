@@ -158,6 +158,13 @@ $messages['az'] = array(
 	'imagemap_desc_types' => 'yuxarı-sağ, aşağı-sağ, aşağı-sol, yuxarı-sol, heç nə',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Amir a57
+ */
+$messages['azb'] = array(
+	'imagemap_description' => 'شکیله گوره',
+);
+
 /** Bashkir (башҡортса)
  * @author Assele
  */
