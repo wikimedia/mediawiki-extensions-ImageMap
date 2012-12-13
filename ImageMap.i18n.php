@@ -1991,6 +1991,7 @@ $messages['vi'] = array(
 	'imagemap_invalid_coord' => 'Lỗi: tọa độ không hợp lệ ở dòng $1, phải là số',
 	'imagemap_invalid_desc' => 'Lỗi: chọn desc không hợp lệ, phải là một trong: $1',
 	'imagemap_description' => 'Thông tin về hình này',
+	'imagemap_desc_types' => 'trên-phải, dưới-phải, dưới-trái, trên-trái, không',
 	'imagemap_poly_odd' => 'Lỗi: đa giác có tọa độ không đầy đủ ở dòng $1',
 );
 
