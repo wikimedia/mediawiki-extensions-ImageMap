@@ -31,11 +31,12 @@ $messages['en'] = array(
 /** Message documentation (Message documentation)
  * @author Kghbln
  * @author Purodha
+ * @author Shirayuki
  * @author The Evil IP address
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'imagemap_desc' => '{{desc}}',
+	'imagemap_desc' => '{{desc|name=Image Map|url=http://www.mediawiki.org/wiki/Extension:ImageMap}}',
 	'imagemap_unrecognised_shape' => '{{doc-important|Do not translate the parameters <code>default</code>, <code>rect</code>, <code>circle</code> or <code>poly</code>.}}',
 	'imagemap_desc_types' => '{{optional}}{{doc-important|Keep the same order.}}',
 );
