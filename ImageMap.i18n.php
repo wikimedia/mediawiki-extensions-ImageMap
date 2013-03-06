@@ -466,6 +466,13 @@ $messages['el'] = array(
 	'imagemap_poly_odd' => 'Σφάλμα: βρέθηκε πολύγωνο με περιττό αριθμό συντεταγμένων στη γραμμή $1',
 );
 
+/** British English (British English)
+ * @author Shirayuki
+ */
+$messages['en-gb'] = array(
+	'imagemap_unrecognised_shape' => 'Error: Unrecognised shape at line $1, each line must start with one of: <code>default</code>, <code>rect</code>, <code>circle</code> or <code>poly</code>.',
+);
+
 /** Esperanto (Esperanto)
  * @author Michawiki
  * @author Yekrats
