@@ -37,8 +37,20 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'imagemap_desc' => '{{desc|name=Image Map|url=http://www.mediawiki.org/wiki/Extension:ImageMap}}',
+	'imagemap_no_link' => 'Used as error message. Parameters:
+* $1 - line number',
+	'imagemap_invalid_title' => 'Used as error message. Parameters:
+* $1 - line number',
+	'imagemap_missing_coord' => 'Used as error message. Parameters:
+* $1 - line number',
 	'imagemap_unrecognised_shape' => '{{doc-important|Do not translate the parameters <code>default</code>, <code>rect</code>, <code>circle</code> or <code>poly</code>.}}',
+	'imagemap_invalid_coord' => 'Used as error message. Parameters:
+* $1 - line number',
+	'imagemap_invalid_desc' => 'Used as error message. Parameters:
+* $1 - list of desc types',
 	'imagemap_desc_types' => '{{optional}}{{doc-important|Keep the same order.}}',
+	'imagemap_poly_odd' => 'Used as error message. Parameters:
+* $1 - line number',
 );
 
 /** Afrikaans (Afrikaans)
