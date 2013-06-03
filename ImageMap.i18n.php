@@ -132,7 +132,7 @@ $messages['arz'] = array(
 	'imagemap_poly_odd' => 'خطأ: تم العثور على مضلع بعدد فردى من الأضلاع فى السطر $1',
 );
 
-/** Assamese (অসমীয়া)
+/** Assamese (অসমীয়া)
  * @author Bishnu Saikia
  * @author Gitartha.bordoloi
  */
@@ -1267,7 +1267,7 @@ $messages['myv'] = array(
 	'imagemap_description' => 'Те артовкстонть',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  */
 $messages['nb'] = array(
 	'imagemap_desc' => 'Gjør at man kan bruke klikkbare bilder ved hjelp av <code>&lt;imagemap&gt;</code>.',
@@ -1302,7 +1302,7 @@ $messages['nds'] = array(
 	'imagemap_poly_odd' => 'Fehler: Polygon mit unevene Tall Koordinaten in Reeg $1',
 );
 
-/** Nedersaksies (Nedersaksies)
+/** Low Saxon (Netherlands) (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
@@ -1342,7 +1342,7 @@ $messages['nl'] = array(
 	'imagemap_poly_odd' => 'Fout: polygoon gevonden met een oneven aantal coördinaten op regel $1',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Frokor
  */
 $messages['nn'] = array(
@@ -1378,7 +1378,7 @@ $messages['oc'] = array(
 	'imagemap_poly_odd' => 'Error : trobat un poligòn amb un nombre impar de coordenadas a la linha $1',
 );
 
-/** Oriya (ଓଡ଼ିଆ)
+/** Oriya (ଓଡ଼ିଆ)
  * @author Psubhashish
  */
 $messages['or'] = array(
