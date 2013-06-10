@@ -348,9 +348,11 @@ $messages['ca'] = array(
 
 /** Chechen (нохчийн)
  * @author Sasan700
+ * @author Умар
  */
 $messages['ce'] = array(
 	'imagemap_invalid_image' => 'Гlалат: нийса дац йа ишта сурт дац кху чохь',
+	'imagemap_description' => 'Суьртах лаьцна',
 );
 
 /** Corsican (corsu)
