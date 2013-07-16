@@ -1062,13 +1062,14 @@ $messages['km'] = array(
  * @author Klutzy
  * @author Kwj2772
  * @author Yknok29
+ * @author 아라
  */
 $messages['ko'] = array(
 	'imagemap_desc' => '사용자가 이미지맵을 사용할 수 있도록 <code>&lt;imagemap&gt;</code> 태그를 추가',
 	'imagemap_no_image' => '오류: 첫 줄에 그림이 제시되어야 합니다.',
 	'imagemap_invalid_image' => '오류: 그림이 잘못되었거나 존재하지 않습니다.',
 	'imagemap_bad_image' => '오류: 이 그림은 이 문서에서 사용이 금지되어 있습니다.',
-	'imagemap_no_link' => '오류: $1번째 줄에서 유효한 링크를 찾을 수 없습니다',
+	'imagemap_no_link' => '오류: $1번째 줄에서 올바른 링크를 찾을 수 없습니다',
 	'imagemap_invalid_title' => '오류: $1번째 줄의 링크 제목이 잘못되었습니다',
 	'imagemap_missing_coord' => '오류: $1줄에 정의된 도형의 좌표 값이 충분하지 않습니다.',
 	'imagemap_unrecognised_shape' => '오류: $1줄에서 도형을 인식할 수 없음, 각 줄은 다음으로 시작해야 합니다: <code>default</code>, <code>rect</code>, <code>circle</code>, <code>poly</code>',
