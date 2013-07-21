@@ -364,6 +364,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'imagemap_invalid_image' => 'Гlалат: нийса дац йа ишта сурт дац кху чохь',
+	'imagemap_invalid_title' => 'ГӀалат: могӀана $1 хьажориган корта нийса яц',
 	'imagemap_description' => 'Суьртах лаьцна',
 );
 
