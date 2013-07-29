@@ -1322,8 +1322,10 @@ $messages['nds'] = array(
  * @author Servien
  */
 $messages['nds-nl'] = array(
+	'imagemap_desc' => 'Maakt anklikbaore verwiezingen op aofbeeldingen meugelik mit t etiket <code>&lt;imagemap&gt;</code>',
 	'imagemap_no_image' => 'Fout: geef n aofbeelding op in de eerste regel',
 	'imagemap_invalid_image' => 'Fout: aofbeelding is ongeldig of besteet niet',
+	'imagemap_bad_image' => 'Fout: de aofbeelding steet op de zwarte lieste veur disse zied',
 	'imagemap_no_link' => 'Fout: der is gien geldige verwiezing evunnen an t einde van regel $1',
 	'imagemap_invalid_title' => 'Fout: ongeldige titel in de verwiezing op regel $1',
 	'imagemap_missing_coord' => 'Fout: niet genog koördinaoten veur vorm op regel $1',
@@ -1331,6 +1333,7 @@ $messages['nds-nl'] = array(
 	'imagemap_invalid_coord' => 'Fout: ongeldige koördinaot in regel $1, mut n getal ween',
 	'imagemap_invalid_desc' => 'Fout: ongeldige beschrievingsspesifikasie, mut n van: <code>$1</code> ween',
 	'imagemap_description' => 'Over disse aofbeelding',
+	'imagemap_poly_odd' => 'Fout: polygoon evunnen mit n oneffen antal koördinaoten op regel $1',
 );
 
 /** Nepali (नेपाली)
