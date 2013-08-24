@@ -48,7 +48,9 @@ This message indicates that an image must be specified in the first line.',
 * $1 - line number',
 	'imagemap_missing_coord' => 'Used as error message. Parameters:
 * $1 - line number',
-	'imagemap_unrecognised_shape' => '{{doc-important|Do not translate the parameters <code>default</code>, <code>rect</code>, <code>circle</code> or <code>poly</code>.}}',
+	'imagemap_unrecognised_shape' => '{{doc-important|Do not translate the parameters <code>default</code>, <code>rect</code>, <code>circle</code> or <code>poly</code>.}}
+Used as error message. Parameters:
+* $1 - line number',
 	'imagemap_invalid_coord' => 'Used as error message. Parameters:
 * $1 - line number',
 	'imagemap_invalid_desc' => 'Used as error message. Parameters:
