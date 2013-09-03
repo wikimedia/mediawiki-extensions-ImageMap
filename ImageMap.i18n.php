@@ -399,6 +399,9 @@ $messages['cs'] = array(
  * @author Lloffiwr
  */
 $messages['cy'] = array(
+	'imagemap_no_image' => 'Gwall: Rhaid nodi delwedd yn y llinell gyntaf.',
+	'imagemap_invalid_image' => "Gwall: Nid yw'r ddelwedd yn ddilys, neu nid yw'n bod.",
+	'imagemap_bad_image' => "Gwall: Mae'r ddelwedd wedi ei gwahardd rhag ei defnyddio ar y dudalen hon.",
 	'imagemap_description' => "Ynglŷn â'r ddelwedd hon",
 );
 
