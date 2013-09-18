@@ -1122,6 +1122,7 @@ $messages['la'] = array(
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'imagemap_desc' => 'Erlaabt et Biller ze benotzen déi een uklicke ka mat Hëllef vum Tag <code>&lt;imagemap&gt;</code>.',
@@ -1134,7 +1135,7 @@ $messages['lb'] = array(
 	'imagemap_unrecognised_shape' => 'Feeler: Onbekannte Form an der Zeil $1. All Zeile muss matt engem vun dëse Parameter ufänken: <tt><code>default</code>, <code>rect</code>, <code>circle</code></tt> oder <tt><code>poly</code></tt>',
 	'imagemap_invalid_coord' => 'Feeler: Ongëlteg Koordinaten an der Zeil $1: et sinn nëmmen Zuelen erlaabt',
 	'imagemap_invalid_desc' => 'Feeler: Ongëltegen „desc“-Parameter, méiglech sinn: <code>$1</code>',
-	'imagemap_description' => 'Iwwert dëst Bild',
+	'imagemap_description' => 'Iwwer dëst Bild',
 	'imagemap_desc_types' => 'uewe-riets, ënne-riets, ënne-lénks, uewe-lénks, keen',
 	'imagemap_poly_odd' => 'Feeler: e Polygon mat enger ongerueder Zuel vu Koordinate gouf an der Linn $1 fonnt',
 );
