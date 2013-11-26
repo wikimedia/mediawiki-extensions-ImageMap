@@ -1,6 +1,6 @@
 <?php
 /**
- * Internationalisation file for extension FindSpam.
+ * Internationalisation file for extension ImageMap.
  *
  * @file
  * @ingroup Extensions
