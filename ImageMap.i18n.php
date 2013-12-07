@@ -377,7 +377,7 @@ $messages['co'] = array(
 	'imagemap_description' => "À prupositu d'issa imagine",
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Li-sung
  * @author Mormegil
  */
