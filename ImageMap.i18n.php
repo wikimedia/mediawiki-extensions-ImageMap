@@ -365,6 +365,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'imagemap_desc' => 'Таро хуьлуьйту картан суьрта таӀийча латораш билгалдан <code>&lt;imagemap&gt;</code> теган гӀуьнца',
 	'imagemap_invalid_image' => 'ГӀалат: нийса дац я ишта сурт дац кху чохь',
 	'imagemap_no_link' => 'ГӀалат: $1 могӀанан чаккхехь нийса йоцу хьажораг ю',
 	'imagemap_invalid_title' => 'ГӀалат: могӀана $1 хьажориган корта нийса яц',
