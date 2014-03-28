@@ -17,6 +17,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 }
 
 $dir = __DIR__ . '/';
+$wgMessagesDirs['ImageMap'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['ImageMap'] = $dir . 'ImageMap.i18n.php';
 $wgAutoloadClasses['ImageMap'] = $dir . 'ImageMap_body.php';
 $wgHooks['ParserFirstCallInit'][] = 'wfSetupImageMap';
