@@ -30,6 +30,8 @@ $wgExtensionCredits['parserhook']['ImageMap'] = array(
 	'descriptionmsg' => 'imagemap_desc',
 );
 
+$wgParserTestFiles[] = $dir . 'imageMapParserTests.txt';
+
 /**
  * @param $parser Parser
  * @return bool
