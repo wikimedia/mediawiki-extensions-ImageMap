@@ -4,7 +4,8 @@
 			"Millosh",
 			"Rancher",
 			"Sasa Stefanovic",
-			"Михајло Анђелковић"
+			"Михајло Анђелковић",
+			"Milicevic01"
 		]
 	},
 	"imagemap_desc": "Омогућава клијентској страни кликабилну мапу коришћњењм ознаке <code>&lt;imagemap&gt;</code>.",
@@ -12,7 +13,7 @@
 	"imagemap_invalid_image": "Грешка: Слика је лоша или непостојећа.",
 	"imagemap_bad_image": "Грешка: слика се налази на црном списку за ову страну",
 	"imagemap_no_link": "Грешка: Није пронађена ниједна ваљана веза на крају линије $1.",
-	"imagemap_invalid_title": "Грешка: Лош наслов у вези у линији $1.",
+	"imagemap_invalid_title": "Грешка: лош наслов у вези у линији $1.",
 	"imagemap_missing_coord": "Грешка: Нема довољно координата за криву у линији $1.",
 	"imagemap_unrecognised_shape": "Грешка: Непрепозната крива у линији $1, свака линија мора почети једном од: <code>default</code>, <code>rect</code>, <code>circle</code> или <code>poly</code>.",
 	"imagemap_invalid_coord": "Грешка: Лоше координате у линији $1; морају бити број.",
