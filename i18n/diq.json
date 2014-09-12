@@ -15,6 +15,6 @@
 	"imagemap_unrecognised_shape": "Xeta: Rêza $1 de şeklo nênaskerde esto, her rêza gani be ninan ra yewe ra dest pêkero: <code>default</code>, <code>rect</code>, <code>circle</code> ya zi <code>poly</code>",
 	"imagemap_invalid_coord": "xeta: satıro $1. de koordinato nemeqbul, gani yew amar bıbo",
 	"imagemap_invalid_desc": "xeta: diyarikerdışê desci yo nemeqbul, gani ninan ra yew bıbo: <code>$1</code>",
-	"imagemap_description": "Derheqê resmi de",
+	"imagemap_description": "Heqa nê resımi de",
 	"imagemap_poly_odd": "xeta: satıro $1. de poliyo ke wayirê yew koordinat diya"
 }
