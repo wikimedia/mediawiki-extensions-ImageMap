@@ -20,7 +20,6 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 call_user_func( function() {
 	$dir = __DIR__ . '/';
 	$GLOBALS['wgMessagesDirs']['ImageMap'] = __DIR__ . '/i18n';
-	$GLOBALS['wgExtensionMessagesFiles']['ImageMap'] = $dir . 'ImageMap.i18n.php';
 	$GLOBALS['wgAutoloadClasses']['ImageMap'] = $dir . 'ImageMap_body.php';
 	$GLOBALS['wgHooks']['ParserFirstCallInit'][] = 'ImageMap::onParserFirstCallInit';
 
