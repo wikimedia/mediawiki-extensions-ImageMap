@@ -23,7 +23,7 @@ call_user_func( function() {
 	$GLOBALS['wgAutoloadClasses']['ImageMap'] = $dir . 'ImageMap_body.php';
 	$GLOBALS['wgHooks']['ParserFirstCallInit'][] = 'ImageMap::onParserFirstCallInit';
 
-	$GLOBALS['wgExtensionCredits']['parserhook']['ImageMap'] = array(
+	$GLOBALS['wgExtensionCredits']['parserhook'][] = array(
 		'path'           => __FILE__,
 		'name'           => 'ImageMap',
 		'author'         => 'Tim Starling',
