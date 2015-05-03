@@ -22,7 +22,7 @@ call_user_func( function() {
 	$GLOBALS['wgMessagesDirs']['ImageMap'] = __DIR__ . '/i18n';
 	$GLOBALS['wgExtensionMessagesFiles']['ImageMap'] = $dir . 'ImageMap.i18n.php';
 	$GLOBALS['wgAutoloadClasses']['ImageMap'] = $dir . 'ImageMap_body.php';
-	$GLOBALS['wgHooks']['ParserFirstCallInit'][] = 'wfSetupImageMap';
+	$GLOBALS['wgHooks']['ParserFirstCallInit'][] = 'ImageMap::onParserFirstCallInit';
 
 	$GLOBALS['wgExtensionCredits']['parserhook']['ImageMap'] = array(
 		'path'           => __FILE__,
@@ -34,12 +34,3 @@ call_user_func( function() {
 
 	$GLOBALS['wgParserTestFiles'][] = $dir . 'imageMapParserTests.txt';
 } );
-
-/**
- * @param $parser Parser
- * @return bool
- */
-function wfSetupImageMap( &$parser ) {
-	$parser->setHook( 'imagemap', array( 'ImageMap', 'render' ) );
-	return true;
-}
