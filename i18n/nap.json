@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"C.R."
+		]
+	},
+	"imagemap_desc": "Premmettesse 'e mappe 'immaggene cliccabbele a lato cliente ausanno 'o tag <code>&lt;imagemap&gt;</code>",
+	"imagemap_invalid_title": "Errore: titole invalide int' 'o cullegamento a 'a linea $1",
+	"imagemap_description": "Ncopp'a st'immaggene",
+	"imagemap_poly_odd": "Errore: Truvato nu poligono cu nu cierto nummero dispare 'e coordinate dint' 'a riga $1"
+}
