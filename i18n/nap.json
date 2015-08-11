@@ -11,6 +11,7 @@
 	"imagemap_no_link": "Errore: Nisciuno link buono s'è truvato a 'o fine d' 'a linea $1.",
 	"imagemap_invalid_title": "Errore: titole invalide int' 'o cullegamento a 'a linea $1",
 	"imagemap_missing_coord": "Errore: Nun ce stanno abbastanza coordinate p' 'a forma specificata int'a linea $1.",
+	"imagemap_unrecognised_shape": "Errore: fiùra nun ricanusciuta â linea $1, ogne linea adda accummincià cu uno 'e chiste: <code>default</code>, <code>rect</code>, <code>circle</code> o <code>poly</code>",
 	"imagemap_invalid_coord": "Errore: coordinate invalide a 'a linea $1, adda essere nu nummero",
 	"imagemap_invalid_desc": "Errore: Specificazione desc invalida, adda essere una 'e chiste: <code>$1</code>.",
 	"imagemap_description": "Ncopp'a st'immaggene",
