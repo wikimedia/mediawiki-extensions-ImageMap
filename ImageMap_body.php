@@ -147,6 +147,7 @@ class ImageMap {
 				continue;
 			}
 
+			$title = false;
 			# Find the link
 			$link = trim( strstr( $line, '[' ) );
 			$m = array();
