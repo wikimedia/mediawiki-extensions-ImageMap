@@ -41,7 +41,8 @@ class ImageMap {
 	 * @return string HTML (Image map, or error message)
 	 */
 	public static function render( $input, $params, $parser ) {
-		global $wgExtensionAssetsPath, $wgUrlProtocols, $wgNoFollowLinks;
+		global $wgUrlProtocols, $wgNoFollowLinks;
+		$config = ConfigFactory::getDefaultInstance()->makeConfig( 'main' );
 
 		$lines = explode( "\n", $input );
 
@@ -339,7 +340,11 @@ class ImageMap {
 				'alt',
 				wfMessage( 'imagemap_description' )->inContentLanguage()->text()
 			);
-			$descImg->setAttribute( 'src', "$wgExtensionAssetsPath/ImageMap/desc-20.png" );
+			$url = $config->get( 'ExtensionAssetsPath' ) . '/ImageMap/desc-20.png';
+			$descImg->setAttribute(
+				'src',
+				OutputPage::transformResourcePath( $config, $url )
+			);
 			$descImg->setAttribute( 'style', 'border: none;' );
 		}
 
