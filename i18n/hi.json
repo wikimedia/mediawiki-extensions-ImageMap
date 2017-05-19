@@ -3,8 +3,7 @@
 		"authors": [
 			"Ansumang",
 			"Kaustubh",
-			"Siddhartha Ghai",
-			"Sfic"
+			"Siddhartha Ghai"
 		]
 	},
 	"imagemap_desc": "<code>&lt;imagemap&gt;</code> टैग के प्रयोग द्वारा क्लायंट द्वारा क्लिक किये जा सकने वाले चित्रनक्षों का प्रयोग संभव करता है",
@@ -18,6 +17,5 @@
 	"imagemap_invalid_coord": "त्रुटि: $1 पंक्ति में अमान्य कोऑर्डिनेट्स, संख्या होनी चाहिये।",
 	"imagemap_invalid_desc": "त्रुटि: अमान्य desc जानकारी, निम्न में से एक होनी चाहिये: <code>$1</code>",
 	"imagemap_description": "इस चित्र के बारे में",
-	"imagemap_desc_types": "top-right, bottom-right, bottom-left, top-left, none",
 	"imagemap_poly_odd": "त्रुटि: $1 पंक्ति पर विषम संख्या के कोऑर्डिनेट्स वाला poly मिला"
 }
