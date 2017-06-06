@@ -10,7 +10,7 @@
 	"imagemap_no_image": "Error: kudu mènèhi sawijining gambar ing baris kapisan",
 	"imagemap_invalid_image": "Masalah: Gambar ora trep utawa ora ana.",
 	"imagemap_bad_image": "Masalah: Barkas ora diidinaké ing kaca iki",
-	"imagemap_no_link": "Kasalahan: ora ditemokaké pranala sing absah ing pungkasan baris kaping $1",
+	"imagemap_no_link": "Masalah: Pranala sing trep ora ana ing pungkasané $1.",
 	"imagemap_invalid_title": "Error: irah-irahan ora absah ing pranala ing baris kaping $1",
 	"imagemap_missing_coord": "Error: ora cukup koordinat kanggo wujud ing baris kaping $1",
 	"imagemap_unrecognised_shape": "Error: wujud ora ditepungi ing baris kaping $1, saben baris kudu diwiwiti mawa salah siji saka: <code>default</code>, <code>rect</code>, <code>circle</code> utawa <code>poly</code>",
