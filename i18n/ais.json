@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Benel"
+			"Benel",
+			"Bunukwiki"
 		]
 	},
+	"imagemap_no_image": "mungangaw: kanca matuzu’ay tu iga i sakacacay a tusil.",
 	"imagemap_invalid_image": "mungangaw：iga caay tatenga’ saca inayi’.",
 	"imagemap_description": "mahizaay kuyni a iga"
 }
