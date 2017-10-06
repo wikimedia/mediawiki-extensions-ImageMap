@@ -28,16 +28,16 @@ class ImageMap {
 	const NONE = 4;
 
 	/**
-	 * @param Parser $parser
+	 * @param Parser &$parser
 	 */
 	public static function onParserFirstCallInit( Parser &$parser ) {
 		$parser->setHook( 'imagemap', [ 'ImageMap', 'render' ] );
 	}
 
 	/**
-	 * @param $input
-	 * @param $params
-	 * @param $parser Parser
+	 * @param string $input
+	 * @param array $params
+	 * @param Parser $parser
 	 * @return string HTML (Image map, or error message)
 	 */
 	public static function render( $input, $params, $parser ) {
@@ -376,8 +376,8 @@ class ImageMap {
 	}
 
 	/**
-	 * @param $count int
-	 * @param $lineNum int|string
+	 * @param int $count
+	 * @param int|string $lineNum
 	 * @return array|string String with error (HTML), or array of coordinates
 	 */
 	static function tokenizeCoords( $count, $lineNum ) {
@@ -396,8 +396,8 @@ class ImageMap {
 	}
 
 	/**
-	 * @param $name string
-	 * @param $line string|int|bool
+	 * @param string $name
+	 * @param string|int|bool $line
 	 * @return string HTML
 	 */
 	static function error( $name, $line = false ) {
