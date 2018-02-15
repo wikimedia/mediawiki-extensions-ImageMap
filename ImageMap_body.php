@@ -401,6 +401,6 @@ class ImageMap {
 	 * @return string HTML
 	 */
 	static function error( $name, $line = false ) {
-		return '<p class="error">' . wfMessage( $name, $line )->text() . '</p>';
+		return '<p class="error">' . wfMessage( $name, $line )->parse() . '</p>';
 	}
 }
