@@ -16,7 +16,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"ImageMap": "ImageMap_body.php"
+		"ImageMap": "includes/ImageMap.php"
 	},
 	"ParserTestFiles": [
 		"imageMapParserTests.txt"
