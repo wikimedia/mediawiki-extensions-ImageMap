@@ -18,8 +18,5 @@
 	"AutoloadClasses": {
 		"ImageMap": "includes/ImageMap.php"
 	},
-	"ParserTestFiles": [
-		"imageMapParserTests.txt"
-	],
 	"manifest_version": 1
 }
