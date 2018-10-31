@@ -380,7 +380,7 @@ class ImageMap {
 	 * @param int|string $lineNum
 	 * @return array|string String with error (HTML), or array of coordinates
 	 */
-	static function tokenizeCoords( $count, $lineNum ) {
+	private static function tokenizeCoords( $count, $lineNum ) {
 		$coords = [];
 		for ( $i = 0; $i < $count; $i++ ) {
 			$coord = strtok( " \t" );
@@ -400,7 +400,7 @@ class ImageMap {
 	 * @param string|int|bool $line
 	 * @return string HTML
 	 */
-	static function error( $name, $line = false ) {
+	private static function error( $name, $line = false ) {
 		return '<p class="error">' . wfMessage( $name, $line )->parse() . '</p>';
 	}
 }
