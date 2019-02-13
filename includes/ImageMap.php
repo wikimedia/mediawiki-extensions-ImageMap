@@ -93,9 +93,9 @@ class ImageMap {
 				$imageHTML = Sanitizer::normalizeCharReferences( $imageHTML );
 
 				$domDoc = new DOMDocument();
-				wfSuppressWarnings();
+				Wikimedia\suppressWarnings();
 				$ok = $domDoc->loadXML( $imageHTML );
-				wfRestoreWarnings();
+				Wikimedia\restoreWarnings();
 				if ( !$ok ) {
 					return self::error( 'imagemap_invalid_image' );
 				}
