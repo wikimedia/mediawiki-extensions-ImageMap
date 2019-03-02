@@ -342,7 +342,7 @@ class ImageMap {
 				'alt',
 				wfMessage( 'imagemap_description' )->inContentLanguage()->text()
 			);
-			$url = $config->get( 'ExtensionAssetsPath' ) . '/ImageMap/desc-20.png';
+			$url = $config->get( 'ExtensionAssetsPath' ) . '/ImageMap/resources/desc-20.png';
 			$descImg->setAttribute(
 				'src',
 				OutputPage::transformResourcePath( $config, $url )
