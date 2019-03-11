@@ -47,6 +47,12 @@ class ImageMap {
 		$lines = explode( "\n", $input );
 
 		$first = true;
+		$scale = 1;
+		$imageNode = null;
+		$domDoc = null;
+		$thumbWidth = 0;
+		$thumbHeight = 0;
+		$imageTitle = null;
 		$lineNum = 0;
 		$mapHTML = '';
 		$links = [];
@@ -259,7 +265,7 @@ class ImageMap {
 			}
 		}
 
-		if ( $first ) {
+		if ( $first || !$imageNode ) {
 			return self::error( 'imagemap_no_image' );
 		}
 
