@@ -207,10 +207,6 @@ class ImageMap {
 					$coords = [];
 					$coord = strtok( " \t" );
 					while ( $coord !== false ) {
-						// T217087: protect against non-numeric values with a zero default
-						if ( !ctype_digit( $coord ) ) {
-							return self::error( 'imagemap_invalid_coord', $lineNum );
-						}
 						$coords[] = $coord;
 						$coord = strtok( " \t" );
 					}
@@ -227,7 +223,7 @@ class ImageMap {
 
 			// Scale the coords using the size of the source image
 			foreach ( $coords as $i => $c ) {
-				$coords[$i] = (int)round( $c * $scale );
+				$coords[$i] = intval( round( $c * $scale ) );
 			}
 
 			// Construct the area tag
