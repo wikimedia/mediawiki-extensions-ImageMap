@@ -207,8 +207,7 @@ class ImageMap {
 					$coords = [];
 					$coord = strtok( " \t" );
 					while ( $coord !== false ) {
-						// T217087: protect against non-numeric values with a zero default
-						if ( !ctype_digit( $coord ) ) {
+						if ( !is_numeric( $coord ) || $coord > 1e9 || $coord < 0 ) {
 							return self::error( 'imagemap_invalid_coord', $lineNum );
 						}
 						$coords[] = $coord;
