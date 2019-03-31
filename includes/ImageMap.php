@@ -192,29 +192,21 @@ class ImageMap {
 					$coords = [];
 					break;
 				case 'rect':
-					$coords = self::tokenizeCoords( 4, $lineNum );
+					$coords = self::tokenizeCoords( $lineNum, 4 );
 					if ( !is_array( $coords ) ) {
 						return $coords;
 					}
 					break;
 				case 'circle':
-					$coords = self::tokenizeCoords( 3, $lineNum );
+					$coords = self::tokenizeCoords( $lineNum, 3 );
 					if ( !is_array( $coords ) ) {
 						return $coords;
 					}
 					break;
 				case 'poly':
-					$coords = [];
-					$coord = strtok( " \t" );
-					while ( $coord !== false ) {
-						if ( !is_numeric( $coord ) || $coord > 1e9 ) {
-							return self::error( 'imagemap_invalid_coord', $lineNum );
-						}
-						$coords[] = $coord;
-						$coord = strtok( " \t" );
-					}
-					if ( !count( $coords ) ) {
-						return self::error( 'imagemap_missing_coord', $lineNum );
+					$coords = self::tokenizeCoords( $lineNum, 1, true );
+					if ( !is_array( $coords ) ) {
+						return $coords;
 					}
 					if ( count( $coords ) % 2 !== 0 ) {
 						return self::error( 'imagemap_poly_odd', $lineNum );
@@ -259,6 +251,7 @@ class ImageMap {
 			if ( $shape == 'default' ) {
 				$defaultLinkAttribs = $attribs;
 			} else {
+				// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 				$mapHTML .= Xml::element( 'area', $attribs ) . "\n";
 			}
 			if ( $externLink ) {
@@ -387,21 +380,24 @@ class ImageMap {
 	}
 
 	/**
-	 * @param int $count
-	 * @param int|string $lineNum
+	 * @param int|string $lineNum Line number, for error reporting
+	 * @param int $minCount Minimum token count
+	 * @param bool $allowNegative
 	 * @return array|string String with error (HTML), or array of coordinates
 	 */
-	private static function tokenizeCoords( $count, $lineNum ) {
+	private static function tokenizeCoords( $lineNum, $minCount = 0, $allowNegative = false ) {
 		$coords = [];
-		for ( $i = 0; $i < $count; $i++ ) {
+		$coord = strtok( " \t" );
+		while ( $coord !== false ) {
+			if ( !is_numeric( $coord ) || $coord > 1e9 || ( !$allowNegative && $coord < 0 ) ) {
+				return self::error( 'imagemap_invalid_crd', $lineNum );
+			}
+			$coords[] = $coord;
 			$coord = strtok( " \t" );
-			if ( $coord === false ) {
-				return self::error( 'imagemap_missing_coord', $lineNum );
-			}
-			if ( !is_numeric( $coord ) || $coord > 1e9 || $coord < 0 ) {
-				return self::error( 'imagemap_invalid_coord', $lineNum );
-			}
-			$coords[$i] = $coord;
+		}
+		if ( count( $coords ) < $minCount ) {
+			// TODO: Should this also check there aren't too many coords?
+			return self::error( 'imagemap_missing_coord', $lineNum );
 		}
 		return $coords;
 	}
