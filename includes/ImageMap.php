@@ -28,9 +28,9 @@ class ImageMap {
 	const NONE = 4;
 
 	/**
-	 * @param Parser &$parser
+	 * @param Parser $parser
 	 */
-	public static function onParserFirstCallInit( Parser &$parser ) {
+	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setHook( 'imagemap', [ 'ImageMap', 'render' ] );
 	}
 
