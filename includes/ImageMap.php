@@ -261,7 +261,7 @@ class ImageMap {
 			}
 		}
 
-		if ( $first || !$imageNode ) {
+		if ( $first || !$imageNode || !$domDoc ) {
 			return self::error( 'imagemap_no_image' );
 		}
 
