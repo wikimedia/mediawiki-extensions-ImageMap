@@ -161,7 +161,7 @@ class ImageMap {
 				$alt = trim( $m[2] );
 			} elseif ( preg_match( '/^ \[\[  ([^\]]*+) \]\] \w* $ /x', $link, $m ) ) {
 				$title = Title::newFromText( $m[1] );
-				if ( is_null( $title ) ) {
+				if ( $title === null ) {
 					return self::error( 'imagemap_invalid_title', $lineNum );
 				}
 				$alt = $title->getFullText();
