@@ -153,6 +153,7 @@ class ImageMap {
 			}
 
 			$title = false;
+			$alt = '';
 			// Find the link
 			$link = trim( strstr( $line, '[' ) );
 			$m = [];
