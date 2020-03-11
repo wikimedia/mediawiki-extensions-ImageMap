@@ -14,9 +14,7 @@
 		]
 	},
 	"Hooks": {
-		"ParserFirstCallInit": [
-			"ImageMap::onParserFirstCallInit"
-		]
+		"ParserFirstCallInit": "ImageMap::onParserFirstCallInit"
 	},
 	"AutoloadClasses": {
 		"ImageMap": "includes/ImageMap.php"
