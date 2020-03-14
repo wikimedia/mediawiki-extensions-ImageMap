@@ -18,6 +18,8 @@
  * Coordinates are relative to the source image, not the thumbnail.
  */
 
+use MediaWiki\MediaWikiServices;
+
 class ImageMap {
 	public static $id = 0;
 
@@ -63,6 +65,7 @@ class ImageMap {
 		$defaultLinkAttribs = false;
 		$realmap = true;
 		$extLinks = [];
+		$repoGroup = MediaWikiServices::getInstance()->getRepoGroup();
 		foreach ( $lines as $line ) {
 			++$lineNum;
 			$externLink = false;
@@ -114,7 +117,7 @@ class ImageMap {
 				$thumbWidth = $imageNode->getAttribute( 'width' );
 				$thumbHeight = $imageNode->getAttribute( 'height' );
 
-				$imageObj = wfFindFile( $imageTitle );
+				$imageObj = $repoGroup->findFile( $imageTitle );
 				if ( !$imageObj || !$imageObj->exists() ) {
 					return self::error( 'imagemap_invalid_image' );
 				}
