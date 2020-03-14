@@ -65,7 +65,9 @@ class ImageMap {
 		$defaultLinkAttribs = false;
 		$realmap = true;
 		$extLinks = [];
-		$repoGroup = MediaWikiServices::getInstance()->getRepoGroup();
+		$services = MediaWikiServices::getInstance();
+		$repoGroup = $services->getRepoGroup();
+		$badFileLookup = $services->getBadFileLookup();
 		foreach ( $lines as $line ) {
 			++$lineNum;
 			$externLink = false;
@@ -91,7 +93,7 @@ class ImageMap {
 				if ( !$imageTitle || !$imageTitle->inNamespace( NS_FILE ) ) {
 					return self::error( 'imagemap_no_image' );
 				}
-				if ( wfIsBadImage( $imageTitle->getDBkey(), $parser->mTitle ) ) {
+				if ( $badFileLookup->isBadFile( $imageTitle->getDBkey(), $parser->mTitle ) ) {
 					return self::error( 'imagemap_bad_image' );
 				}
 				// Parse the options so we can use links and the like in the caption
