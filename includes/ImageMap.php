@@ -93,14 +93,14 @@ class ImageMap {
 				if ( !$imageTitle || !$imageTitle->inNamespace( NS_FILE ) ) {
 					return self::error( 'imagemap_no_image' );
 				}
-				if ( $badFileLookup->isBadFile( $imageTitle->getDBkey(), $parser->mTitle ) ) {
+				if ( $badFileLookup->isBadFile( $imageTitle->getDBkey(), $parser->getTitle() ) ) {
 					return self::error( 'imagemap_bad_image' );
 				}
 				// Parse the options so we can use links and the like in the caption
 				$parsedOptions = $parser->recursiveTagParse( $options );
 				$imageHTML = $parser->makeImage( $imageTitle, $parsedOptions );
 				$parser->replaceLinkHolders( $imageHTML );
-				$imageHTML = $parser->mStripState->unstripBoth( $imageHTML );
+				$imageHTML = $parser->getStripState()->unstripBoth( $imageHTML );
 				$imageHTML = Sanitizer::normalizeCharReferences( $imageHTML );
 
 				$domDoc = new DOMDocument();
@@ -371,14 +371,14 @@ class ImageMap {
 				// Don't register special or interwiki links...
 			} elseif ( $title->getNamespace() == NS_MEDIA ) {
 				// Regular Media: links are recorded as image usages
-				$parser->mOutput->addImage( $title->getDBkey() );
+				$parser->getOutput()->addImage( $title->getDBkey() );
 			} else {
 				// Plain ol' link
-				$parser->mOutput->addLink( $title );
+				$parser->getOutput()->addLink( $title );
 			}
 		}
 		foreach ( $extLinks as $title ) {
-			$parser->mOutput->addExternalLink( $title );
+			$parser->getOutput()->addExternalLink( $title );
 		}
 		// Armour output against broken parser
 		$output = str_replace( "\n", '', $output );
