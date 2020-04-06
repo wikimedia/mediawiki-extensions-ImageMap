@@ -396,7 +396,7 @@ class ImageMap {
 		$coord = strtok( " \t" );
 		while ( $coord !== false ) {
 			if ( !is_numeric( $coord ) || $coord > 1e9 || ( !$allowNegative && $coord < 0 ) ) {
-				return self::error( 'imagemap_invalid_crd', $lineNum );
+				return self::error( 'imagemap_invalid_coord', $lineNum );
 			}
 			$coords[] = $coord;
 			$coord = strtok( " \t" );
