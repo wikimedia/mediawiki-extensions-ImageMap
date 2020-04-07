@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nullzero",
-			"Aefgh39622"
+			"Aefgh39622",
+			"Nullzero"
 		]
 	},
 	"imagemap_desc": "อนุญาตแผนที่ภาพที่สามารถคลิกได้สำหรับฝั่งไคลเอนต์โดยใช้ป้ายกำกับ <code>&lt;imagemap&gt;</code>",
