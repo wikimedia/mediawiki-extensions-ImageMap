@@ -18,7 +18,18 @@
  * Coordinates are relative to the source image, not the thumbnail.
  */
 
+namespace MediaWiki\Extensions\ImageMap;
+
+use ConfigFactory;
+use DOMDocument;
+use DOMElement;
+use DOMXPath;
 use MediaWiki\MediaWikiServices;
+use OutputPage;
+use Parser;
+use Sanitizer;
+use Title;
+use Xml;
 
 class ImageMap {
 	public static $id = 0;
@@ -33,7 +44,7 @@ class ImageMap {
 	 * @param Parser $parser
 	 */
 	public static function onParserFirstCallInit( Parser $parser ) {
-		$parser->setHook( 'imagemap', [ 'ImageMap', 'render' ] );
+		$parser->setHook( 'imagemap', [ self::class, 'render' ] );
 	}
 
 	/**
@@ -104,9 +115,9 @@ class ImageMap {
 				$imageHTML = Sanitizer::normalizeCharReferences( $imageHTML );
 
 				$domDoc = new DOMDocument();
-				Wikimedia\suppressWarnings();
+				\Wikimedia\suppressWarnings();
 				$ok = $domDoc->loadXML( $imageHTML );
-				Wikimedia\restoreWarnings();
+				\Wikimedia\restoreWarnings();
 				if ( !$ok ) {
 					return self::error( 'imagemap_invalid_image' );
 				}
