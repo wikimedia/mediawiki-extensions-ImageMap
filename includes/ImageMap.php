@@ -34,11 +34,11 @@ use Xml;
 class ImageMap {
 	public static $id = 0;
 
-	const TOP_RIGHT = 0;
-	const BOTTOM_RIGHT = 1;
-	const BOTTOM_LEFT = 2;
-	const TOP_LEFT = 3;
-	const NONE = 4;
+	private const TOP_RIGHT = 0;
+	private const BOTTOM_RIGHT = 1;
+	private const BOTTOM_LEFT = 2;
+	private const TOP_LEFT = 3;
+	private const NONE = 4;
 
 	/**
 	 * @param Parser $parser
