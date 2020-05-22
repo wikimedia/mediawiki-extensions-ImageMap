@@ -32,7 +32,6 @@ use Title;
 use Xml;
 
 class ImageMap {
-	public static $id = 0;
 
 	private const TOP_RIGHT = 0;
 	private const BOTTOM_RIGHT = 1;
