@@ -267,7 +267,6 @@ class ImageMap {
 			if ( $shape == 'default' ) {
 				$defaultLinkAttribs = $attribs;
 			} else {
-				// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 				$mapHTML .= Xml::element( 'area', $attribs ) . "\n";
 			}
 			if ( $externLink ) {
