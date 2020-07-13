@@ -1,8 +1,6 @@
 {
 	"@metadata": {
-		"authors": [
-			"Shinjiman"
-		]
+		"authors": []
 	},
 	"imagemap_desc": "容許客戶端可以用<code>&lt;imagemap&gt;</code>標籤整可撳圖像地圖",
 	"imagemap_no_image": "錯誤: 一定要響第一行指定一幅圖像",
