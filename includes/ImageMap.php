@@ -153,7 +153,7 @@ class ImageMap {
 				$descType = array_search( $type, $types );
 				if ( $descType > 4 ) {
 					// A localized descType is used. Subtract 5 to reach the canonical desc type.
-					$descType = $descType - 5;
+					$descType -= 5;
 				}
 				// <0? In theory never, but paranoia...
 				if ( $descType === false || $descType < 0 ) {
