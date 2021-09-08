@@ -55,6 +55,7 @@ class ImageMap {
 	public static function render( $input, $params, Parser $parser ) {
 		global $wgUrlProtocols, $wgNoFollowLinks;
 		$config = ConfigFactory::getDefaultInstance()->makeConfig( 'main' );
+		$enableLegacyMediaDOM = $config->get( 'ParserEnableLegacyMediaDOM' );
 
 		$lines = explode( "\n", $input );
 
@@ -67,6 +68,7 @@ class ImageMap {
 		$imageTitle = null;
 		$mapHTML = '';
 		$links = [];
+		$explicitNone = false;
 
 		// Define canonical desc types to allow i18n of 'imagemap_desc_types'
 		$descTypesCanonical = 'top-right, bottom-right, bottom-left, top-left, none';
@@ -103,6 +105,14 @@ class ImageMap {
 				}
 				// Parse the options so we can use links and the like in the caption
 				$parsedOptions = $options === '' ? '' : $parser->recursiveTagParse( $options );
+
+				if ( !$enableLegacyMediaDOM ) {
+					$explicitNone = preg_match( '/(^|\|)none(\||$)/D', $parsedOptions );
+					if ( !$explicitNone ) {
+						$parsedOptions .= '|none';
+					}
+				}
+
 				$imageHTML = $parser->makeImage( $imageTitle, $parsedOptions );
 				$parser->replaceLinkHolders( $imageHTML );
 				$imageHTML = $parser->getStripState()->unstripBoth( $imageHTML );
@@ -301,7 +311,6 @@ class ImageMap {
 		}
 
 		$div = null;
-		$enableLegacyMediaDOM = $config->get( 'ParserEnableLegacyMediaDOM' );
 
 		if ( $enableLegacyMediaDOM ) {
 			// Add a surrounding div, remove the default link to the description page
@@ -331,9 +340,16 @@ class ImageMap {
 			$anchor = $imageNode->parentNode;
 			$wrapper = $anchor->parentNode;
 
-			// For T22030
 			$classes = $wrapper->getAttribute( 'class' );
+
+			// For T22030
 			$classes .= ( $classes ? ' ' : '' ) . 'noresize';
+
+			// Remove that class if it was only added while forcing a block
+			if ( !$explicitNone ) {
+				$classes = trim( preg_replace( '/ ?mw-halign-none/', '', $classes ) );
+			}
+
 			$wrapper->setAttribute( 'class', $classes );
 
 			if ( $defaultLinkAttribs ) {
