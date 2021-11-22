@@ -316,6 +316,13 @@ class ImageMap {
 			// Add a surrounding div, remove the default link to the description page
 			$anchor = $imageNode->parentNode;
 			$parent = $anchor->parentNode;
+
+			// Handle cases where there are no anchors, like `|link=`
+			if ( $anchor instanceof DOMDocument ) {
+				$parent = $anchor;
+				$anchor = $imageNode;
+			}
+
 			$div = $parent->insertBefore( new DOMElement( 'div' ), $anchor );
 			$div->setAttribute( 'class', 'noresize' );
 			if ( $defaultLinkAttribs ) {
