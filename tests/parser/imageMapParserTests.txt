@@ -6,8 +6,6 @@ imagemap
 
 !! test
 imagemap test 1
-!! options
-disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
@@ -36,8 +34,6 @@ Image:Foobar.jpg
 
 !! test
 imagemap test 2
-!! options
-disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
@@ -70,8 +66,6 @@ poly 10.1 10.9 10 30 -30 15 [[Main Page]]
 
 !! test
 imagemap test 3
-!! options
-disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
@@ -177,8 +171,6 @@ File:Foobar.jpg
 ## FIXME: Note the difference in the link alt
 !! test
 Link with wikitext syntax in content
-!! options
-disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
@@ -210,8 +202,6 @@ default [[Main Page|Go to ''main page'']]
 
 !! test
 File with link= option
-!! options
-disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
