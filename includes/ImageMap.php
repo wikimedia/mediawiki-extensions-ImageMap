@@ -29,6 +29,7 @@ use OutputPage;
 use Parser;
 use Sanitizer;
 use Title;
+use Wikimedia\AtEase\AtEase;
 use Xml;
 
 class ImageMap {
@@ -119,9 +120,9 @@ class ImageMap {
 				$imageHTML = Sanitizer::normalizeCharReferences( $imageHTML );
 
 				$domDoc = new DOMDocument();
-				\Wikimedia\suppressWarnings();
+				AtEase::suppressWarnings();
 				$ok = $domDoc->loadXML( $imageHTML );
-				\Wikimedia\restoreWarnings();
+				AtEase::restoreWarnings();
 				if ( !$ok ) {
 					return self::error( 'imagemap_invalid_image' );
 				}
