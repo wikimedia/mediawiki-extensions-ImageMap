@@ -159,7 +159,7 @@ class ImageMap {
 					$typesText = $descTypesCanonical . ', ' . $typesText;
 				}
 				$types = array_map( 'trim', explode( ',', $typesText ) );
-				$type = trim( strtok( '' ) );
+				$type = trim( strtok( '' ) ?: '' );
 				$descType = array_search( $type, $types );
 				if ( $descType > 4 ) {
 					// A localized descType is used. Subtract 5 to reach the canonical desc type.
