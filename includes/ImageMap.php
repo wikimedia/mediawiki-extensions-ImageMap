@@ -18,7 +18,7 @@
  * Coordinates are relative to the source image, not the thumbnail.
  */
 
-namespace MediaWiki\Extensions\ImageMap;
+namespace MediaWiki\Extension\ImageMap;
 
 use ConfigFactory;
 use DOMDocument;
