@@ -370,6 +370,21 @@ class ImageMap {
 			}
 			$wrapper->insertBefore( $imageParent, $anchor );
 
+			$typeOf = $wrapper->getAttribute( 'typeof' ) ?? '';
+			preg_match( '#^mw:(?:Image|Video|Audio)(/|$)#', $typeOf, $match );
+			$format = $match[1] ?? '';
+			$hasVisibleMedia = in_array( $format, [ 'Thumb', 'Frame' ], true );
+
+			if ( !$hasVisibleMedia ) {
+				$xpath = new DOMXPath( $wrapper->ownerDocument );
+				$captions = $xpath->query( '//figcaption', $wrapper );
+				$caption = $captions->item( 0 );
+				$captionText = trim( $caption->textContent );
+				if ( $captionText ) {
+					$imageParent->setAttribute( 'title', $captionText );
+				}
+			}
+
 			if ( isset( $mapNode ) ) {
 				$wrapper->insertBefore( $mapNode, $anchor );
 			}

@@ -221,8 +221,8 @@ wgParserEnableLegacyMediaDOM=false
 <imagemap>
 File:Foobar.jpg|link=|Hi ho
 </imagemap>
-!! html/php+disabled
-<figure class="mw-default-size noresize" typeof="mw:Image"><span><img alt="Hi ho" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" title="Hi ho" width="1941" height="220" /></span><figcaption>Hi ho</figcaption></figure>
+!! html/php
+<figure class="mw-default-size noresize" typeof="mw:Image"><span title="Hi ho"><img alt="Hi ho" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" width="1941" height="220" /></span><figcaption>Hi ho</figcaption></figure>
 !! html/parsoid
 <figure class="mw-default-size noresize" typeof="mw:Image mw:Extension/imagemap" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg|link=|Hi ho\n"}}'><span><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941"/></span><figcaption>Hi ho</figcaption></figure>
 !! end
