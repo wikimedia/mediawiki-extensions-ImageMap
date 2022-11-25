@@ -22,12 +22,14 @@ namespace MediaWiki\Extension\ImageMap;
 
 use ConfigFactory;
 use DOMDocumentFragment;
+use DOMElement;
 use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\MediaWikiServices;
 use OutputPage;
 use Parser;
 use Sanitizer;
 use Title;
+use Wikimedia\Assert\Assert;
 use Wikimedia\Parsoid\Utils\DOMCompat;
 use Wikimedia\Parsoid\Utils\DOMUtils;
 use Xml;
@@ -318,10 +320,12 @@ class ImageMap implements ParserFirstCallInitHook {
 				$anchor = $imageNode;
 			}
 
-			$div = $parent->insertBefore( $domDoc->createElement( 'div' ), $anchor );
+			$div = $domDoc->createElement( 'div' );
+			$parent->insertBefore( $div, $anchor );
 			$div->setAttribute( 'class', 'noresize' );
 			if ( $defaultLinkAttribs ) {
-				$defaultAnchor = $div->appendChild( $domDoc->createElement( 'a' ) );
+				$defaultAnchor = $domDoc->createElement( 'a' );
+				$div->appendChild( $defaultAnchor );
 				foreach ( $defaultLinkAttribs as $name => $value ) {
 					$defaultAnchor->setAttribute( $name, $value );
 				}
@@ -340,6 +344,7 @@ class ImageMap implements ParserFirstCallInitHook {
 		} else {
 			$anchor = $imageNode->parentNode;
 			$wrapper = $anchor->parentNode;
+			Assert::precondition( $wrapper instanceof DOMElement, 'Anchor node has a parent' );
 
 			$classes = $wrapper->getAttribute( 'class' );
 
@@ -401,20 +406,23 @@ class ImageMap implements ParserFirstCallInitHook {
 				$marginTop = -20;
 			}
 			$div->setAttribute( 'style', "height: {$thumbHeight}px; width: {$thumbWidth}px; " );
-			$descWrapper = $div->appendChild( $domDoc->createElement( 'div' ) );
+			$descWrapper = $domDoc->createElement( 'div' );
+			$div->appendChild( $descWrapper );
 			$descWrapper->setAttribute( 'style',
 				"margin-left: {$marginLeft}px; " .
 					"margin-top: {$marginTop}px; " .
 					"text-align: left;"
 			);
 
-			$descAnchor = $descWrapper->appendChild( $domDoc->createElement( 'a' ) );
+			$descAnchor = $domDoc->createElement( 'a' );
+			$descWrapper->appendChild( $descAnchor );
 			$descAnchor->setAttribute( 'href', $imageTitle->getLocalURL() );
 			$descAnchor->setAttribute(
 				'title',
 				wfMessage( 'imagemap_description' )->inContentLanguage()->text()
 			);
-			$descImg = $descAnchor->appendChild( $domDoc->createElement( 'img' ) );
+			$descImg = $domDoc->createElement( 'img' );
+			$descAnchor->appendChild( $descImg );
 			$descImg->setAttribute(
 				'alt',
 				wfMessage( 'imagemap_description' )->inContentLanguage()->text()
