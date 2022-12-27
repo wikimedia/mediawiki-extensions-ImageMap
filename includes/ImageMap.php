@@ -20,7 +20,6 @@
 
 namespace MediaWiki\Extension\ImageMap;
 
-use ConfigFactory;
 use DOMDocumentFragment;
 use DOMElement;
 use MediaWiki\Hook\ParserFirstCallInitHook;
@@ -57,7 +56,7 @@ class ImageMap implements ParserFirstCallInitHook {
 	 */
 	public function render( $input, $params, Parser $parser ) {
 		global $wgUrlProtocols, $wgNoFollowLinks;
-		$config = ConfigFactory::getDefaultInstance()->makeConfig( 'main' );
+		$config = MediaWikiServices::getInstance()->getMainConfig();
 		$enableLegacyMediaDOM = $config->get( 'ParserEnableLegacyMediaDOM' );
 
 		$lines = explode( "\n", $input );
