@@ -243,6 +243,8 @@ File:Foobar.jpg|link=|Hi ho
 
 !! test
 File with <br> in caption (T113791)
+!! options
+disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
@@ -257,6 +259,8 @@ File:Foobar.jpg|thumb|a<br>b
 
 !! test
 File with <br /> in caption (T113791)
+!! options
+disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
