@@ -6,6 +6,8 @@ imagemap
 
 !! test
 imagemap test 1
+!! options
+disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
@@ -34,6 +36,8 @@ Image:Foobar.jpg
 
 !! test
 imagemap test 2
+!! options
+disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
