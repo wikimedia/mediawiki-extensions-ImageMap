@@ -8,6 +8,8 @@ imagemap
 imagemap test 1
 !! config
 wgParserEnableLegacyMediaDOM=false
+!! options
+disabled
 !! wikitext
 <imagemap>
 Image:Foobar.jpg
@@ -36,6 +38,8 @@ Image:Foobar.jpg
 imagemap test 2
 !! config
 wgParserEnableLegacyMediaDOM=false
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg
@@ -68,6 +72,8 @@ poly 10.1 10.9 10 30 -30 15 [[Main Page]]
 imagemap test 3
 !! config
 wgParserEnableLegacyMediaDOM=false
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|150px|alt=Alt text
@@ -186,6 +192,8 @@ File:Foobar.jpg
 Link with wikitext syntax in content
 !! config
 wgParserEnableLegacyMediaDOM=false
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|150px|alt=Alt text
@@ -215,6 +223,8 @@ default [[Main Page|Go to ''main page'']]
 
 !! test
 File with link= option
+!! options
+disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
@@ -243,6 +253,8 @@ File:Foobar.jpg|link=|Hi ho
 
 !! test
 File with <br> in caption (T113791)
+!! options
+disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
@@ -257,6 +269,8 @@ File:Foobar.jpg|thumb|a<br>b
 
 !! test
 File with <br /> in caption (T113791)
+!! options
+disabled
 !! config
 wgParserEnableLegacyMediaDOM=false
 !! wikitext
