@@ -29,6 +29,7 @@ use Parser;
 use Sanitizer;
 use Title;
 use Wikimedia\Assert\Assert;
+use Wikimedia\Parsoid\Ext\WTUtils;
 use Wikimedia\Parsoid\Utils\DOMCompat;
 use Wikimedia\Parsoid\Utils\DOMUtils;
 use Xml;
@@ -367,14 +368,9 @@ class ImageMap implements ParserFirstCallInitHook {
 			}
 			$wrapper->insertBefore( $imageParent, $anchor );
 
-			$typeOf = $wrapper->getAttribute( 'typeof' ) ?? '';
-			preg_match( '#^mw:(?:Image|Video|Audio)(/|$)#', $typeOf, $match );
-			$format = $match[1] ?? '';
-			$hasVisibleMedia = in_array( $format, [ 'Thumb', 'Frame' ], true );
-
-			if ( !$hasVisibleMedia ) {
+			if ( !WTUtils::hasVisibleCaption( $wrapper ) ) {
 				$caption = DOMCompat::querySelector( $domFragment, 'figcaption' );
-				$captionText = trim( $caption->textContent );
+				$captionText = trim( WTUtils::textContentFromCaption( $caption ) );
 				if ( $captionText ) {
 					$imageParent->setAttribute( 'title', $captionText );
 				}
