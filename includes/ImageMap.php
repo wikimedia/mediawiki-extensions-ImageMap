@@ -439,7 +439,14 @@ class ImageMap implements ParserFirstCallInitHook {
 		} else {
 			'@phan-var DOMElement $wrapper';
 			$typeOf = $wrapper->getAttribute( 'typeof' ) ?? '';
-			if ( !preg_match( '#\bmw:File/Thumb\b#', $typeOf ) && $descType !== self::NONE ) {
+			if ( preg_match( '#\bmw:File/Thumb\b#', $typeOf ) ) {
+				// $imageNode was cloned above
+				$img = $imageParent->firstChild;
+				'@phan-var DOMElement $img';
+				if ( !$img->hasAttribute( 'resource' ) ) {
+					$img->setAttribute( 'resource', $imageTitle->getLocalURL() );
+				}
+			} elseif ( $descType !== self::NONE ) {
 				// The following classes are used here:
 				// * mw-ext-imagemap-desc-top-right
 				// * mw-ext-imagemap-desc-bottom-right
