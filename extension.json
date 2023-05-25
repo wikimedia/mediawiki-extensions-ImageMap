@@ -24,5 +24,22 @@
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\ImageMap\\": "includes/"
 	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "ImageMap"
+	},
+	"ResourceModules": {
+		"ext.imagemap": {
+			"packageFiles": [
+				"resources/ext.imagemap.js"
+			],
+			"dependencies": [
+				"ext.imagemap.styles"
+			]
+		},
+		"ext.imagemap.styles": {
+			"styles": "resources/ext.imagemap.styles.less"
+		}
+	},
 	"manifest_version": 2
 }
