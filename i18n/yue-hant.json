@@ -1,8 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shinjiman",
-			"捍粵者"
+			"Winston Sung"
 		]
 	},
 	"imagemap_desc": "容許客戶端可以用<code>&lt;imagemap&gt;</code>標籤整可撳圖像地圖",
