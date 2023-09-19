@@ -1,6 +1,9 @@
 {
 	"name": "ImageMap",
-	"author": "Tim Starling",
+	"author": [
+		"Tim Starling",
+		"Arlo Breault"
+	],
 	"url": "https://www.mediawiki.org/wiki/Extension:ImageMap",
 	"descriptionmsg": "imagemap_desc",
 	"license-name": "GPL-2.0-or-later",
@@ -41,5 +44,8 @@
 			"styles": "resources/ext.imagemap.styles.less"
 		}
 	},
+	"ParsoidModules": [
+		"MediaWiki\\Extension\\ImageMap\\ParsoidImageMap"
+	],
 	"manifest_version": 2
 }
