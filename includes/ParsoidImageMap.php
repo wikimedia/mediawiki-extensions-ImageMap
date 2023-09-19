@@ -155,13 +155,11 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 			// Handle desc spec
 			$cmd = strtok( $line, " \t" );
 			if ( $cmd == 'desc' ) {
-				$typesText = $descTypesCanonical;
-				// FIXME: Support this ...
-				// $typesText = wfMessage( 'imagemap_desc_types' )->inContentLanguage()->text();
-				// if ( $descTypesCanonical != $typesText ) {
-				// 	// i18n desc types exists
-				// 	$typesText = $descTypesCanonical . ', ' . $typesText;
-				// }
+				$typesText = wfMessage( 'imagemap_desc_types' )->inContentLanguage()->text();
+				if ( $descTypesCanonical != $typesText ) {
+					// i18n desc types exists
+					$typesText = $descTypesCanonical . ', ' . $typesText;
+				}
 				$types = array_map( 'trim', explode( ',', $typesText ) );
 				$type = trim( strtok( '' ) ?: '' );
 				$descType = array_search( $type, $types, true );

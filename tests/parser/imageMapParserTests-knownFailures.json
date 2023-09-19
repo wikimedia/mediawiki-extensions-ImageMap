@@ -1,5 +1,1 @@
-{
-	"Non-default localized (French) description type": {
-		"wt2html": "<p data-parsoid='{\"dsr\":[0,56,0,0]}'><span typeof=\"mw:Extension/imagemap mw:Error\" about=\"#mwt2\" data-parsoid='{\"dsr\":[0,56,10,11]}' data-mw='{\"name\":\"imagemap\",\"attrs\":{},\"body\":{\"extsrc\":\"\\nImage:Foobar.jpg\\ndesc haut-gauche\\n\"},\"errors\":[{\"key\":\"imagemap_invalid_desc\",\"params\":[\"top-right, bottom-right, bottom-left, top-left, none\"]}]}' data-mw-i18n='{\"/\":{\"lang\":\"x-user\",\"key\":\"imagemap_invalid_desc\",\"params\":[\"top-right, bottom-right, bottom-left, top-left, none\"]}}'>imagemap_invalid_desc</span></p>"
-	}
-}
+{}
