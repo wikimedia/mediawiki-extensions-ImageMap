@@ -138,10 +138,10 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 				// factor when one is much larger than the other
 				// (sx+sy)/(x+y) = s
 
-				$thumbWidth = (int)( $imageNode->getAttribute( 'width' ) ?? '' );
-				$thumbHeight = (int)( $imageNode->getAttribute( 'height' ) ?? '' );
-				$imageWidth = (int)( $imageNode->getAttribute( 'data-file-width' ) ?? '' );
-				$imageHeight = (int)( $imageNode->getAttribute( 'data-file-height' ) ?? '' );
+				$thumbWidth = (int)( $imageNode->getAttribute( 'width' ) );
+				$thumbHeight = (int)( $imageNode->getAttribute( 'height' ) );
+				$imageWidth = (int)( $imageNode->getAttribute( 'data-file-width' ) );
+				$imageHeight = (int)( $imageNode->getAttribute( 'data-file-height' ) );
 
 				$denominator = $imageWidth + $imageHeight;
 				$numerator = $thumbWidth + $thumbHeight;
@@ -207,7 +207,7 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 			}
 			DOMUtils::assertElt( $a );
 
-			$href = $a->getAttribute( 'href' ) ?? '';
+			$href = $a->getAttribute( 'href' );
 			$externLink = DOMUtils::matchRel( $a, '#^mw:ExtLink/#D' ) !== null;
 			$alt = '';
 
@@ -323,7 +323,7 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 		DOMCompat::getClassList( $thumb )->add( 'noresize' );
 
 		// Determine whether a "magnify" link is present
-		$typeOf = $thumb->getAttribute( 'typeof' ) ?? '';
+		$typeOf = $thumb->getAttribute( 'typeof' );
 		if ( !preg_match( '#\bmw:File/Thumb\b#', $typeOf ) && $descType !== self::NONE ) {
 			// The following classes are used here:
 			// * mw-ext-imagemap-desc-top-right

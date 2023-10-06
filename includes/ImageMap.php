@@ -317,6 +317,7 @@ class ImageMap implements ParserFirstCallInitHook {
 			// Add a surrounding div, remove the default link to the description page
 			$anchor = $imageNode->parentNode;
 			$parent = $anchor->parentNode;
+			'@phan-var DOMElement $anchor';
 
 			// Handle cases where there are no anchors, like `|link=`
 			if ( $anchor instanceof DOMDocumentFragment ) {
@@ -349,6 +350,7 @@ class ImageMap implements ParserFirstCallInitHook {
 			$anchor = $imageNode->parentNode;
 			$wrapper = $anchor->parentNode;
 			Assert::precondition( $wrapper instanceof DOMElement, 'Anchor node has a parent' );
+			'@phan-var DOMElement $anchor';
 
 			$classes = $wrapper->getAttribute( 'class' );
 
@@ -438,7 +440,7 @@ class ImageMap implements ParserFirstCallInitHook {
 			}
 		} else {
 			'@phan-var DOMElement $wrapper';
-			$typeOf = $wrapper->getAttribute( 'typeof' ) ?? '';
+			$typeOf = $wrapper->getAttribute( 'typeof' );
 			if ( preg_match( '#\bmw:File/Thumb\b#', $typeOf ) ) {
 				// $imageNode was cloned above
 				$img = $imageParent->firstChild;
