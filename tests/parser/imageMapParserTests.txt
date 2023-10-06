@@ -105,7 +105,7 @@ Empty imagemap
 </imagemap>
 !! html/php
 <p class="error">Error: Must specify an image in the first line.</p>
-!! html/parsoid
+!! html/parsoid-disabled
 <p><span typeof="mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image","params":null}}'>imagemap_no_image</span></p>
 !! end
 
@@ -117,7 +117,7 @@ Invalid image title
 </imagemap>
 !! html/php
 <p class="error">Error: Must specify an image in the first line.</p>
-!! html/parsoid
+!! html/parsoid-disabled
 <p><span typeof="mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\n[[x|xx]]]]\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image","params":null}}'>imagemap_no_image</span></p>
 !! end
 
@@ -129,7 +129,7 @@ File:Nopenopenope.jpg
 </imagemap>
 !! html/php
 <p class="error">Error: Image is invalid or non-existent.</p>
-!! html/parsoid
+!! html/parsoid-disabled
 <p><span typeof="mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Nopenopenope.jpg\n"},"errors":[{"key":"imagemap_invalid_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_image","params":null}}'>imagemap_invalid_image</span></p>
 !! end
 
@@ -314,6 +314,6 @@ Foobar.jpg
 </imagemap>
 !! html/php
 <p class="error">Error: Must specify an image in the first line.</p>
-!! html/parsoid
+!! html/parsoid-disabled
 <p><span typeof="mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFoobar.jpg\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image","params":null}}'>imagemap_no_image</span></p>
 !! end
