@@ -175,6 +175,23 @@ desc top-left
 !! end
 
 !! test
+Non-default localized (French) description type
+!! options
+language=fr
+!! config
+wgParserEnableLegacyMediaDOM=false
+!! wikitext
+<imagemap>
+Image:Foobar.jpg
+desc haut-gauche
+</imagemap>
+!! html/php
+<figure class="mw-default-size noresize mw-ext-imagemap-desc-top-left" typeof="mw:File"><span><img src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" width="1941" height="220" class="mw-file-element" resource="/wiki/Fichier:Foobar.jpg" /></span><figcaption></figcaption></figure>
+!! html/parsoid
+<figure class="mw-default-size noresize mw-ext-imagemap-desc-top-left" typeof="mw:File mw:Extension/imagemap" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nImage:Foobar.jpg\ndesc haut-gauche\n"}}'><span><img resource="./Fichier:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></span><figcaption></figcaption></figure>
+!! end
+
+!! test
 None description type
 !! config
 wgParserEnableLegacyMediaDOM=false
