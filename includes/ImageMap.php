@@ -247,7 +247,10 @@ class ImageMap implements ParserFirstCallInitHook {
 			$attribs = [];
 			if ( $externLink ) {
 				// Get the 'target' and 'rel' attributes for external link.
-				$attribs = $parser->getExternalLinkAttribs( $title );
+				$attribs = array_filter(
+					$parser->getExternalLinkAttribs( $title ),
+					fn ( $attr ) => $attr !== null
+				);
 
 				$attribs['href'] = $title;
 				$attribs['class'] = 'plainlinks';
