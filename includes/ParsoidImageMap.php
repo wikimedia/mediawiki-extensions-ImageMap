@@ -207,7 +207,7 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 			DOMUtils::assertElt( $a );
 
 			$href = $a->getAttribute( 'href' );
-			$externLink = DOMUtils::matchRel( $a, '#^mw:ExtLink/#D' ) !== null;
+			$externLink = DOMUtils::matchRel( $a, '#^mw:ExtLink#D' ) !== null;
 			$alt = '';
 
 			$hasContent = $externLink || ( DOMDataUtils::getDataParsoid( $a )->stx ?? null ) === 'piped';

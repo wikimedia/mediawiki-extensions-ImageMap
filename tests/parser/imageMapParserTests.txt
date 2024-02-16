@@ -334,3 +334,18 @@ Foobar.jpg
 !! html/parsoid-disabled
 <p><span typeof="mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFoobar.jpg\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image","params":null}}'>imagemap_no_image</span></p>
 !! end
+
+!! test
+Imagemap with external link
+!! config
+wgParserEnableLegacyMediaDOM=false
+!! wikitext
+<imagemap>
+File:Foobar.jpg
+default [http://google.com]
+</imagemap>
+!! html/php
+<figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File"><a rel="nofollow" href="http://google.com" class="plainlinks" title="http://google.com"><img src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" width="1941" height="220" class="mw-file-element" resource="/wiki/File:Foobar.jpg" /></a><figcaption></figcaption></figure>
+!! html/parsoid
+<figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\ndefault [http://google.com]\n"}}'><a href="http://google.com" class="plainlinks" rel="nofollow"><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></a><figcaption></figcaption></figure>
+!! end
