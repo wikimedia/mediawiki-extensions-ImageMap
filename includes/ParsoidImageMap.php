@@ -14,7 +14,6 @@ use Wikimedia\Parsoid\Ext\ExtensionTagHandler;
 use Wikimedia\Parsoid\Ext\ParsoidExtensionAPI;
 use Wikimedia\Parsoid\Ext\WTUtils;
 use Wikimedia\Parsoid\Utils\DOMCompat;
-use Wikimedia\Parsoid\Utils\UrlUtils;
 
 /**
  * This is an adaptation of the existing ImageMap extension of the legacy
@@ -256,27 +255,14 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 			$attribs = [ 'href' => $href ];
 			if ( $externLink ) {
 				$attribs['class'] = 'plainlinks';
-
-				$siteConfig = $extApi->getSiteConfig();
-
-				// Get the 'rel' attribute for external link.
-				$noFollowConfig = $siteConfig->getNoFollowConfig();
-				if (
-					$noFollowConfig['nofollow'] &&
-					!in_array(
-						$extApi->getPageConfig()->getLinkTarget()->getNamespace(),
-						$noFollowConfig['nsexceptions'],
-						true
-					) &&
-					!UrlUtils::matchesDomainList( $href, $noFollowConfig['domainexceptions'] )
-				) {
-					$attribs['rel'] = 'nofollow';
+				// The AddLinkAttributes pass isn't run on nested pipelines
+				// so $a doesn't have rel/target attributes to copy over
+				$extLinkAttribs = $extApi->getExternalLinkAttribs( $href );
+				if ( isset( $extLinkAttribs['rel'] ) ) {
+					$attribs['rel'] = implode( ' ', $extLinkAttribs['rel'] );
 				}
-
-				// Get the 'target' attribute for external link
-				$externLinkTarget = $siteConfig->getExternalLinkTarget();
-				if ( $externLinkTarget ) {
-					$attribs['target'] = $externLinkTarget;
+				if ( isset( $extLinkAttribs['target'] ) ) {
+					$attribs['target'] = $extLinkAttribs['target'];
 				}
 			}
 			if ( $shape != 'default' ) {
