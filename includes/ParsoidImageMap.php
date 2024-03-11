@@ -108,7 +108,7 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 					$image = $bits[0];
 					$options = '';
 				} else {
-					list( $image, $options ) = $bits;
+					[ $image, $options ] = $bits;
 					$options = '|' . $options;
 				}
 
