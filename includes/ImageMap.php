@@ -28,11 +28,11 @@ use MediaWiki\Output\OutputPage;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Title\Title;
+use MediaWiki\Xml\Xml;
 use Wikimedia\Assert\Assert;
 use Wikimedia\Parsoid\Ext\WTUtils;
 use Wikimedia\Parsoid\Utils\DOMCompat;
 use Wikimedia\Parsoid\Utils\DOMUtils;
-use Xml;
 
 class ImageMap implements ParserFirstCallInitHook {
 
