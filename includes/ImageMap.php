@@ -22,13 +22,15 @@ namespace MediaWiki\Extension\ImageMap;
 
 use DOMDocumentFragment;
 use DOMElement;
+use MediaWiki\Config\Config;
 use MediaWiki\Hook\ParserFirstCallInitHook;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Page\File\BadFileLookup;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Title\Title;
 use MediaWiki\Xml\Xml;
+use RepoGroup;
 use Wikimedia\Assert\Assert;
 use Wikimedia\Parsoid\Ext\WTUtils;
 use Wikimedia\Parsoid\Utils\DOMCompat;
@@ -46,6 +48,20 @@ class ImageMap implements ParserFirstCallInitHook {
 		'top-right', 'bottom-right', 'bottom-left', 'top-left'
 	];
 
+	private BadFileLookup $badFileLookup;
+	private Config $config;
+	private RepoGroup $repoGroup;
+
+	public function __construct(
+		BadFileLookup $badFileLookup,
+		Config $config,
+		RepoGroup $repoGroup
+	) {
+		$this->badFileLookup = $badFileLookup;
+		$this->config = $config;
+		$this->repoGroup = $repoGroup;
+	}
+
 	/**
 	 * @param Parser $parser
 	 */
@@ -61,8 +77,7 @@ class ImageMap implements ParserFirstCallInitHook {
 	 */
 	public function render( $input, $params, Parser $parser ) {
 		global $wgUrlProtocols;
-		$config = MediaWikiServices::getInstance()->getMainConfig();
-		$enableLegacyMediaDOM = $config->get( 'ParserEnableLegacyMediaDOM' );
+		$enableLegacyMediaDOM = $this->config->get( 'ParserEnableLegacyMediaDOM' );
 
 		$lines = explode( "\n", $input );
 
@@ -84,9 +99,6 @@ class ImageMap implements ParserFirstCallInitHook {
 		$defaultLinkAttribs = false;
 		$realMap = true;
 		$extLinks = [];
-		$services = MediaWikiServices::getInstance();
-		$repoGroup = $services->getRepoGroup();
-		$badFileLookup = $services->getBadFileLookup();
 		foreach ( $lines as $lineNum => $line ) {
 			$lineNum++;
 			$externLink = false;
@@ -108,7 +120,7 @@ class ImageMap implements ParserFirstCallInitHook {
 				if ( !$imageTitle || !$imageTitle->inNamespace( NS_FILE ) ) {
 					return $this->error( 'imagemap_no_image' );
 				}
-				if ( $badFileLookup->isBadFile( $imageTitle->getDBkey(), $parser->getTitle() ) ) {
+				if ( $this->badFileLookup->isBadFile( $imageTitle->getDBkey(), $parser->getTitle() ) ) {
 					return $this->error( 'imagemap_bad_image' );
 				}
 				// Parse the options so we can use links and the like in the caption
@@ -135,7 +147,7 @@ class ImageMap implements ParserFirstCallInitHook {
 				$thumbWidth = (int)$imageNode->getAttribute( 'width' );
 				$thumbHeight = (int)$imageNode->getAttribute( 'height' );
 
-				$imageObj = $repoGroup->findFile( $imageTitle );
+				$imageObj = $this->repoGroup->findFile( $imageTitle );
 				if ( !$imageObj || !$imageObj->exists() ) {
 					return $this->error( 'imagemap_invalid_image' );
 				}
@@ -431,10 +443,10 @@ class ImageMap implements ParserFirstCallInitHook {
 					'alt',
 					wfMessage( 'imagemap_description' )->inContentLanguage()->text()
 				);
-				$url = $config->get( 'ExtensionAssetsPath' ) . '/ImageMap/resources/desc-20.png';
+				$url = $this->config->get( 'ExtensionAssetsPath' ) . '/ImageMap/resources/desc-20.png';
 				$descImg->setAttribute(
 					'src',
-					OutputPage::transformResourcePath( $config, $url )
+					OutputPage::transformResourcePath( $this->config, $url )
 				);
 				$descImg->setAttribute( 'style', 'border: none;' );
 			}

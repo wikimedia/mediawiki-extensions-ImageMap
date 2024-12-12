@@ -18,7 +18,12 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "MediaWiki\\Extension\\ImageMap\\ImageMap"
+			"class": "MediaWiki\\Extension\\ImageMap\\ImageMap",
+			"services": [
+				"BadFileLookup",
+				"MainConfig",
+				"RepoGroup"
+			]
 		}
 	},
 	"Hooks": {
