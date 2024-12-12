@@ -24,6 +24,7 @@ use DOMDocumentFragment;
 use DOMElement;
 use MediaWiki\Config\Config;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\MainConfigNames;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\File\BadFileLookup;
 use MediaWiki\Parser\Parser;
@@ -77,7 +78,7 @@ class ImageMap implements ParserFirstCallInitHook {
 	 */
 	public function render( $input, $params, Parser $parser ) {
 		global $wgUrlProtocols;
-		$enableLegacyMediaDOM = $this->config->get( 'ParserEnableLegacyMediaDOM' );
+		$enableLegacyMediaDOM = $this->config->get( MainConfigNames::ParserEnableLegacyMediaDOM );
 
 		$lines = explode( "\n", $input );
 
@@ -443,7 +444,7 @@ class ImageMap implements ParserFirstCallInitHook {
 					'alt',
 					wfMessage( 'imagemap_description' )->inContentLanguage()->text()
 				);
-				$url = $this->config->get( 'ExtensionAssetsPath' ) . '/ImageMap/resources/desc-20.png';
+				$url = $this->config->get( MainConfigNames::ExtensionAssetsPath ) . '/ImageMap/resources/desc-20.png';
 				$descImg->setAttribute(
 					'src',
 					OutputPage::transformResourcePath( $this->config, $url )
