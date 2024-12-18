@@ -77,7 +77,7 @@ class ImageMap implements ParserFirstCallInitHook {
 	 * @return string HTML (Image map, or error message)
 	 */
 	public function render( $input, $params, Parser $parser ) {
-		global $wgUrlProtocols;
+		$urlProtocols = $this->config->get( MainConfigNames::UrlProtocols );
 		$enableLegacyMediaDOM = $this->config->get( MainConfigNames::ParserEnableLegacyMediaDOM );
 
 		$lines = explode( "\n", $input );
@@ -200,8 +200,8 @@ class ImageMap implements ParserFirstCallInitHook {
 					return $this->error( 'imagemap_invalid_title', $lineNum );
 				}
 				$alt = $title->getFullText();
-			} elseif ( in_array( substr( $link, 1, strpos( $link, '//' ) + 1 ), $wgUrlProtocols )
-				|| in_array( substr( $link, 1, strpos( $link, ':' ) ), $wgUrlProtocols )
+			} elseif ( in_array( substr( $link, 1, strpos( $link, '//' ) + 1 ), $urlProtocols )
+				|| in_array( substr( $link, 1, strpos( $link, ':' ) ), $urlProtocols )
 			) {
 				if ( preg_match( '/^ \[  ([^\s]*+)  \s  ([^\]]*+)  \] \w* $ /x', $link, $m ) ) {
 					$title = $m[1];
