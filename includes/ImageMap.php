@@ -49,12 +49,16 @@ class ImageMap implements ParserFirstCallInitHook {
 	}
 
 	/**
-	 * @param string $input
+	 * @param string|null $input
 	 * @param array $params
 	 * @param Parser $parser
 	 * @return string HTML (Image map, or error message)
 	 */
 	public function render( $input, $params, Parser $parser ) {
+		if ( $input === null ) {
+			return '';
+		}
+
 		global $wgUrlProtocols;
 		$config = ConfigFactory::getDefaultInstance()->makeConfig( 'main' );
 		$enableLegacyMediaDOM = $config->get( 'ParserEnableLegacyMediaDOM' );
