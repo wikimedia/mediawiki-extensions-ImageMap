@@ -25,13 +25,13 @@ use DOMElement;
 use MediaWiki\Config\Config;
 use MediaWiki\FileRepo\RepoGroup;
 use MediaWiki\Hook\ParserFirstCallInitHook;
+use MediaWiki\Html\Html;
 use MediaWiki\MainConfigNames;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\File\BadFileLookup;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Title\Title;
-use MediaWiki\Xml\Xml;
 use Wikimedia\Assert\Assert;
 use Wikimedia\Parsoid\Ext\WTUtils;
 use Wikimedia\Parsoid\Utils\DOMCompat;
@@ -291,7 +291,7 @@ class ImageMap implements ParserFirstCallInitHook {
 				$defaultLinkAttribs = $attribs;
 			} else {
 				// @phan-suppress-next-line SecurityCheck-DoubleEscaped
-				$mapHTML .= Xml::element( 'area', $attribs ) . "\n";
+				$mapHTML .= Html::element( 'area', $attribs ) . "\n";
 			}
 			if ( $externLink ) {
 				$extLinks[] = $title;
