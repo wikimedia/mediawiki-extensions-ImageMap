@@ -60,7 +60,10 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 		];
 	}
 
-	/** @inheritDoc */
+	/**
+	 * @inheritDoc
+	 * @throws ExtensionError
+	 */
 	public function sourceToDom(
 		ParsoidExtensionAPI $extApi, string $src, array $extArgs
 	): DocumentFragment {
