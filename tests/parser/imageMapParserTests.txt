@@ -252,3 +252,22 @@ default [http://google.com]
 !! html/parsoid
 <figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\ndefault [http://google.com]\n"}}'><a href="http://google.com" class="plainlinks" rel="nofollow noreferrer noopener" target="_blank"><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></a><figcaption></figcaption></figure>
 !! end
+
+!! test
+Imagemap with interlanguage link
+!! wikitext
+[[es:Lalala]]
+
+<imagemap>
+File:Foobar.jpg
+default [[es:Lalala]]
+</imagemap>
+!! html/php
+<p><br />
+</p>
+<figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File"><a href="http://es.wikipedia.org/wiki/Lalala" title="es:Lalala"><img src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" width="1941" height="220" class="mw-file-element" resource="/wiki/File:Foobar.jpg" /></a><figcaption></figcaption></figure>
+!! html/parsoid
+<link rel="mw:PageProp/Language" href="http://es.wikipedia.org/wiki/Lalala"/>
+
+<figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\ndefault [[es:Lalala]]\n"}}'><a href="http://es.wikipedia.org/wiki/Lalala"><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></a><figcaption></figcaption></figure>
+!! end

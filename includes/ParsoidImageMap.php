@@ -132,10 +132,12 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 				$imageNode = $anchor->firstChild;
 
 				// Could be a span
-				if ( DOMCompat::nodeName( $imageNode ) !== 'img' ) {
+				if ( !(
+					$imageNode instanceof Element &&
+					DOMCompat::nodeName( $imageNode ) === 'img'
+				) ) {
 					throw new ExtensionError( 'imagemap_invalid_image' );
 				}
-				DOMUtils::assertElt( $imageNode );
 
 				// Add the linear dimensions to avoid inaccuracy in the scale
 				// factor when one is much larger than the other
@@ -201,12 +203,16 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 				// sol
 				true
 			);
-			$a = DOMCompat::querySelector( $linkFragment, 'a' );
-			if ( $a === null ) {
+			// Interlanguage links parse to link tags, so expect that here too
+			$a = DOMCompat::querySelector( $linkFragment, 'a, link' );
+			if (
+				!( $a instanceof Element ) ||
+				( DOMCompat::nodeName( $a ) === 'link' &&
+					!DOMUtils::matchRel( $a, '#^mw:PageProp/Language#D' ) )
+			) {
 				// Meh, might be for other reasons
 				throw new ExtensionError( 'imagemap_invalid_title', $lineNum );
 			}
-			DOMUtils::assertElt( $a );
 
 			$href = $a->getAttribute( 'href' );
 			$externLink = DOMUtils::matchRel( $a, '#^mw:ExtLink#D' ) !== null;
