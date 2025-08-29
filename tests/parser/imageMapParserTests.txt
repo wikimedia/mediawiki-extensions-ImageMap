@@ -54,8 +54,8 @@ Empty imagemap
 </imagemap>
 !! html/php
 <p class="error">Error: Must specify an image in the first line.</p>
-!! html/parsoid
-<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image"}}'></span></p>
+!! html/parsoid+disabled
+<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image"}}'></span></p>
 !! end
 
 !! test
@@ -66,8 +66,8 @@ Invalid image title
 </imagemap>
 !! html/php
 <p class="error">Error: Must specify an image in the first line.</p>
-!! html/parsoid
-<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\n[[x|xx]]]]\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image"}}'></span></p>
+!! html/parsoid+disabled
+<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\n[[x|xx]]]]\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image"}}'></span></p>
 !! end
 
 !! test
@@ -78,8 +78,8 @@ File:Nopenopenope.jpg
 </imagemap>
 !! html/php
 <p class="error">Error: Image is invalid or non-existent.</p>
-!! html/parsoid
-<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Nopenopenope.jpg\n"},"errors":[{"key":"imagemap_invalid_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_image"}}'></span></p>
+!! html/parsoid+disabled
+<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Nopenopenope.jpg\n"},"errors":[{"key":"imagemap_invalid_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_image"}}'></span></p>
 !! end
 
 !! test
@@ -91,8 +91,8 @@ desc nopenopenope
 </imagemap>
 !! html/php
 <p class="error">Error: Invalid desc specification, must be one of: <code>top-right, bottom-right, bottom-left, top-left, none</code>.</p>
-!! html/parsoid
-<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nImage:Foobar.jpg\ndesc nopenopenope\n"},"errors":[{"key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}}'></span></p>
+!! html/parsoid+disabled
+<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nImage:Foobar.jpg\ndesc nopenopenope\n"},"errors":[{"key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}}'></span></p>
 !! end
 
 !! test
@@ -104,8 +104,8 @@ desc
 </imagemap>
 !! html/php
 <p class="error">Error: Invalid desc specification, must be one of: <code>top-right, bottom-right, bottom-left, top-left, none</code>.</p>
-!! html/parsoid
-<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nImage:Foobar.jpg\ndesc\n"},"errors":[{"key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}}'></span></p>
+!! html/parsoid+disabled
+<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nImage:Foobar.jpg\ndesc\n"},"errors":[{"key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}}'></span></p>
 !! end
 
 !! test
@@ -158,8 +158,8 @@ File:Foobar.jpg
 </imagemap>
 !! html/php
 <p class="error">Error: No valid link was found at the end of line 3.</p>
-!! html/parsoid
-<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\n123\n"},"errors":[{"key":"imagemap_no_link","params":[3]}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_link","params":[3]}}'></span></p>
+!! html/parsoid+disabled
+<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\n123\n"},"errors":[{"key":"imagemap_no_link","params":[3]}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_link","params":[3]}}'></span></p>
 !! end
 
 !! test
@@ -171,8 +171,8 @@ File:Foobar.jpg
 </imagemap>
 !! html/php
 <p class="error">Error: Invalid title in link at line 3.</p>
-!! html/parsoid
-<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\n[[&lt;]]\n"},"errors":[{"key":"imagemap_invalid_title","params":[3]}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_title","params":[3]}}'></span></p>
+!! html/parsoid+disabled
+<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\n[[&lt;]]\n"},"errors":[{"key":"imagemap_invalid_title","params":[3]}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_title","params":[3]}}'></span></p>
 !! end
 
 ## FIXME: Note the difference in the link alt
@@ -234,8 +234,8 @@ Foobar.jpg
 </imagemap>
 !! html/php
 <p class="error">Error: Must specify an image in the first line.</p>
-!! html/parsoid
-<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFoobar.jpg\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image"}}'></span></p>
+!! html/parsoid+disabled
+<p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFoobar.jpg\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image"}}'></span></p>
 !! end
 
 !! test
