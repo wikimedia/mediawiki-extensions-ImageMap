@@ -133,7 +133,7 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 				// Could be a span
 				if ( !(
 					$imageNode instanceof Element &&
-					DOMCompat::nodeName( $imageNode ) === 'img'
+					DOMUtils::nodeName( $imageNode ) === 'img'
 				) ) {
 					throw new ExtensionError( 'imagemap_invalid_image' );
 				}
@@ -206,7 +206,7 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 			$a = DOMCompat::querySelector( $linkFragment, 'a, link' );
 			if (
 				!( $a instanceof Element ) ||
-				( DOMCompat::nodeName( $a ) === 'link' &&
+				( DOMUtils::nodeName( $a ) === 'link' &&
 					!DOMUtils::matchRel( $a, '#^mw:PageProp/Language#D' ) )
 			) {
 				// Meh, might be for other reasons
