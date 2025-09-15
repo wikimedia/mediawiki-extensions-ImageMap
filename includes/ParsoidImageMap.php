@@ -31,7 +31,6 @@ use Wikimedia\Parsoid\Utils\DOMCompat;
  *
  * Coordinates are relative to the source image, not the thumbnail.
  */
-
 class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 
 	private const TOP_RIGHT = 0;
