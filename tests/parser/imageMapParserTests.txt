@@ -271,3 +271,22 @@ default [[es:Lalala]]
 
 <figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\ndefault [[es:Lalala]]\n"}}'><a href="http://es.wikipedia.org/wiki/Lalala"><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></a><figcaption></figcaption></figure>
 !! end
+
+!! test
+Imagemap with category link
+!! wikitext
+[[category:Lalala]]
+
+<imagemap>
+File:Foobar.jpg
+default [[category:Lalala]]
+</imagemap>
+!! html/php
+<p><br />
+</p>
+<figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File"><a href="/wiki/Category:Lalala" title="Category:Lalala"><img src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" width="1941" height="220" class="mw-file-element" resource="/wiki/File:Foobar.jpg" /></a><figcaption></figcaption></figure>
+!! html/parsoid
+<link rel="mw:PageProp/Category" href="./Category:Lalala"/>
+
+<figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\ndefault [[category:Lalala]]\n"}}'><a href="./Category:Lalala"><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></a><figcaption></figcaption></figure>
+!! end

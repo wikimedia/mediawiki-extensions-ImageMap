@@ -202,12 +202,14 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 				// sol
 				true
 			);
-			// Interlanguage links parse to link tags, so expect that here too
+			// Interlanguage and category links parse to link tags,
+			// so expect them here too
 			$a = DOMCompat::querySelector( $linkFragment, 'a, link' );
 			if (
 				!( $a instanceof Element ) ||
 				( DOMUtils::nodeName( $a ) === 'link' &&
-					!DOMUtils::matchRel( $a, '#^mw:PageProp/Language#D' ) )
+					// We could expose WTUtils::isSolTransparentLink for this
+					!DOMUtils::matchRel( $a, '#^mw:PageProp/(Category|Language)#D' ) )
 			) {
 				// Meh, might be for other reasons
 				throw new ExtensionError( 'imagemap_invalid_title', $lineNum );
