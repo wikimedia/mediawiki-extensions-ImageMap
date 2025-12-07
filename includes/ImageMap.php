@@ -47,18 +47,11 @@ class ImageMap implements ParserFirstCallInitHook {
 		'top-right', 'bottom-right', 'bottom-left', 'top-left'
 	];
 
-	private BadFileLookup $badFileLookup;
-	private Config $config;
-	private RepoGroup $repoGroup;
-
 	public function __construct(
-		BadFileLookup $badFileLookup,
-		Config $config,
-		RepoGroup $repoGroup
+		private readonly BadFileLookup $badFileLookup,
+		private readonly Config $config,
+		private readonly RepoGroup $repoGroup,
 	) {
-		$this->badFileLookup = $badFileLookup;
-		$this->config = $config;
-		$this->repoGroup = $repoGroup;
 	}
 
 	/**
