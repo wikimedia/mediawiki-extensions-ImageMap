@@ -126,8 +126,7 @@ class ImageMap implements ParserFirstCallInitHook {
 					$parsedOptions .= '|none';
 				}
 
-				$imageHTML = $parser->makeImage( $imageTitle, $parsedOptions );
-				$parser->replaceLinkHolders( $imageHTML );
+				$imageHTML = $parser->makeImageHtml( $imageTitle, $parsedOptions );
 				$imageHTML = $parser->getStripState()->unstripBoth( $imageHTML );
 				$imageHTML = Sanitizer::normalizeCharReferences( $imageHTML );
 
