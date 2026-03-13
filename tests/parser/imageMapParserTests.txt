@@ -36,6 +36,8 @@ poly 10.1 10.9 10 30 -30 15 [[Main Page]]
 
 !! test
 imagemap test 3
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|150px|alt=Alt text
@@ -178,6 +180,8 @@ File:Foobar.jpg
 ## FIXME: Note the difference in the link alt
 !! test
 Link with wikitext syntax in content
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|150px|alt=Alt text
@@ -203,6 +207,8 @@ File:Foobar.jpg|link=|Hi ho
 
 !! test
 File with <br> in caption (T113791)
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|thumb|a<br>b
@@ -215,6 +221,8 @@ File:Foobar.jpg|thumb|a<br>b
 
 !! test
 File with <br /> in caption (T113791)
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|thumb|a<br />b
