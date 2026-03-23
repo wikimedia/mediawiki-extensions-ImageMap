@@ -10,7 +10,7 @@
 	"imagemap_invalid_image": "Greška: slika je loša ili ne postoji",
 	"imagemap_bad_image": "Greška: Slika nije dopuštena na ovoj stranici",
 	"imagemap_no_link": "Greška: Nije pronađena ispravna veza na kraju reda $1",
-	"imagemap_invalid_title": "Greška: nevaljan naslov u linku u redu $1",
+	"imagemap_invalid_title": "Greška: neispravan naslov u vezi u redu $1.",
 	"imagemap_missing_coord": "Greška: nema dovoljno koordinata za iscrtavanje u redu $1",
 	"imagemap_unrecognised_shape": "Greška: nepriznat red $1, svaki red mora počinjati sa jednim od: <code>default</code>, <code>rect</code>, <code>circle</code> ili <code>poly</code>"
 }
