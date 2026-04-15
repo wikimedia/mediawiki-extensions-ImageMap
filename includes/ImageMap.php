@@ -22,10 +22,10 @@ namespace MediaWiki\Extension\ImageMap;
 
 use MediaWiki\Config\Config;
 use MediaWiki\FileRepo\RepoGroup;
-use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Html\Html;
 use MediaWiki\MainConfigNames;
 use MediaWiki\Page\File\BadFileLookup;
+use MediaWiki\Parser\Hook\ParserFirstCallInitHook;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Title\Title;
