@@ -3,6 +3,13 @@ version=2
 parsoid-compatible=wt2html,wt2wt,selser
 !! end
 
+# This is the standard article assumed to exist.
+!! article
+Main Page
+!! text
+blah blah
+!! endarticle
+
 # Force the test runner to ensure the extension is loaded
 !! hooks
 imagemap
