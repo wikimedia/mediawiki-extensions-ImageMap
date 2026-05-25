@@ -6,7 +6,6 @@ namespace MediaWiki\Extension\ImageMap;
 use Wikimedia\Parsoid\Core\DOMCompat;
 use Wikimedia\Parsoid\DOM\DocumentFragment;
 use Wikimedia\Parsoid\DOM\Element;
-use Wikimedia\Parsoid\Ext\DOMDataUtils;
 use Wikimedia\Parsoid\Ext\DOMUtils;
 use Wikimedia\Parsoid\Ext\ExtensionError;
 use Wikimedia\Parsoid\Ext\ExtensionModule;
@@ -216,18 +215,13 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 
 			$href = DOMCompat::getAttribute( $a, 'href' ) ?? '';
 			$externLink = DOMUtils::matchRel( $a, '#^mw:ExtLink#D' ) !== null;
-			$alt = '';
 
-			$hasContent = $externLink || ( DOMDataUtils::getDataParsoid( $a )->stx ?? null ) === 'piped';
-
-			if ( $hasContent ) {
-				// FIXME: The legacy extension does ad hoc link parsing, which
-				// results in link content not interpreting wikitext syntax.
-				// Here we produce a known difference by just taking the text
-				// content of the resulting dom.
-				// See the test, "Link with wikitext syntax in content"
-				$alt = trim( $a->textContent ?? '' );
-			}
+			// FIXME: The legacy extension does ad hoc link parsing, which
+			// results in link content not interpreting wikitext syntax.
+			// Here we produce a known difference by just taking the text
+			// content of the resulting dom.
+			// See the test, "Link with wikitext syntax in content"
+			$alt = trim( $a->textContent ?? '' );
 
 			$shapeSpec = substr( $line, 0, -strlen( $link ) );
 
