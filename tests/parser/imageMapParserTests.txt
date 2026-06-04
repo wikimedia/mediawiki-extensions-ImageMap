@@ -245,10 +245,13 @@ Foobar.jpg
 <p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFoobar.jpg\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image"}}'></span></p>
 !! end
 
+# Temporarily disabled while we remove noreferrer (T427561)
 !! test
 Imagemap with external link
 !! config
 wgExternalLinkTarget="_blank"
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg
