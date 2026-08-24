@@ -15,8 +15,12 @@ blah blah
 imagemap
 !! endhooks
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 imagemap test 1
+!! options
+disabled
 !! wikitext
 <imagemap>
 Image:Foobar.jpg
@@ -27,8 +31,12 @@ Image:Foobar.jpg
 <figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nImage:Foobar.jpg\n"}}'><span><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></span><figcaption></figcaption></figure>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 imagemap test 2
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg
@@ -41,8 +49,12 @@ poly 10.1 10.9 10 30 -30 15 [[Main Page]]
 <figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\n\npoly 10.1 10.9 10 30 -30 15 [[Main Page]]\n"}}'><span><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element" usemap="#ImageMap_3be2052f1c66156a"/></span><map name="ImageMap_3be2052f1c66156a"><area alt="Main Page" href="./Main_Page" shape="poly" coords="10,11,10,30,-30,15" title="Main Page"/></map><figcaption></figcaption></figure>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 imagemap test 3
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|150px|alt=Alt text
@@ -115,8 +127,12 @@ desc
 <p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nImage:Foobar.jpg\ndesc\n"},"errors":[{"key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_invalid_desc","params":["top-right, bottom-right, bottom-left, top-left, none"]}}'></span></p>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 Non-default description type
+!! options
+disabled
 !! wikitext
 <imagemap>
 Image:Foobar.jpg
@@ -128,9 +144,12 @@ desc top-left
 <figure class="mw-default-size noresize mw-ext-imagemap-desc-top-left" typeof="mw:File mw:Extension/imagemap" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nImage:Foobar.jpg\ndesc top-left\n"}}'><span><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></span><figcaption></figcaption></figure>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 Non-default localized (French) description type
 !! options
+disabled
 language=fr
 !! wikitext
 <imagemap>
@@ -143,8 +162,12 @@ desc haut-gauche
 <figure class="mw-default-size noresize mw-ext-imagemap-desc-top-left" typeof="mw:File mw:Extension/imagemap" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nImage:Foobar.jpg\ndesc haut-gauche\n"}}'><span><img resource="./Fichier:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></span><figcaption></figcaption></figure>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 None description type
+!! options
+disabled
 !! wikitext
 <imagemap>
 Image:Foobar.jpg
@@ -183,8 +206,12 @@ File:Foobar.jpg
 !! end
 
 ## FIXME: Note the difference in the link alt
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 Link with wikitext syntax in content
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|150px|alt=Alt text
@@ -196,8 +223,12 @@ default [[Main Page|Go to ''main page'']]
 <figure typeof="mw:File mw:Extension/imagemap" class="noresize mw-ext-imagemap-desc-bottom-right" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg|150px|alt=Alt text\ndefault [[Main Page|Go to &apos;&apos;main page&apos;&apos;]]\n"}}'><a href="./Main_Page" title="Go to main page"><img alt="Alt text" resource="./File:Foobar.jpg" src="http://example.com/images/thumb/3/3a/Foobar.jpg/150px-Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="17" width="150" srcset="http://example.com/images/thumb/3/3a/Foobar.jpg/300px-Foobar.jpg 2x" class="mw-file-element"/></a><figcaption></figcaption></figure>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 File with link= option
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|link=|Hi ho
@@ -208,8 +239,12 @@ File:Foobar.jpg|link=|Hi ho
 <figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg|link=|Hi ho\n"}}'><span title="Hi ho"><img alt="Hi ho" resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></span><figcaption>Hi ho</figcaption></figure>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 File with <br> in caption (T113791)
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|thumb|a<br>b
@@ -220,8 +255,12 @@ File:Foobar.jpg|thumb|a<br>b
 <figure class="mw-default-size noresize" typeof="mw:File/Thumb mw:Extension/imagemap" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg|thumb|a&lt;br>b\n"}}'><span><img resource="./File:Foobar.jpg" src="http://example.com/images/thumb/3/3a/Foobar.jpg/180px-Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="20" width="180" srcset="http://example.com/images/thumb/3/3a/Foobar.jpg/360px-Foobar.jpg 2x" class="mw-file-element"/></span><figcaption>a<br/>b</figcaption></figure>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 File with <br /> in caption (T113791)
+!! options
+disabled
 !! wikitext
 <imagemap>
 File:Foobar.jpg|thumb|a<br />b
@@ -245,8 +284,12 @@ Foobar.jpg
 <p><span typeof="mw:I18n mw:Extension/imagemap mw:Error" class="error" about="#mwt2" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFoobar.jpg\n"},"errors":[{"key":"imagemap_no_image"}]}' data-mw-i18n='{"/":{"lang":"x-user","key":"imagemap_no_image"}}'></span></p>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 Imagemap with external link
+!! options
+disabled
 !! config
 wgExternalLinkTarget="_blank"
 !! wikitext
@@ -260,8 +303,12 @@ default [http://google.com]
 <figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\ndefault [http://google.com]\n"}}'><a href="http://google.com" class="plainlinks" rel="nofollow" target="_blank"><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></a><figcaption></figcaption></figure>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 Imagemap with interlanguage link
+!! options
+disabled
 !! wikitext
 [[es:Lalala]]
 
@@ -279,8 +326,12 @@ default [[es:Lalala]]
 <figure class="mw-default-size noresize mw-ext-imagemap-desc-bottom-right" typeof="mw:File mw:Extension/imagemap" data-mw='{"name":"imagemap","attrs":{},"body":{"extsrc":"\nFile:Foobar.jpg\ndefault [[es:Lalala]]\n"}}'><a href="http://es.wikipedia.org/wiki/Lalala"><img resource="./File:Foobar.jpg" src="http://example.com/images/3/3a/Foobar.jpg" decoding="async" data-file-width="1941" data-file-height="220" data-file-type="bitmap" height="220" width="1941" class="mw-file-element"/></a><figcaption></figcaption></figure>
 !! end
 
+# Disabled: expected HTML needs loading="lazy" now that
+# $wgNativeImageLazyLoading defaults to true (T148047).
 !! test
 Imagemap with category link
+!! options
+disabled
 !! wikitext
 [[category:Lalala]]
 
