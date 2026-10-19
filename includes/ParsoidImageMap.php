@@ -38,7 +38,10 @@ class ParsoidImageMap extends ExtensionTagHandler implements ExtensionModule {
 	private const NONE = 4;
 
 	private const DESC_TYPE_MAP = [
-		'top-right', 'bottom-right', 'bottom-left', 'top-left'
+		self::TOP_RIGHT => 'top-right',
+		self::BOTTOM_RIGHT => 'bottom-right',
+		self::BOTTOM_LEFT => 'bottom-left',
+		self::TOP_LEFT => 'top-left',
 	];
 
 	/** @inheritDoc */
